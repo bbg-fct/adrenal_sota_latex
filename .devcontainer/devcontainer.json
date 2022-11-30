@@ -7,6 +7,9 @@
     "runServices": [
         "vscode"
     ],
+    "mounts": [
+        "source=/mnt/c/Users/Bernardo-b2f/OneDrive - FCT NOVA/Documents/AdrenalSota/figures,target=/adrenal_sota/figures,type=bind"
+    ],
     "shutdownAction": "stopCompose",
     "workspaceFolder": "/adrenal_sota",
     "postCreateCommand": "tlmgr update --self && tlmgr update --all",
