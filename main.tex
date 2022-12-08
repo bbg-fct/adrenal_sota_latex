@@ -102,7 +102,7 @@ The studies analysed in this paper were selected accordingly in the following PI
 The studies were searched in two databases: PubMed and Web of Science in September 2022. The search was made with the following research string: (adrenal or suprarenal) AND
 (CT OR "computed tomography" OR MRI OR "magnetic resonance imaging" OR "MRI scan" OR "nuclear magnetic resonance" OR "magnetic resonance" OR NMR)
 AND ("deep learning" OR "convolutional networks" OR CNN OR "neural networks" OR convolutional OR DNN OR SVM OR "Support vector machine" OR "decision tree" OR "machine learning").
-Studies that weren: (a) reviews, (b) not written in English, (c) did not report a modelling method, (d) did not have the full text available were excluded from this research.
+Studies that were: (a) reviews, (b) not written in English, (c) did not report a modelling method, (d) did not have the full text available were excluded from this research.
 
 The research resulted in 23 studies that were divided in 3 groups related with their object of study:
 \begin{enumerate}
@@ -126,7 +126,7 @@ Table \ref{tab:sota_sum} shows the distribution of the selected studies in terms
     \end{tabular}
     \caption{Studies distribution per group. CT: Computed Tomography; MRI: Magnetic Resonance Imaging; ML: Traditional Machine Learning; DL: Deep Learning.}
     \label{tab:sota_sum}
-\end{table} 
+\end{table}
 
 Radiomics is the extraction of quantitative features from medical images. Before the feature extraction, there are two relevant
 steps: image acquisition and segmentation of the region of interest (ROI). Any type of medical images can be used in radiomics,
@@ -144,7 +144,10 @@ to describe the complexity of the individual region of interest. Ordinarily, the
     \item High-Order Statistics: usage of filters to extract patterns from the images. From the resultant images, first and second-order features are extracted.
 \end{enumerate}
 
+The most relevant radiomic features to the task in hand are selected using statistical approaches or machine learning \cite{Zhang2022}. Then, these features are used as the input of ML models to classify the region of interest. This type of workflow is widespread, appearing in 87\% (20/23) of the analysed studies.
+Traditional machine learning models like K-means, Support Vector Machine (SVM), Logistic Regression (LogReg), or Random Forest (RanFor), are frequently used to classify radiomic features of regions of interest and have achieved high performance in different anatomical regions \cite{Zhang2022, Wagner2021}. Deep Learning models, such as, Convolutional Neural Networks (CNNs), have been often applied to medical images from several anatomical regions with promising results \cite{Anaya-Isaza2021}. Despite that, only 13\% of the studies presented in this paper report the application of DL models to adrenal images. DL models are different from ML models mostly because they demand bigger annotated data sets and they do not rely on the feature extraction step (all features are automatically extracted and classified by the model).
 
+In the next sections each group of papers will be analysed in detail, exploring their common and contrasting aspects. For each group the analysis will be focused on the utilized data sets, models, and the obtained results.
 
 \subsection{Group A - Adenomas vs other lesions}
 
