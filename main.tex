@@ -88,19 +88,63 @@ Commonly, non-functional lesions do not require any treatment and, for that reas
 
 \section{Differential diagnosis of adrenal lesions - machine learning approach}
 
-\subsection{Research scope}
+\subsection{Research details}
 
-The presented state of the art was accomplished using the following research string: \textit{(adrenal or suprarenal) AND (CT OR "computed tomography" OR MRI OR "magnetic resonance imaging" OR "MRI scan" OR "nuclear magnetic resonance" OR "magnetic resonance" OR NMR ) AND ("deep learning" OR "convolutional networks" OR CNN OR "neural networks" OR convolutional OR DNN OR SVM OR "Support vector machine" OR "decision tree" OR "machine learning" ) AND (Classif* or diagnos* or dete* or locali* or "lesion segmentation")}. The analysed papers were published between 2017 and 2022. \textbf{Pubmed and Web Of Science (cite this)} were the used academic search engines.
-The focus of this research is on works that apply machine learning (ML) methods to extract insights of abdominal Computed Tomography (CT) or Magnetic Resonance (MR) images to perform differential diagnosis of the adrenal lesions. We aim to answer the following questions:
+The studies analysed in this paper were selected accordingly in the following PICO criteria:
+
 \begin{enumerate}
-    \item What is the relevance of using machine learning methods to differentiate adrenal lesions?
-    \item The diagnosis performance is better with CT and RM images?
-    \item What are the common used machine learning methods?
-    \item What are the main limitations when performing differential diagnosis of adrenal lesions with ML?
-    \item Can Deep Learning be presented as solution to differential diagnosis of adrenal lesions?
+    \item[] \textbf{P (patients) }– patients with adrenal lesions.
+    \item[] \textbf{I (interventions) }– machine learning (including deep learning) modelling.
+    \item[] \textbf{C (comparison) }– standard of care imaging including Computed Tomography (CT) and Magnetic Imaging Resonance (MRI).
+    \item[] \textbf{O (outcome) }– lesion differentiation (benign/malign and subtyping) and lesions detection.
 \end{enumerate}
-All papers retrieved by the above mentioned research string that do not fall in this scope were excluded.
-In total 21 papers were found and 3 were excluded. Thus, 18 papers were left to analyse and produce this review.
+
+The studies were searched in two databases: PubMed and Web of Science in September 2022. The search was made with the following research string: (adrenal or suprarenal) AND
+(CT OR "computed tomography" OR MRI OR "magnetic resonance imaging" OR "MRI scan" OR "nuclear magnetic resonance" OR "magnetic resonance" OR NMR)
+AND ("deep learning" OR "convolutional networks" OR CNN OR "neural networks" OR convolutional OR DNN OR SVM OR "Support vector machine" OR "decision tree" OR "machine learning").
+Studies that weren: (a) reviews, (b) not written in English, (c) did not report a modelling method, (d) did not have the full text available were excluded from this research.
+
+The research resulted in 23 studies that were divided in 3 groups related with their object of study:
+\begin{enumerate}
+    \item[] \textbf{Group A}: contains all the studies that focus on the differentiation between adrenal adenomas and other adrenal lesions.
+    \item[] \textbf{Group B}: contains all the studies that target the differentiation between benign and malign adrenal lesions.
+    \item[] \textbf{Group C}: contains the remaining studies that did not fit any of the above categories.
+\end{enumerate}
+Table \ref{tab:sota_sum} shows the distribution of the selected studies in terms of their group, image modality and model type. Overall, most of the studies adopt traditional machine learning models to classify imaging features (radiomics) from CT images to distinguish adenomas from other types of adrenal lesions, eg. Metastases, pheochromocytomas.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{cccccccc}\toprule
+        \multirow{2}{*}{\textbf{Group}} & \multicolumn{3}{c}{\textbf{Image Modality}} & \multicolumn{3}{c}{\textbf{Model Type}} & \multirow{2}{*}{\textbf{Total}}
+        \\\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+                                        & \textbf{MRI}                                & \textbf{CT}                             & \textbf{MRI+CT}                 & \textbf{ML} & \textbf{DL} & \textbf{ML+DL}      \\\midrule
+        A - Adenomas vs other lesions   & 4                                           & 7                                       & 1                               & 11          & 1           & 0              & 12 \\
+        B - Benign vs Malign            & 2                                           & 5                                       & 0                               & 7           & 0           & 0              & 7  \\
+        C - Other                       & 1                                           & 3                                       & 0                               & 2           & 1           & 1              & 4  \\
+        Sum                             & 7                                           & 15                                      & 1                               & 20          & 2           & 1              & 23 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Studies distribution per group. CT: Computed Tomography; MRI: Magnetic Resonance Imaging; ML: Traditional Machine Learning; DL: Deep Learning.}
+    \label{tab:sota_sum}
+\end{table} 
+
+Radiomics is the extraction of quantitative features from medical images. Before the feature extraction, there are two relevant
+steps: image acquisition and segmentation of the region of interest (ROI). Any type of medical images can be used in radiomics,
+such as Positron Emission Tomography (PET), MRI, or CT. The ROI segmentation is necessary to limit the amount of data that needs
+to be processed in order to extract features. This process can be completely manual, which is the gold standard, where a specialist
+selects the ROI. Manual segmentation is a time-consuming task that significantly depends on the skill of the operator. There are
+fully automatic methods for ROI segmentation however, they can fail in difficult cases, such as, lesions with indistinct borders
+and are highly dependent on the quality of the image. For that reason, the usage of semi-automatic methods is preferable.
+These methods have minimal user interaction (seed identification or manual correction). The extracted quantitative features aim
+to describe the complexity of the individual region of interest. Ordinarily, these features are divided into 4 categories:
+\begin{enumerate}
+    \item Shape-Based Features: numeric information respecting geometrics characteristics, like shape and size.
+    \item First-Order Statistics: distribution of voxel values without spatial information, generally histogram-based.
+    \item Second-Order Statistics: “texture” features, focus on the spatial relationships between voxels with similar grey levels.
+    \item High-Order Statistics: usage of filters to extract patterns from the images. From the resultant images, first and second-order features are extracted.
+\end{enumerate}
+
+
 
 \subsection{Group A - Adenomas vs other lesions}
 
@@ -124,7 +168,7 @@ In total 21 papers were found and 3 were excluded. Thus, 18 papers were left to 
         \cite{Romeo2018}                    & T1W-OP/IP; T2W MRI                       & 60                                                 & 40                & 20
         \\\bottomrule
     \end{tabular}
-    \caption{Dataset Details for each article in the Group A. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted}
+    \caption{Dataset Details for each article in the Group A. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
     \label{tab:data_A}
 \end{table}
 
@@ -147,7 +191,7 @@ In total 21 papers were found and 3 were excluded. Thus, 18 papers were left to 
         \cite{Romeo2018}                    & ML                             & DecTre                                         & Manual                        & $1^{st}$, $2^{nd}$                 \\
         \bottomrule
     \end{tabular}
-    \caption{Modelling Details  for each article in the Group A. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; LASSO: Least Absolute Shrinkage and Selection Operator; DecTre: Decision Tree; RanFor: Random Forest; PCA: Principal Components Analysis; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features}
+    \caption{Modelling Details  for each article in the Group A. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; LASSO: Least Absolute Shrinkage and Selection Operator; DecTre: Decision Tree; RanFor: Random Forest; PCA: Principal Components Analysis; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
     \label{tab:model_A}
 \end{table}
 
@@ -191,7 +235,7 @@ In total 21 papers were found and 3 were excluded. Thus, 18 papers were left to 
         \cite{Stanzione2021}                & T1W-OP/IP; T2W MRI                       & 55                                                 & 37              & 18              \\
         \bottomrule
     \end{tabular}
-    \caption{Dataset Details for each article in the Group B. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted}
+    \caption{Dataset Details for each article in the Group B. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
     \label{tab:data_B}
 \end{table}
 
@@ -211,7 +255,7 @@ In total 21 papers were found and 3 were excluded. Thus, 18 papers were left to 
     \end{tabular}
     \caption{Modelling Details for each article in the Group B. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression;
         Bounded PSO-NN: Bounded Particle Swarm Optimisation Neural network; BSGC: Bayesian Spatial Gaussian Classifiers; NN: Neural Network; ExTre: Extra Trees Classifier
-        RanFor: Random Forest; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features;}
+        RanFor: Random Forest; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
     \label{tab:model_B}
 \end{table}
 
@@ -238,33 +282,32 @@ In total 21 papers were found and 3 were excluded. Thus, 18 papers were left to 
 \begin{table}[]
     \centering
     \begin{tabular}{ccccc}\toprule
-        \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Image Modality}} & \multicolumn{3}{c}{\textbf{Sample Size (lesions)}}
-        \\\cmidrule(lr){3-5}
-                                            &                                          & \textbf{Total}                                     & \textbf{Benign} & \textbf{Malign} \\\midrule
-        \cite{Bi2017}                       & U-CT                                     & 377                                                & 182             & 195             \\
-        \cite{Bi2022}                       & CE-CT                                    & 114                                                & 90              & 24              \\
-        \cite{Kong2022}                     & U/CE-CT                                  & 210                                                & 114             & 96              \\
-        \cite{Zheng2020}                    & CE-CT                                    & 160                                                & 89              & 71              \\
+        \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Image Modality}} & \multirow{2}{*}{\textbf{Sample size}} & \multirow{2}{*}{\textbf{Task}}             \\
+        \\ \midrule
+        \cite{Bi2017}                       & U-CT                                     & 38                                    & Lesion Detection                           \\
+        \cite{Bi2022}                       & CE-CT                                    & 229                                   & Multiclass Classification                  \\
+        \cite{Kong2022}                     & T2W-MRI                                  & 305                                   & pheochromocytomas vs non-pheochromocytomas \\
+        \cite{Zheng2020}                    & U/CE-CT                                  & 83                                    & Adenoma subtyping                          \\
         \bottomrule
     \end{tabular}
-    \caption{Dataset Details for each article in the Group C. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted}
+    \caption{Dataset Details for each article in the Group C. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
     \label{tab:data_C}
 \end{table}
 
 \begin{table}[]
     \centering
     \begin{tabular}{ccccc}\toprule
-        \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Type}} & \multirow{2}{*}{\textbf{Classification Model}} & \multirow{2}{*}{\textbf{ROI}} & \multirow{2}{*}{\textbf{Features}} \\
+        \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Type}} & \multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{\textbf{ROI}} & \multirow{2}{*}{\textbf{Features}} \\
         \\ \midrule
-        \cite{Bi2017}                       & U-CT                           & 377                                            & 182                           & 195                                \\
-        \cite{Bi2022}                       & CE-CT                          & 114                                            & 90                            & 24                                 \\
-        \cite{Kong2022}                     & U/CE-CT                        & 210                                            & 114                           & 96                                 \\
-        \cite{Zheng2020}                    & CE-CT                          & 160                                            & 89                            & 71                                 \\
+        \cite{Bi2017}                       & DL                             & FCN                             & Manual                        & -                                  \\
+        \cite{Bi2022}                       & DL + ML                        & CNN + SVM                       & Manual                        & CNN embedding                      \\
+        \cite{Kong2022}                     & ML                             & LogReg                          & Semi-Auto                     & $1^{st}$, $2^{nd}$, higher, shape  \\
+        \cite{Zheng2020}                    & ML                             & LogReg                          & Manual                        & $1^{st}$, higher, shape            \\
         \bottomrule
     \end{tabular}
     \caption{Modelling Details for each article in the Group C. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression;
-        Bounded PSO-NN: Bounded Particle Swarm Optimisation Neural network; BSGC: Bayesian Spatial Gaussian Classifiers; NN: Neural Network; ExTre: Extra Trees Classifier
-        RanFor: Random Forest; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features;}
+        BSGC: Bayesian Spatial Gaussian Classifiers; CNN: Convolutional Neural Network; SVM: Support Vector Machine;
+        $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
     \label{tab:model_C}
 \end{table}
 
@@ -273,10 +316,10 @@ In total 21 papers were found and 3 were excluded. Thus, 18 papers were left to 
     \begin{tabular}{ccccc}\toprule
         \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Specificity - \%}} & \multirow{2}{*}{\textbf{Sensitivity - \%}} & \multirow{2}{*}{\textbf{Accuracy - \%}} & \multirow{2}{*}{\textbf{AUC - \%}} \\
         \\\midrule
-        \cite{Bi2017}                       & U-CT                                       & 377                                        & 182                                     & 195                                \\
-        \cite{Bi2022}                       & CE-CT                                      & 114                                        & 90                                      & 24                                 \\
-        \cite{Kong2022}                     & U/CE-CT                                    & 210                                        & 114                                     & 96                                 \\
-        \cite{Zheng2020}                    & CE-CT                                      & 160                                        & 89                                      & 71                                 \\
+        \cite{Bi2017}                       & -                                          & 76.29                                      & -                                       & -                                  \\
+        \cite{Bi2022}                       & 95.9                                       & 83.7                                       & 85.2                                    & -                                  \\
+        \cite{Kong2022}                     & 75.0                                       & 85.7                                       & 84.0                                    & 90.6                               \\
+        \cite{Zheng2020}                    & 92.8                                       & 91.5                                       & 92.2                                    & 90.2                               \\
         \bottomrule
     \end{tabular}
     \caption{Model metrics for each article in the Group C. AUC: Area Under the ROC Curve.}
