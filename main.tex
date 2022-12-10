@@ -99,18 +99,31 @@ The studies analysed in this paper were selected accordingly in the following PI
     \item[] \textbf{O (outcome) }– lesion differentiation (benign/malign and subtyping) and lesions detection.
 \end{enumerate}
 
-The studies were searched in two databases: PubMed and Web of Science in September 2022. The search was made with the following research string: (adrenal or suprarenal) AND
-(CT OR "computed tomography" OR MRI OR "magnetic resonance imaging" OR "MRI scan" OR "nuclear magnetic resonance" OR "magnetic resonance" OR NMR)
-AND ("deep learning" OR "convolutional networks" OR CNN OR "neural networks" OR convolutional OR DNN OR SVM OR "Support vector machine" OR "decision tree" OR "machine learning").
-Studies that were: (a) reviews, (b) not written in English, (c) did not report a modelling method, (d) did not have the full text available were excluded from this research.
+The studies were searched in two databases: PubMed and Web of Science in
+September 2022. The search was made with the following research string: (adrenal
+or suprarenal) AND (CT OR "computed tomography" OR MRI OR "magnetic resonance
+imaging" OR "MRI scan" OR "nuclear magnetic resonance" OR "magnetic resonance"
+OR NMR) AND ("deep learning" OR "convolutional networks" OR CNN OR "neural
+networks" OR convolutional OR DNN OR SVM OR "Support vector machine" OR
+"decision tree" OR "machine learning"). Studies that were: (a) reviews, (b) not
+written in English, (c) did not report a modelling method, (d) did not have the
+full text available were excluded from this research.
 
-The research resulted in 23 studies that were divided in 3 groups related with their object of study:
+The research resulted in 23 studies that were divided in 3 groups related with
+their object of study:
 \begin{enumerate}
-    \item[] \textbf{Group A}: contains all the studies that focus on the differentiation between adrenal adenomas and other adrenal lesions.
-    \item[] \textbf{Group B}: contains all the studies that target the differentiation between benign and malign adrenal lesions.
-    \item[] \textbf{Group C}: contains the remaining studies that did not fit any of the above categories.
+    \item[] \textbf{Group A}: contains all the studies that focus on the
+        differentiation between adrenal adenomas and other adrenal lesions.
+    \item[] \textbf{Group B}: contains all the studies that target the
+        differentiation between benign and malign adrenal lesions.
+    \item[] \textbf{Group C}: contains the remaining studies that did not fit
+        any of the above categories.
 \end{enumerate}
-Table \ref{tab:sota_sum} shows the distribution of the selected studies in terms of their group, image modality and model type. Overall, most of the studies adopt traditional machine learning models to classify imaging features (radiomics) from CT images to distinguish adenomas from other types of adrenal lesions, eg. Metastases, pheochromocytomas.
+Table \ref{tab:sota_sum} shows the distribution of the selected studies in terms
+of their group, image modality and model type. Overall, most of the studies
+adopt traditional machine learning models to classify imaging features
+(radiomics) from CT images to distinguish adenomas from other types of adrenal
+lesions, eg. Metastases, pheochromocytomas.
 
 \begin{table}[]
     \centering
@@ -150,6 +163,32 @@ Traditional machine learning models like K-means, Support Vector Machine (SVM), 
 In the next sections each group of papers will be analysed in detail, exploring their common and contrasting aspects. For each group the analysis will be focused on the utilized data sets, models, and the obtained results.
 
 \subsection{Group A - Adenomas vs other lesions}
+
+This group corresponds to 52\% of all analysed studies and contains studies that
+aim at the differentiation between adrenal adenomas and other lesions. Tables
+\ref{tab:data_A,tab:model_A,tab:res_A} present an overview of the data sets,
+models, and results, respectively, for each study inside group A.
+\cite{Schieda2017,Tu2018,Tu2020} have data sets with adenomas and metastases.
+\cite{Yi20181,Yi2018, Liu2022,Liu2021} have patients with adenomas and
+pheochromocytomas. \cite{Elmohr2019, Torresan2021, Ho2019} have compared
+adenomas and carcinomas. Finally, \cite{Romeo2018, Kusunoki2022} do not have
+another specific lesion, \cite{Romeo2018} data set has 3 classes: lipid-poor
+adenomas, lipid-rich adenoma and nonadenomas and \cite{Kusunoki2022} performs a
+general differentiation between adenomas vs nonadenomas. In terms of the imaging
+modality utilised by the studies, there is slight advantage to CT, as it is used
+in 8 studies, mostly with and without contrast enhanced images. The studies that
+analyse MRI images focus on chemical shift images as they pose an remarkable
+advantage in the detection of the lipip content of the lesions. All studies but
+one performed lesion classification with ML models using radiomic features. The
+most common model is the logistic regression (LogReg), followed by support
+vector machine (SVM) and decision tree-based models. In every study, the region
+of interest (ROI) was manually selected by experts. The extraction of first and
+second-order statistics is a common practice, but only 3 studies extracted
+shape-based features, and none extracted higher-order statistics. The only study
+that deployed a DL model has performed classification of the ROI (selected,
+cropped and labelled by experts) with a deep convolution neural network
+\cite{Kusunoki2022}. They report the usage of augmentation techniques, such as
+rotations and horizontal flips.
 
 \begin{table}[]
     \centering
