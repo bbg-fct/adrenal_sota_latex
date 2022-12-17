@@ -53,7 +53,7 @@ The adrenal gland has two different regions: the adrenal cortex and the adrenal 
 
 The adrenal glands can be affected by a wide variety of benign and malignant lesions. It is estimated that approximately 6\% of the population has them \cite{Panda2015}. These lesions can be primary if they originated in the glands themselves (cortex or medulla) or secondary if they have another origin. Primary lesions can be functional if they produce hormones \cite{Panda2015}. Table <PUT TAB 1> presents an overview of the adrenal lesions. The most common adrenal lesions are adenomas. Adenomas are often non-functional and remain asymptomatic, being discovered incidentally \cite{Wang2018}. Adenomas are, in most cases, non-functional and remain asymptomatic, being discovered incidentally \cite{Platzek2019}. Adrenocortical carcinoma is a rare lesion although it is the most common primary malignant adrenal lesion. This lesion affects children in their first decade and adults in their fourth and fifth decades \cite{Panda2015}. Also, the adrenals are a frequent location of metastases \cite{Platzek2019}.
 
-Functional lesions can cause endocrines syndromes, such as Conn and Cushing syndrome. The Cushing syndrome or hypercortisolism is caused by elevated values of cortisol and it is associated with adrenal adenomas, mostly. Nevertheless, adrenocortical carcinomas or pheochromocytomas can also cause Cushing syndrome. This syndrome is defined by symptoms like obesity, rounded face, abnormal skin pigmentation, muscle weakness, hypertension, diabetes, and others. On the other hand, the Conn syndrome or primary aldosteronism is related to the excessive production of aldosterone. The most common symptoms of this syndrome are sodium retention, plasma renin suppression, hypertension, cardiovascular damage, and increased potassium excretion. Like the Conn syndrome, this syndrome is commonly caused by adrenal adenomas.  .  In opposition to the above-mentioned syndromes, the Addison disease is caused by adrenal insufficiency, which can be caused by malignant lesions. Patients with this disease can experience weight loss, weakness, fatigue, gastrointestinal upset, orthostatic hypotension, and abnormal skin pigmentation. These symptoms can evolve into dehydration, shock, hyperkalaemia (high potassium), and hyponatremia (high sodium) when entering acute adrenal insufficiency \cite{Wang2018}.
+Functional lesions can cause endocrines syndromes, such as Conn and Cushing syndrome. The Cushing syndrome or hypercortisolism is caused by elevated values of cortisol and it is associated with adrenal adenomas, mostly. Nevertheless, adrenocortical carcinomas or pheochromocytomas can also cause Cushing syndrome. This syndrome is defined by symptoms like obesity, rounded face, abnormal skin pigmentation, muscle weakness, hypertension, diabetes, and others. On the other hand, the Conn syndrome or primary aldosteronism is related to the excessive production of aldosterone. The most common symptoms of this syndrome are sodium retention, plasma renin suppression, hypertension, cardiovascular damage, and increased potassium excretion. Like the Conn syndrome, this syndrome is commonly caused by adrenal adenomas. In opposition to the above-mentioned syndromes, the Addison disease is caused by adrenal insufficiency, which can be caused by malignant lesions. Patients with this disease can experience weight loss, weakness, fatigue, gastrointestinal upset, orthostatic hypotension, and abnormal skin pigmentation. These symptoms can evolve into dehydration, shock, hyperkalaemia (high potassium), and hyponatremia (high sodium) when entering acute adrenal insufficiency \cite{Wang2018}.
 
 \begin{figure}
     \centering
@@ -164,31 +164,52 @@ In the next sections each group of papers will be analysed in detail, exploring 
 
 \subsection{Group A - Adenomas vs other lesions}
 
-This group corresponds to 52\% of all analysed studies and contains studies that
-aim at the differentiation between adrenal adenomas and other lesions. Tables
-\ref{tab:data_A,tab:model_A,tab:res_A} present an overview of the data sets,
-models, and results, respectively, for each study inside group A.
-\cite{Schieda2017,Tu2018,Tu2020} have data sets with adenomas and metastases.
-\cite{Yi20181,Yi2018, Liu2022,Liu2021} have patients with adenomas and
-pheochromocytomas. \cite{Elmohr2019, Torresan2021, Ho2019} have compared
-adenomas and carcinomas. Finally, \cite{Romeo2018, Kusunoki2022} do not have
-another specific lesion, \cite{Romeo2018} data set has 3 classes: lipid-poor
-adenomas, lipid-rich adenoma and nonadenomas and \cite{Kusunoki2022} performs a
-general differentiation between adenomas vs nonadenomas. In terms of the imaging
+Group A comprises all studies that focus on the differentiation between adenomas
+and other lesions. This group corresponds to 52\% of all analysed studies.
+Tables \ref{tab:data_A}, \ref{tab:model_A} and \ref{tab:res_A} present an
+overview of the data sets, models, and results, respectively, for each study
+within group A. \cite{Schieda2017,Tu2018,Tu2020} have data sets with adenomas
+and metastases. \cite{Yi20181,Yi2018, Liu2022,Liu2021} have patients with
+adenomas and pheochromocytomas. \cite{Elmohr2019, Torresan2021, Ho2019} have
+compared adenomas and carcinomas. \cite{Tu2020, Yi2018, Yi20181, Liu2022} have
+considered only lipid-poor adenomas for their adenoma dataset. Finally,
+\cite{Romeo2018} data set has 3 classes: lipid-poor adenomas, lipid-rich
+adenomas and nonadenomas and \cite{Kusunoki2022} performs a general
+differentiation between adenomas and nonadenomas. In terms of the imaging
 modality utilised by the studies, there is slight advantage to CT, as it is used
 in 8 studies, mostly with and without contrast enhanced images. The studies that
-analyse MRI images focus on chemical shift images as they pose an remarkable
-advantage in the detection of the lipip content of the lesions. All studies but
-one performed lesion classification with ML models using radiomic features. The
-most common model is the logistic regression (LogReg), followed by support
-vector machine (SVM) and decision tree-based models. In every study, the region
-of interest (ROI) was manually selected by experts. The extraction of first and
-second-order statistics is a common practice, but only 3 studies extracted
-shape-based features, and none extracted higher-order statistics. The only study
-that deployed a DL model has performed classification of the ROI (selected,
-cropped and labelled by experts) with a deep convolution neural network
-\cite{Kusunoki2022}. They report the usage of augmentation techniques, such as
-rotations and horizontal flips.
+analyse MRI images focus on chemical shift images as they pose an advantage in
+the detection of the lipid content of the lesions. The sample size of the
+studies ranges from dozens to hundreds of lesions, which is closely related to
+the applied inclusion criteria and the initial sample size. For example,
+\cite{Torresan2021} had a database of 336 patients however only 19 met the
+inclusion criteria, each with one lesion.
+
+All studies,but one, performed lesion classification with ML models using
+radiomic features. The most common model is logistic regression (LogReg),
+followed by support vector machine (SVM) and decision tree-based models. In
+every study, the region of interest (ROI) was manually selected by experts. The
+extraction of first and second-order statistics is a common practice, but only 3
+studies extracted shape-based features, and none extracted higher-order
+statistics. The only study that has implemented a DL model has performed ROI
+(selected, cropped and labelled by experts) classification with a deep
+convolution neural network \cite{Kusunoki2022}. They report the usage of
+augmentation techniques such as rotations and horizontal flips.
+\cite{Torresan2021} was the only study to implement an unsupervised model.
+
+In \cite{Ho2019} the data set consists of lipid-poor adenomas and carcinomas in
+both MRI and CT images. The objective of this work was to compare the different
+image modalities using the same machine learning approach. The authors have
+reported only the Area Under the Receiving Operating Characteristic Curve (AUC).
+The value presented in \ref{tab:res_A} refers to the best result, using CE-CT
+images, with MRI images the value decreases to 58 \%.
+Both studies by Yi et al \cite{Yi2018, Yi20181} implemented a logistic regression model with the same radiomic features
+but using different CT images and achieved impressive results. \cite{Yi2018} adds clinical features
+such as, the existence of necrosis or calcification and lesion dimensions, to
+the radiomic features. Also, to improve feature selection the authors used the
+Least Absolute Shrinkage and Selection Operator (LASSO).
+
+
 
 \begin{table}[]
     \centering
@@ -220,9 +241,12 @@ rotations and horizontal flips.
         \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Type}} & \multirow{2}{*}{\textbf{Classification Model}} & \multirow{2}{*}{\textbf{ROI}} & \multirow{2}{*}{\textbf{Features}} \\
         \\\midrule
         \cite{Tu2018}                       & ML                             & LogReg                                         & Manual                        & $1^{st}$                           \\
-        \cite{Yi20181}                      & ML                             & LogReg                                         & Manual                        & $1^{st}$, $2^{nd}$                 \\
-        \cite{Yi2018}                       & ML                             & LASSO-LogReg                                   & Manual                        & $1^{st}$, $2^{nd}$                 \\
-        \cite{Elmohr2019}                   & ML                             & RanFor; LogREg                                 & Manual                        & $1^{st}$, $2^{nd}$, shape          \\
+        \cite{Yi20181}                      & ML                             &
+        LogReg                              & Manual                         & $1^{st}$, $2^{nd}$, higher                                                                                          \\
+        \cite{Yi2018}                       & ML                             &
+        LogReg                              & Manual
+                                            & $1^{st}$, $2^{nd}$, higher                                                                                                                           \\
+        \cite{Elmohr2019}                   & ML                             & RanFor; LogReg                                 & Manual                        & $1^{st}$, $2^{nd}$, shape          \\
         \cite{Torresan2021}                 & ML                             & K-Means                                        & Manual                        & $1^{st}$, $2^{nd}$                 \\
         \cite{Kusunoki2022}                 & DL                             & DCNN                                           & Manual                        & -                                  \\
         \cite{Liu2022}                      & ML                             & LinReg; SVM; RanFor                            & Manual                        & $1^{st}$; clinical                 \\
@@ -256,11 +280,38 @@ rotations and horizontal flips.
         \cite{Romeo2018}                    & -                                          & -                                          & 80.0                                    & -                                  \\
         \bottomrule
     \end{tabular}
-    \caption{Model metrics for each article in the Group A. AUC: Area Under the ROC Curve.}
+    \caption{Model metrics for each article in the Group A. AUC: Area Under the Receiving Operating Characteristic Curve.}
     \label{tab:res_A}
 \end{table}
 
-\subsection{Malign vs benign lesions}
+\subsection{Group B - Malign vs benign lesions}
+
+Group B consists of studies that aim at the differentiation between benign and
+malignant lesions. This group includes 30\% of the studies. Tables
+\ref{tab:data_B}, \ref{tab:model_B} and \ref{tab:res_B} display an overview of
+the data sets, models, and results, respectively, for each study within group B.
+In terms of the image modalities in the data sets, this group is similar to
+group A. There are more studies that use CT images and all of them, expect one,
+use CE-CT. Studies that analyse MRI data sets have both T1W chemical shift
+images and T2W images. \cite{Shoemaker2018} has the largest data set of all the
+analysed studies. Group B does not comprise any study with a DL model, however
+there are two studies that use neural networks. \cite{Koyuncu2019} experimented
+several optimisation algorithms for neural networks and achieved the best
+results using the Bounded Particle Swarm Optimisation algorithm
+\footnote{ \href{https://link.springer.com/chapter/10.1007/978-3-319-93025-1\_2}{https://link.springer.com/chapter/10.1007/978-3-319-93025-1\_2}}.
+In \cite{Barstugan2020} a SVM was implemented to perform binary classification,
+however, the authors also used a NN to perform type characterisation. The
+authors divided the dataset in 4 classes, each with one type of lesion, 3 benign
+(adenoma, cyst and lipoma) and 1 malign (metastasis). For both workflows, ROI
+selection was made using manual and semi-automatic segmentation, and the same
+radiomic features were used. The results presented in Table \ref{tab:res_B}
+refer to the binary classification, and they were the best results of this
+group. For the multiclass classification the results were poor, despite the high
+values of specificity and accuracy, 96.2 \% and 93.2 \%, respectively, the
+sensibility is extremely low, 59.6 \%, which can be explained by the high number
+of class and the lack of balance in the data set. In this group all the models
+are supervised learning models.
+
 
 \begin{table}[]
     \centering
@@ -287,16 +338,17 @@ rotations and horizontal flips.
         \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Type}} & \multirow{2}{*}{\textbf{Classification Model}} & \multirow{2}{*}{\textbf{ROI}} & \multirow{2}{*}{\textbf{Features}} \\
         \\ \midrule
         \cite{Shoemaker2018}                & ML                             & LogReg                                         & -                             & $1^{st}$, $2^{nd}$                 \\
-        \cite{Koyuncu2019}                  & ML                             & Bounded PSO-NN                                 & Semi-auto                     & $1^{st}$, $2^{nd}$, higher, shape  \\
-        \cite{Li2019}                       & ML                             & BSGC                                           & Semi-auto                     & $2^{nd}$                           \\
+        \cite{Koyuncu2019}                  & ML                             & NN                                             & Semi-auto                     & $1^{st}$, $2^{nd}$, higher, shape  \\
+        \cite{Li2019}                       & ML                             & BayCla                                         & Semi-auto                     & $2^{nd}$                           \\
         \cite{Andersen2021}                 & ML                             & LogReg                                         & Semi-auto                     & $1^{st}$, higher                   \\
         \cite{Moawad2021}                   & ML                             & RanFor                                         & Manual                        & $1^{st}$, $2^{nd}$, higher, shape  \\
-        \cite{Barstugan2020}                & ML                             & SVM; NN                                        & Manual; Semi-auto             & $2^{nd}$, higher                   \\
+        \cite{Barstugan2020}                & ML                             &
+        SVM                                 & Manual; Semi-auto
+                                            & $2^{nd}$, higher                                                                                                                                     \\
         \cite{Stanzione2021}                & ML                             & ExTre                                          & Manual                        & $1^{st}$, $2^{nd}$, higher, shape  \\
         \bottomrule
     \end{tabular}
-    \caption{Modelling Details for each article in the Group B. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression;
-        Bounded PSO-NN: Bounded Particle Swarm Optimisation Neural network; BSGC: Bayesian Spatial Gaussian Classifiers; NN: Neural Network; ExTre: Extra Trees Classifier
+    \caption{Modelling Details for each article in the Group B. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; BayCla: Bayesian Classifier; NN: Neural Network; ExTre: Extra Trees Classifier.
         RanFor: Random Forest; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
     \label{tab:model_B}
 \end{table}
@@ -312,27 +364,40 @@ rotations and horizontal flips.
         \cite{Andersen2021}                 & 77.0                                       & 58.0                                       & 68.0                                    & 73.0                               \\
         \cite{Moawad2021}                   & 71.4                                       & 84.2                                       & 77.5                                    & 85.1                               \\
         \cite{Barstugan2020}                & 90.0                                       & 99.2                                       & 98.4                                    & -                                  \\
-        \cite{Stanzione2021}                & -                                          & -                                          & 91.0                                    & .97                                \\
+        \cite{Stanzione2021}                & -                                          & -                                          & 91.0                                    & 97.0                               \\
         \bottomrule
     \end{tabular}
-    \caption{Model metrics for each article in the Group B. AUC: Area Under the ROC Curve.}
+    \caption{Model metrics for each article in the Group B. AUC: Area Under the Receiving Operating Characteristic Curve.}
     \label{tab:res_B}
 \end{table}
 
-\subsection{Other}
+\subsection{Group C}
 
+Group C consists of the remaining studies that did not fit any of prior defined
+groups.  This group includes 18\% of the studies. Tables \ref{tab:data_B},
+\ref{tab:model_B} and \ref{tab:res_B} display an overview of the data sets,
+models, and results, respectively, for each study inside group C. In this group
+are 4 studies with distinct objectives. \cite{Bi2017} implements a fully
+convolutional neural network for lesion detection using a small dataset of U-CT
+images. \cite{Bi2022} creates a machine learning pipeline where the CNN
+embedding is used as input of an SVM to execute multiclass classification with a
+data set of CE-CT images. The data set had 5 classes: carcinoma, non-functional
+adenoma, ganglioneuroma, myelolipoma and pheochromocytoma.\cite{Kong2022} aimed
+at the differentiation between pheochromocytomas and non-pheochromocytomas with
+a T2W MRI dataset and a logistic regression model. \cite{Zheng2020} also used
+logistic regression but to characterize adenomas with a CT dataset.
 \begin{table}[]
     \centering
     \begin{tabular}{ccccc}\toprule
-        \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Image Modality}} & \multirow{2}{*}{\textbf{Sample size}} & \multirow{2}{*}{\textbf{Task}}             \\
+        \multirow{2}{*}{\textbf{Reference}} & \multirow{2}{*}{\textbf{Image Modality}} & \multirow{2}{*}{\textbf{Sample size}} & \multirow{2}{*}{\textbf{Task}} \\
         \\ \midrule
-        \cite{Bi2017}                       & U-CT                                     & 38                                    & Lesion Detection                           \\
-        \cite{Bi2022}                       & CE-CT                                    & 229                                   & Multiclass Classification                  \\
-        \cite{Kong2022}                     & T2W-MRI                                  & 305                                   & pheochromocytomas vs non-pheochromocytomas \\
-        \cite{Zheng2020}                    & U/CE-CT                                  & 83                                    & Adenoma subtyping                          \\
+        \cite{Bi2017}                       & U-CT                                     & 38                                    & Lesion Detection               \\
+        \cite{Bi2022}                       & CE-CT                                    & 229                                   & Multiclass Classification      \\
+        \cite{Kong2022}                     & T2W-MRI                                  & 305                                   & pheo vs non-pheo               \\
+        \cite{Zheng2020}                    & U/CE-CT                                  & 83                                    & Adenoma subtyping              \\
         \bottomrule
     \end{tabular}
-    \caption{Dataset Details for each article in the Group C. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
+    \caption{Dataset Details for each article in the Group C. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted. Pheo: pheochromocytomas}
     \label{tab:data_C}
 \end{table}
 
@@ -364,7 +429,7 @@ rotations and horizontal flips.
         \cite{Zheng2020}                    & 92.8                                       & 91.5                                       & 92.2                                    & 90.2                               \\
         \bottomrule
     \end{tabular}
-    \caption{Model metrics for each article in the Group C. AUC: Area Under the ROC Curve.}
+    \caption{Model metrics for each article in the Group C. AUC: Area Under the Receiving Operating Characteristic Curve.}
     \label{tab:res_C}
 \end{table}
 
