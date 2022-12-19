@@ -27,6 +27,19 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage[nottoc]{tocbibind}
+
+% \usepackage[backend=biber,style=numeric]{biblatex}
+% \addbibresource{adrenal.bib}
+
+\usepackage[
+    backend=bibtex,
+    style=ieee,
+  ]{biblatex}
+\addbibresource{adrenal.bib}
+
+% \usepackage{natbib}
+% \bibliographystyle{ksfh_nat}
 
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
@@ -40,20 +53,104 @@
 
 \subsection{Anatomy, physiology and pathophysiology (CHANGE)}
 
-The adrenal glands, or suprarenal glands, are two small glands located on top of the kidneys.  Each has a body and two limbs \cite{Baba2012}, and weights about 5g \cite{brit}. Figure \ref{fig:adrenal_ana} shows the localisation and anatomy of the adrenal glands. A slice of the right adrenal gland can be linear, comma or V-shaped. On the other hand, the left adrenal is triangular or Y-shaped.
+The adrenal glands, or suprarenal glands, are two small glands located on top of
+the kidneys.  Each has a body and two limbs \cite{Baba2012}, and weights about
+5g \cite{brit}. Figure \ref{fig:adrenal_ana} shows the localisation and anatomy
+of the adrenal glands. These glands are a component of the
+Hypothalamic-Pituitary-Adrenal (HPA) axis, which is responsible to maintain
+homeostasis in the presence of chronic stressors, activating a complex range of
+responses from the endocrine, nervous and immune systems, generally known as the
+stress response \cite{open}.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.6]{figures/adrenal_anatomy.png}
-    \caption{Adrenal localization and anatomy. From \textbf{ADD REFERENCE}}
+    \includegraphics[scale=0.8]{figures/adrenal_anatomy_cropped.png}
+    \caption{Adrenal glands localisation and anatomy.  Adapted from \cite{Grossman2022}}
     \label{fig:adrenal_ana}
 \end{figure}
 
-The adrenal gland has two different regions: the adrenal cortex and the adrenal medulla. The adrenal medulla is the inner region of the gland and is derived from the mesoderm \cite{Baba2012}. This region is responsible for the production of epinephrine and norepinephrine, which stimulates the fight-or-flight response \cite{openstax}. The adrenal cortex is the outer region of the gland and is derived from neural crest cells \cite{Baba2012}. This region is responsible for the production of cortisol, corticosterone, and cortisone, which increase blood glucose levels, and the production of aldosterone, which increases the level of sodium in the blood \cite{openstax}.
+The adrenal gland has two different regions: the adrenal cortex and the adrenal
+medulla. The adrenal cortex is the outer region of the gland and is derived from
+neural crest cells. The cortex itself comprises three zones: the zona glomerosa,
+the zona fasciculata, and the zona reticularis, each responsible for producing a
+different set of hormones. The adrenal cortex secretes hormones relevant to the
+regulation of long-term stress response, blood pressure and blood volume,
+nutrient uptake and storage, fluid and electrolyte balance, and inflammation.
+For example, this region is responsible for producing cortisol, corticosterone,
+and cortisone, which increase blood glucose levels, and aldosterone production,
+which increases the level of sodium in the blood \cite{open}.
 
-The adrenal glands can be affected by a wide variety of benign and malignant lesions. It is estimated that approximately 6\% of the population has them \cite{Panda2015}. These lesions can be primary if they originated in the glands themselves (cortex or medulla) or secondary if they have another origin. Primary lesions can be functional if they produce hormones \cite{Panda2015}. Table <PUT TAB 1> presents an overview of the adrenal lesions. The most common adrenal lesions are adenomas. Adenomas are often non-functional and remain asymptomatic, being discovered incidentally \cite{Wang2018}. Adenomas are, in most cases, non-functional and remain asymptomatic, being discovered incidentally \cite{Platzek2019}. Adrenocortical carcinoma is a rare lesion although it is the most common primary malignant adrenal lesion. This lesion affects children in their first decade and adults in their fourth and fifth decades \cite{Panda2015}. Also, the adrenals are a frequent location of metastases \cite{Platzek2019}.
+The adrenal medulla is the inner region of the gland, and it is a neuroendocrine
+tissue composed of postganglionic sympathetic nervous system (SNS) neurons. This
+region is responsible for the production of epinephrine and norepinephrine,
+which mediate the short-term stress or the fight-or-flight response. This
+response has the goal of prepare the body for extreme physical exertion \cite{open}.
 
-Functional lesions can cause endocrines syndromes, such as Conn and Cushing syndrome. The Cushing syndrome or hypercortisolism is caused by elevated values of cortisol and it is associated with adrenal adenomas, mostly. Nevertheless, adrenocortical carcinomas or pheochromocytomas can also cause Cushing syndrome. This syndrome is defined by symptoms like obesity, rounded face, abnormal skin pigmentation, muscle weakness, hypertension, diabetes, and others. On the other hand, the Conn syndrome or primary aldosteronism is related to the excessive production of aldosterone. The most common symptoms of this syndrome are sodium retention, plasma renin suppression, hypertension, cardiovascular damage, and increased potassium excretion. Like the Conn syndrome, this syndrome is commonly caused by adrenal adenomas. In opposition to the above-mentioned syndromes, the Addison disease is caused by adrenal insufficiency, which can be caused by malignant lesions. Patients with this disease can experience weight loss, weakness, fatigue, gastrointestinal upset, orthostatic hypotension, and abnormal skin pigmentation. These symptoms can evolve into dehydration, shock, hyperkalaemia (high potassium), and hyponatremia (high sodium) when entering acute adrenal insufficiency \cite{Wang2018}.
+The adrenal glands can be affected by a wide variety of benign and malignant
+lesions. It is estimated that approximately 9\% of the global population has
+adrenal lesions, that are, mostly, incidentally detected during abdominal
+imaging \cite{Dhamija2015}. These lesions can be primary if they originated in
+the glands themselves (cortex or medulla) or secondary if they have another origin. Primary
+lesions can be functional if they produce hormones \cite{Panda2015}. Table <PUT
+TAB 1> presents an overview of the adrenal lesions. The most common adrenal
+lesions are adenomas. Adenomas are often non-functional and remain asymptomatic,
+being discovered incidentally \cite{Wang2018}. Adenomas are, in most cases,
+non-functional and remain asymptomatic, being discovered incidentally
+\cite{Platzek2019}. Adrenocortical carcinoma is a rare lesion although it is the
+most common primary malignant adrenal lesion. This lesion affects children in
+their first decade and adults in their fourth and fifth decades
+\cite{Panda2015}. Also, the adrenals are a frequent location of metastases
+\cite{Platzek2019}.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{cccc}\toprule
+        \textbf{Adrenal Lesions}        & \textbf{Histologic origin}          & \textbf{Benign}       & \textbf{Malign}      \\
+        \midrule
+        \multirow{6}{*}{Primary}        & \multirow{4}{*}{Cortical}           & Adenoma               & Adrenocortical       \\
+                                        &                                     & Adrenal hyperplasia   & Carcinoma            \\
+                                        &                                     & Oncocytoma            & Malignant            \\
+                                        &                                     &                       & oncocytoma           \\
+        \cmidrule(lr){2-4}
+                                        & \multirow{4}{*}{Medullary}          & Pheochromocytoma      & Malignant            \\
+                                        &                                     &                       & pheochromocytoma     \\
+                                        &                                     & Ganglioneuroma        & Neuroblastoma        \\
+                                        &                                     &                       & Ganglioneuroblastoma \\
+        \midrule
+        \multirow{4}{*}{Secondary}      & \multirow{4}{*}{No specific origin} & Myelolipoma           & Metastases           \\
+                                        &                                     & Cysts                 & Lymphoma             \\
+                                        &                                     & Lipoma                &                      \\
+                                        &                                     & Hemorrhage            &                      \\
+        \midrule
+        \multirow{3}{*}{Other entities} & \multirow{2}{*}{Any cell origin/}   & Incidentalomas        & Colision tumours     \\
+                                        &                                     &                       & (adenoma+metastases) \\
+                                        & \multirow{1}{*}{either primary}     & Colision tumours      &                      \\
+                                        & \multirow{1}{*}{or secondary}       & (adenoma+myelolipoma) &
+
+        \\\bottomrule
+    \end{tabular}
+    \caption{Classification of the most common adrenal lesions in terms of their
+        etiology and cell of origin.  Adapted from \cite{Panda2015}.}
+    \label{tab:data_A}
+\end{table}
+
+Functional lesions can cause endocrines syndromes, such as Conn and Cushing
+syndrome. The Cushing syndrome or hypercortisolism is caused by elevated values
+of cortisol and it is associated with adrenal adenomas, mostly. Nevertheless,
+adrenocortical carcinomas or pheochromocytomas can also cause Cushing syndrome.
+This syndrome is defined by symptoms like obesity, rounded face, abnormal skin
+pigmentation, muscle weakness, hypertension, diabetes, and others. On the other
+hand, the Conn syndrome or primary aldosteronism is related to the excessive
+production of aldosterone. The most common symptoms of this syndrome are sodium
+retention, plasma renin suppression, hypertension, cardiovascular damage, and
+increased potassium excretion. Like the Conn syndrome, this syndrome is commonly
+caused by adrenal adenomas. In opposition to the above-mentioned syndromes, the
+Addison disease is caused by adrenal insufficiency, which can be caused by
+malignant lesions. Patients with this disease can experience weight loss,
+weakness, fatigue, gastrointestinal upset, orthostatic hypotension, and abnormal
+skin pigmentation. These symptoms can evolve into dehydration, shock,
+hyperkalaemia (high potassium), and hyponatremia (high sodium) when entering
+acute adrenal insufficiency \cite{Wang2018}.
 
 \begin{figure}
     \centering
@@ -433,7 +530,8 @@ logistic regression but to characterize adenomas with a CT dataset.
     \label{tab:res_C}
 \end{table}
 
-\bibliographystyle{ieeetr}
-\bibliography{adrenal}
+% \bibliographystyle{unsrt}
+% \bibliography{adrenal}
+\printbibliography
 
 \end{document}
