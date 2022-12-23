@@ -11,15 +11,12 @@
 % extracting files from latexindent.tar.lzma...
 % ======================================================================
 \documentclass{article}
-
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[english]{babel}
-
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-
 % Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -28,30 +25,22 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage[nottoc]{tocbibind}
-
-% \usepackage[backend=biber,style=numeric]{biblatex}
-% \addbibresource{adrenal.bib}
-
 \usepackage[
     backend=bibtex,
     style=ieee,
   ]{biblatex}
 \addbibresource{adrenal.bib}
-
-% \usepackage{natbib}
-% \bibliographystyle{ksfh_nat}
-
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Detecting adrenal lesions using machine learning - a state of the art}
+\title{Adrenal Lesions Diagnosis: Machine Learning Approach}
 \author{Bernardo Gonçalves - 58885 - Doctoral program in Biomedical Engineering}
 
 \begin{document}
 \maketitle
 
-\section{Adrenal Glands and Adrenal Lesions}
+\section{Adrenal Glands and Lesions}
 
-\subsection{Anatomy, physiology and pathophysiology (CHANGE)}
+\subsection{Anatomy, physiology and pathophysiology}
 
 The adrenal glands, or suprarenal glands, are two small glands located on top of
 the kidneys.  Each has a body and two limbs \cite{Baba2012}, and weights about
@@ -70,19 +59,28 @@ stress response \cite{open}.
 \end{figure}
 
 The adrenal glands can be affected by a wide variety of benign and malignant
-lesions. It is estimated that approximately 9\% of the global population has
-adrenal lesions, which are mostly incidentally detected during abdominal imaging
+lesions. Approximately 9\% of the global population is estimated to have adrenal
+lesions, which are mostly detected incidentally during abdominal imaging
 \cite{Dhamija2015}. These lesions can be primary if they originated in the
 glands themselves (cortex or medulla) or secondary if they have another origin.
 Primary lesions can be functional if they produce hormones \cite{Panda2015}.
 Table \ref{tab:lesions} presents the adrenal lesions and their classification.
-The most recurrent adrenal lesions are adenomas. Adenomas are often
-non-functional and remain asymptomatic, being discovered incidentally
-\cite{Platzek2019}. Adrenocortical carcinoma is a rare lesion, although it is
-the most common primary malignant adrenal lesion. This lesion affects children
-in their first decade and adults in their fourth and fifth decades
-\cite{Panda2015}. Also, the adrenals are a frequent location of metastases
-\cite{Platzek2019}.
+Adrenal adenomas represent 50-80\% of adrenal lesions \cite{Bracci2022}. Adenomas
+are often non-functional and remain asymptomatic, being discovered incidentally
+\cite{Platzek2019}. Adrenocortical carcinomas, despite being the most common
+primary adrenal lesion, are very rare, presenting only 0.7–2.0 cases per million
+habitants per year \cite{Bracci2022}. These lesions affect children in their
+first decade and adults in their fourth and fifth decades \cite{Panda2015}.
+Also, the adrenals are a frequent location of metastases \cite{Platzek2019},
+approximately, 25\% of patients with cancer have adrenal metastases on autopsy
+\cite{Bracci2022}. In general, non-functional lesions do not require any
+treatment, therefore it is crucial to differentiate between adenomas and
+non-adenomas \cite{Platzek2019}. Adrenal adenomas have less than 1 cm in
+diameter, usually and they can be lipid-rich or lipid-poor \cite{Panda2015}.
+About 70-80\% of the adenomas are lipid-rich in contrast with the malignant
+lesions \cite{Platzek2019}. This results in a 20-30\% overlap between adenomas
+and malignant lesions in terms of intracytoplasmic lipid content
+\cite{Israel2004}.
 
 \begin{table}[]
     \centering
@@ -161,67 +159,80 @@ which mediate the short-term stress or the fight-or-flight response. This
 response has the goal of prepare the body for extreme physical exertion
 \cite{open}.
 
-\subsection{Adrenals Imaging}
+\subsection{Adrenal Imaging - medical diagnosis of adrenal lesions}
 
-Structural medical imaging techniques are decisive to detect and characterize
-adrenal lesions and complementary to functional imaging and endocrine evaluation
-in the assessment of functional lesions. Imaging techniques can also rule out
-invasive interventions. The most used imaging techniques to evaluate the adrenal
-glands are Computed Tomography (CT) and Magnetic Resonance Imaging (MRI). The
-Ultrasonography (USG) despite being a common method to assess abdominal
-pathologies, is not a good method to perceive retroperitoneal (back of the
-peritoneum) structures like the adrenals \cite{Panda2015}. Both Figures <ref FIG
-2> and <REF FIG 3> show the V and Y-shaped normal glands. Figure <ref FIG 2> is
-an axial contrast-enhanced CT image in the arterial phase where both glands are
-enhanced due to the high retroperitoneal fat content. Figure <REF FIG 3> is a
-coronal MR Chemical Shift Image (CSI) out-of-phase showing normal adrenal glands
-also.
+Structural medical imaging techniques are decisive in detecting and
+characterising adrenal lesions and complementary to functional imaging and
+endocrine evaluation in the assessment of functional lesions. Imaging techniques
+can also rule out invasive interventions. The most used imaging techniques to
+evaluate the adrenal glands are Computed Tomography (CT) and Magnetic Resonance
+Imaging (MRI). Ultrasonography (USG), although a common method to assess
+abdominal pathologies, is not a good method to perceive retroperitoneal
+structures (see Figure \ref{fig:retro_per}) such as adrenals \cite{Panda2015}.
 
-\begin{figure}[htbp]
+\begin{figure}
     \centering
     \includegraphics[scale=0.15 ]{figures/retro_peritoneum.jpg}
     \caption{Peritoneum representation. Adrenals are an example of a retroperitoneal organ. From \cite{retroimg} }
-    \label{fig: retro_per}
+    \label{fig:retro_per}
 \end{figure}
+
+Figure \ref{fig:adrenal_glands_normal} shows the V- (left) and Y-shaped (right)
+normal glands. Figure \ref{fig:adrenal_ct} is an axial contrast-enhanced CT
+image in the arterial phase where both glands are enhanced due to the high
+retroperitoneal fat content. Figure \ref{fig:adrenal_mri} is a coronal MR
+Chemical Shift Image (CSI) out-of-phase showing normal adrenal glands as well.
 
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/CT_adrenal_enhanced.png}
-        \caption{Adrenal glands in a contrast-enhanced CT axial slice in arterial phase. Due to the high level of retroperitoneal fat both glands are enhanced in this image slice. Reprinted from \cite{Panda2015}}
+        \caption{Adrenal glands in a contrast-enhanced CT axial slice in arterial phase. Due to the high level of retroperitoneal fat both glands are enhanced in this image slice. Reprinted from \cite{Panda2015}.}
         \label{fig:adrenal_ct}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/MRI_adrenal.png}
-        \caption{Adrenal glands in a MR CSI coronal slice. Both glands have a intermediate signal intensity. Reprinted from \cite{Panda2015} }
+        \caption{Adrenal glands in a MR CSI coronal slice. Both glands have a intermediate signal intensity. Reprinted from \cite{Panda2015}. }
         \label{fig:adrenal_mri}
     \end{subfigure}
     \caption{Normal adrenal glands in CT and MR slices. The arrows indicate the localization of the glands.}
     \label{fig:adrenal_glands_normal}
 \end{figure}
 
-Lipid-rich adenomas can be easily detected using unenhanced CT (less than 10 HU)
-\cite{Panda2015} or CSI \cite{Platzek2019}. However, lipid-poor adenomas cannot
-be correctly characterised by  \cite{Israel2004}. In these cases,
-CSI presents itself as a better solution because of its improved sensitivity to
-low levels of lipid content and therefore it can detect 62-67\% of the adenomas
-uncharacterised by CT \cite{Israel2004}. CSI is a fat-suppression technique that
-originates two sets of images: in-phase (IP) and out-of-phase (OP) images. In OP
-images the signal is the difference between the signals of water and fat
-molecules. In IP images the signal of both water and fat is added. Thus, there
-is a significant suppression of signal from IP to OP images in lipid-rich
-lesions \cite{Jahanvi2021}. OP images are characterised by the so-called India
-ink artefact that is a signal void in the margins of fatty and normal tissues
-\cite{Jahanvi2021}, creating a darker boundary in lipid-rich lesions like most
-adenomas. \cite{Platzek2019} performed a metanalysis with 1280 lesions (859
-adenomas, 421 non-adenomas) and documented a sensitivity of 94\% and specificity
-of 95\% detecting adrenal adenomas. The same study states the importance of
-using Dynamic Contrast-Enhanced (DCE) MRI to improve the detection performance
-of lipid-poor adenomas. Adenomas present a signal increase in the arterial phase
-and a rapid washout \cite{Chung2001}.
+As stated above, the differential diagnosis between adenomas and non-adenomas is
+of extreme importance. This diagnosis can be hindered by the existence of
+lipid-poor adenomas that are more difficult to diagnose. Lipid-rich adenomas can
+be easily detected using unenhanced CT (less than 10 HU) \cite{Panda2015} or CSI
+\cite{Platzek2019}. However, unenhanced CT is not indicated to detect lipid-poor
+adenomas \cite{Israel2004}. In these cases, CSI presents itself as a better
+solution because of its improved sensitivity to low levels of lipid content and
+therefore it can detect 62-67\% of the adenomas uncharacterized by unenhanced CT
+\cite{Israel2004}.
+
+CSI is a fat-suppression technique that originates two sets of images: in-phase
+(IP) and out-of-phase (OP) images. In OP images the signal is the difference
+between the signals of water and fat molecules. In IP images the signal of both
+water and fat is added. Thus, there is a significant suppression of the signal
+from IP to OP images in lipid-rich lesions \cite{Jahanvi2021}. OP images are
+characterised by the so-called India ink artefact, which is a signal void in the
+margins of fatty and normal tissues \cite{Jahanvi2021}, creating a darker
+boundary in lipid-rich lesions such as most adenomas. Figure \ref{fig:adenomas}
+shows two adenomas, one lipid-rich (up) and the other lipid-poor (down) using
+CSI. The red rectangles present in the figures surround the adenomas. Here, the
+difference in signal between IP and OP images is much greater in lipid-rich
+adenomas than in lipid-poor adenomas, facilitating the diagnostic process of
+lipid-rich adenomas using these images. Given these images, the diagnosis of
+adenoma can be made by visual evaluation or by quantitative indices such as the
+adrenal Signal Intensity Index (SII), Adrenal-to-Spleen Ratio (ASR),
+Adrenal-to-Liver Ratio (ALR) or the Adrenal-to-Muscle Ratio (AMR)
+\cite{Fujiyoshi2003}. \cite{Platzek2019} performed a metanalysis with 1280
+lesions (859 adenomas, 421 non-adenomas) and documented a sensitivity of 94\% and
+a specificity of 95\% in detecting adrenal adenomas with the CSI technique using
+visual evaluation and/or quantitative methods. Despite these high values the
+authors state that the lipid-poor adenoma poses an issue even using CSI methods.
 
 \begin{figure}
     \centering
@@ -256,13 +267,22 @@ and a rapid washout \cite{Chung2001}.
     \label{fig:adenomas}
 \end{figure}
 
-\section{Differential diagnosis of adrenal lesions - current medical approach}
+In these cases the addition of Dynamic Contrast-Enhanced (DCE) sequences is
+favourable, increasing the diagnosis performance \cite{Barat2022}. In
+\cite{Chung2001} 35 adrenal adenomas were analysed and it was concluded that the
+enhancement pattern of the adenomas is different from the one presented by
+malignant lesions. Adenomas present a homogeneous capillary blush on 18 seconds
+post-gadolinium images and a rapid washout on 45 seconds post-gadolinium images.
+From metanalysis performed in \cite{Platzek2019} it was concluded that the
+quantitative methods do not present a significant advantage to the visual
+diagnosis. In addition, the authors do not recommend any additional imaging if
+the adenoma diagnosis is confirmed based on CSI. However, if the adenoma is not
+confirmed, DCE sequences would help to distinguish between adenomas and
+malignant lesions.
 
-\subsection{Current procedure}
+\section{Diagnosis of adrenal lesions - a machine learning approach}
 
-\subsection{Main limitations and setbacks}
-
-\section{Differential diagnosis of adrenal lesions - machine learning approach}
+\textbf{MACHINE LEARNING MOTIVATION CONNECTING MED IMAGING WITH MACHINE LEARNING} 
 
 \subsection{Research details}
 
@@ -317,6 +337,8 @@ lesions, eg. Metastases, pheochromocytomas.
     \label{tab:sota_sum}
 \end{table}
 
+\subsection{Radiomics}
+
 Radiomics is the extraction of quantitative features from medical images. Before the feature extraction, there are two relevant
 steps: image acquisition and segmentation of the region of interest (ROI). Any type of medical images can be used in radiomics,
 such as Positron Emission Tomography (PET), MRI, or CT. The ROI segmentation is necessary to limit the amount of data that needs
@@ -338,7 +360,9 @@ Traditional machine learning models like K-means, Support Vector Machine (SVM), 
 
 In the next sections each group of papers will be analysed in detail, exploring their common and contrasting aspects. For each group the analysis will be focused on the utilized data sets, models, and the obtained results.
 
-\subsection{Group A - Adenomas vs other lesions}
+\subsection{Study Analysis}
+
+\subsubsection{Group A - Adenomas vs other lesions}
 
 Group A comprises all studies that focus on the differentiation between adenomas
 and other lesions. This group corresponds to 52\% of all analysed studies.
@@ -460,7 +484,7 @@ Least Absolute Shrinkage and Selection Operator (LASSO).
     \label{tab:res_A}
 \end{table}
 
-\subsection{Group B - Malign vs benign lesions}
+\subsubsection{Group B - Malign vs benign lesions}
 
 Group B consists of studies that aim at the differentiation between benign and
 malignant lesions. This group includes 30\% of the studies. Tables
@@ -547,7 +571,7 @@ are supervised learning models.
     \label{tab:res_B}
 \end{table}
 
-\subsection{Group C}
+\subsubsection{Group C}
 
 Group C consists of the remaining studies that did not fit any of prior defined
 groups.  This group includes 18\% of the studies. Tables \ref{tab:data_B},
@@ -609,8 +633,8 @@ logistic regression but to characterize adenomas with a CT dataset.
     \label{tab:res_C}
 \end{table}
 
-% \bibliographystyle{unsrt}
-% \bibliography{adrenal}
+\subsection{Discussion}
+
 \printbibliography
 
 \end{document}
