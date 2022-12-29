@@ -277,16 +277,34 @@ From metanalysis performed in \cite{Platzek2019} it was concluded that the
 quantitative methods do not present a significant advantage to the visual
 diagnosis. In addition, the authors do not recommend any additional imaging if
 the adenoma diagnosis is confirmed based on CSI. However, if the adenoma is not
-confirmed, DCE sequences would help to distinguish between adenomas and
+confirmed, DCE sequences would help distinguish between adenomas and
 malignant lesions.
 
 \section{Diagnosis of adrenal lesions - a machine learning approach}
 
-\textbf{MACHINE LEARNING MOTIVATION CONNECTING MED IMAGING WITH MACHINE LEARNING} 
-
+The growing number of abdominal studies reflects on the increasing frequency of
+adrenal incidentalomas, which are usually benign, non-functional adenomas.
+However, it is important to evaluate their functional status and potential for
+being malignant as soon as possible. The diagnosis of adrenal lesions is a
+complex process that involves both biochemical and radiological evaluation
+\cite{Anagnostis2009}. Adrenal radiologic evaluation via conventional imaging is
+a challenging process that depends largely on the experience and knowledge of
+the radiologist \cite{Zhang2022}. Several pitfalls can result in misdiagnosis of
+adrenal lesions, such as the presence of pseudolesions, overlap of imaging
+features of different lesions, or incorrect choice of the imaging technique
+\cite{Elsayes2020}. New approaches to the diagnosis of adrenal lesions are
+crucial to avoid misdiagnosis, which can lead to increased treatment costs or
+unnecessary examination \cite{Zhang2022}. Machine learning methods have been
+proposed as a potential solution not only to improve the diagnostic accuracy of
+adrenal lesions, but also to simplify and speed up the process. These methods
+have proven their value in medical imaging analysis with promising results in
+different anatomic regions \cite{Suganyadevi2022, Avanzo2020}. In this section
+it was conducted a thorough analysis of the published studies that perform
+adrenal lesion diagnosis using machine leaning methods for medical imaging
+analysis.
 \subsection{Research details}
 
-The studies analysed in this paper were selected accordingly in the following PICO criteria:
+The studies analysed in this section were selected accordingly in the following PICO criteria:
 
 \begin{enumerate}
     \item[] \textbf{P (patients) }– patients with adrenal lesions.
@@ -355,10 +373,25 @@ to describe the complexity of the individual region of interest. Ordinarily, the
     \item High-Order Statistics: usage of filters to extract patterns from the images. From the resultant images, first and second-order features are extracted.
 \end{enumerate}
 
-The most relevant radiomic features to the task in hand are selected using statistical approaches or machine learning \cite{Zhang2022}. Then, these features are used as the input of ML models to classify the region of interest. This type of workflow is widespread, appearing in 87\% (20/23) of the analysed studies.
-Traditional machine learning models like K-means, Support Vector Machine (SVM), Logistic Regression (LogReg), or Random Forest (RanFor), are frequently used to classify radiomic features of regions of interest and have achieved high performance in different anatomical regions \cite{Zhang2022, Wagner2021}. Deep Learning models, such as, Convolutional Neural Networks (CNNs), have been often applied to medical images from several anatomical regions with promising results \cite{Anaya-Isaza2021}. Despite that, only 13\% of the studies presented in this paper report the application of DL models to adrenal images. DL models are different from ML models mostly because they demand bigger annotated data sets and they do not rely on the feature extraction step (all features are automatically extracted and classified by the model).
+The most relevant radiomic features to the task in hand are selected using
+statistical approaches or machine learning \cite{Zhang2022}. Then, these
+features are used as the input of ML models to classify the region of interest.
+This type of workflow is widespread, appearing in 87\% (20/23) of the analysed
+studies. Traditional machine learning models like K-means, Support Vector
+Machine (SVM), Logistic Regression (LogReg), or Random Forest (RanFor), are
+frequently used to classify radiomic features of regions of interest and have
+achieved high performance in different anatomical regions \cite{Zhang2022,
+    Wagner2021}. Deep Learning models, such as, Convolutional Neural Networks
+(CNNs), have been often applied to medical images from several anatomical
+regions with promising results \cite{Anaya-Isaza2021}. Despite that, only 13\%
+of the studies presented in this paper report the application of DL models to
+adrenal images. DL models are different from ML models mostly because they
+demand bigger annotated data sets and they do not rely on the feature extraction
+step (all features are automatically extracted and classified by the model).
 
-In the next sections each group of papers will be analysed in detail, exploring their common and contrasting aspects. For each group the analysis will be focused on the utilized data sets, models, and the obtained results.
+their common and contrasting aspects. For each group, the analysis will be
+In the next sections each group of papers will be analysed in detail, exploring
+focused on the utilized data sets, models, and the obtained results.
 
 \subsection{Study Analysis}
 
@@ -368,47 +401,51 @@ Group A comprises all studies that focus on the differentiation between adenomas
 and other lesions. This group corresponds to 52\% of all analysed studies.
 Tables \ref{tab:data_A}, \ref{tab:model_A} and \ref{tab:res_A} present an
 overview of the data sets, models, and results, respectively, for each study
-within group A. \cite{Schieda2017,Tu2018,Tu2020} have data sets with adenomas
-and metastases. \cite{Yi20181,Yi2018, Liu2022,Liu2021} have patients with
-adenomas and pheochromocytomas. \cite{Elmohr2019, Torresan2021, Ho2019} have
-compared adenomas and carcinomas. \cite{Tu2020, Yi2018, Yi20181, Liu2022} have
-considered only lipid-poor adenomas for their adenoma dataset. Finally,
-\cite{Romeo2018} data set has 3 classes: lipid-poor adenomas, lipid-rich
-adenomas and nonadenomas and \cite{Kusunoki2022} performs a general
-differentiation between adenomas and nonadenomas. In terms of the imaging
-modality utilised by the studies, there is slight advantage to CT, as it is used
-in 8 studies, mostly with and without contrast enhanced images. The studies that
-analyse MRI images focus on chemical shift images as they pose an advantage in
-the detection of the lipid content of the lesions. The sample size of the
-studies ranges from dozens to hundreds of lesions, which is closely related to
-the applied inclusion criteria and the initial sample size. For example,
-\cite{Torresan2021} had a database of 336 patients however only 19 met the
-inclusion criteria, each with one lesion.
+within group A.
 
-All studies,but one, performed lesion classification with ML models using
-radiomic features. The most common model is logistic regression (LogReg),
-followed by support vector machine (SVM) and decision tree-based models. In
-every study, the region of interest (ROI) was manually selected by experts. The
-extraction of first and second-order statistics is a common practice, but only 3
-studies extracted shape-based features, and none extracted higher-order
-statistics. The only study that has implemented a DL model has performed ROI
-(selected, cropped and labelled by experts) classification with a deep
-convolution neural network \cite{Kusunoki2022}. They report the usage of
-augmentation techniques such as rotations and horizontal flips.
-\cite{Torresan2021} was the only study to implement an unsupervised model.
+Adenomas are the common lesion in all of these studies however
+they are compared with three different lesions: metastases in
+\cite{Schieda2017,Tu2018,Tu2020}; pheochromocytomas in \cite{Yi20181,Yi2018,
+    Liu2022,Liu2021}, and carcinomas in \cite{Elmohr2019, Torresan2021, Ho2019}.
+\cite{Tu2020, Yi2018, Yi20181, Liu2022} have considered only lipid-poor adenomas
+for their adenoma dataset. There is only one study that has a non-binary data
+set. \cite{Romeo2018} data set has 3 classes: lipid-poor adenomas, lipid-rich
+adenomas and non-adenomas. \cite{Kusunoki2022} does not specify another lesion
+type, performing differentiation between adenomas and non-adenomas. Most of the
+data sets (8 of 12 studies) contain CT images. From those, 6 use both images
+with and without contrast. The remaining have MRI datasets, all with CSI and T2W
+images. The sample size of the studies ranges from dozens to hundreds of
+lesions, which is closely related to the applied inclusion criteria and the
+initial sample size. For example, \cite{Torresan2021} had a database of 336
+patients however only 19 met the inclusion criteria, each with one lesion. Many
+of the studies have unbalance datasets. Many of the datasets have more adenomas
+than other lesions.
 
-In \cite{Ho2019} the data set consists of lipid-poor adenomas and carcinomas in
-both MRI and CT images. The objective of this work was to compare the different
-image modalities using the same machine learning approach. The authors have
-reported only the Area Under the Receiving Operating Characteristic Curve (AUC).
-The value presented in \ref{tab:res_A} refers to the best result, using CE-CT
-images, with MRI images the value decreases to 58 \%.
-Both studies by Yi et al \cite{Yi2018, Yi20181} implemented a logistic regression model with the same radiomic features
-but using different CT images and achieved impressive results. \cite{Yi2018} adds clinical features
-such as, the existence of necrosis or calcification and lesion dimensions, to
-the radiomic features. Also, to improve feature selection the authors used the
-Least Absolute Shrinkage and Selection Operator (LASSO).
+All studies, except one, performed lesion classification
+with ML models using radiomic features. The most frequent model is logistic
+regression (LogReg), followed by the support vector machine (SVM) and decision
+tree-based models. In every study, the region of interest (ROI) was manually
+selected by experts. The extraction of first and second-order statistics is a
+widespread practice, but only 3 studies extracted shape-based features, and none
+extracted higher-order statistics. The only study that has implemented a DL
+model has performed ROI (selected, cropped and labelled by experts)
+classification with a deep convolution neural network \cite{Kusunoki2022}. They
+report the usage of augmentation techniques such as rotations and horizontal
+flips. \cite{Torresan2021} was the only study to implement an unsupervised
+model.
 
+In \cite{Ho2019} the data set consists of lipid-poor adenomas and
+carcinomas in both MRI and CT images. The objective of this work was to compare
+the different image modalities using the same machine learning approach. The
+authors have reported only the Area Under the Receiving Operating Characteristic
+Curve (AUC). The value presented in \ref{tab:res_A} refers to the best result,
+using CE-CT images and with MRI images the value decreases to 58 %. 
+Both works by Yi et al \cite{Yi2018, Yi20181} achieved impressive results. Both
+studies implemented a logistic regression model with the same radiomic features
+but using different CT images. However, \cite{Yi2018} adds clinical features
+such as necrosis or calcification and lesion dimensions, to the radiomic
+features. Also, to improve feature selection the authors used the Least Absolute
+Shrinkage and Selection Operator (LASSO). \textbf{– for discussing?}
 
 
 \begin{table}[]
@@ -487,30 +524,39 @@ Least Absolute Shrinkage and Selection Operator (LASSO).
 \subsubsection{Group B - Malign vs benign lesions}
 
 Group B consists of studies that aim at the differentiation between benign and
-malignant lesions. This group includes 30\% of the studies. Tables
+malignant lesions. This group includes 30% of the studies. Tables
 \ref{tab:data_B}, \ref{tab:model_B} and \ref{tab:res_B} display an overview of
 the data sets, models, and results, respectively, for each study within group B.
+
 In terms of the image modalities in the data sets, this group is similar to
-group A. There are more studies that use CT images and all of them, expect one,
+group A. There are more studies that use CT images and all of them, except one,
 use CE-CT. Studies that analyse MRI data sets have both T1W chemical shift
-images and T2W images. \cite{Shoemaker2018} has the largest data set of all the
-analysed studies. Group B does not comprise any study with a DL model, however
-there are two studies that use neural networks. \cite{Koyuncu2019} experimented
-several optimisation algorithms for neural networks and achieved the best
-results using the Bounded Particle Swarm Optimisation algorithm
-\footnote{ \href{https://link.springer.com/chapter/10.1007/978-3-319-93025-1\_2}{https://link.springer.com/chapter/10.1007/978-3-319-93025-1\_2}}.
-In \cite{Barstugan2020} a SVM was implemented to perform binary classification,
+images and T2W images. The number of lesions analysed in each study varies from
+dozens to hundreds like in group A and most data sets are unbalanced.
+\cite{Shoemaker2018} has the largest data set of all the analysed studies of all
+groups.
+
+Unlike group A, most of the studies in group B implement semi-automatic region
+of interest segmentation. All studies except \cite{Li20190} combine different
+radiomic features. In \cite{Li2019} only second-order statistics are used as
+input of a Bayesian Spatial Gaussian Classifier. Group B does not include any
+study with a DL model, however, there are two studies that use neural networks.
+\cite{Koyuncu2019} experimented several optimisation algorithms for neural
+networks and achieved the best results using the Bounded Particle Swarm
+Optimisation algorithm \footnote{\href{https://link.springer.com/chapter/10.1007/978-3-319-93025-1\_2}{https://link.springer.com/chapter/10.1007/978-3-319-93025-1\_2}}. In
+\cite{Barstugan2020} an SVM was implemented to perform binary classification,
 however, the authors also used a NN to perform type characterisation. The
-authors divided the dataset in 4 classes, each with one type of lesion, 3 benign
-(adenoma, cyst and lipoma) and 1 malign (metastasis). For both workflows, ROI
-selection was made using manual and semi-automatic segmentation, and the same
-radiomic features were used. The results presented in Table \ref{tab:res_B}
+authors divided the dataset into 4 classes, each with one type of lesion, 3
+benign (adenoma, cyst and lipoma) and 1 malign (metastasis). For both workflows,
+ROI selection was made using manual and semi-automatic segmentation, and the
+same radiomic features were used. The results presented in Table \ref{tab:res_B}
 refer to the binary classification, and they were the best results of this
-group. For the multiclass classification the results were poor, despite the high
-values of specificity and accuracy, 96.2 \% and 93.2 \%, respectively, the
+group. For the multiclass classification, the results were poor, despite the
+high values of specificity and accuracy, 96.2 \% and 93.2 \%, respectively, the
 sensibility is extremely low, 59.6 \%, which can be explained by the high number
-of class and the lack of balance in the data set. In this group all the models
-are supervised learning models.
+of classes and the lack of balance in the data set. In this group, all the
+models are supervised learning models.
+
 
 
 \begin{table}[]
@@ -576,16 +622,33 @@ are supervised learning models.
 Group C consists of the remaining studies that did not fit any of prior defined
 groups.  This group includes 18\% of the studies. Tables \ref{tab:data_B},
 \ref{tab:model_B} and \ref{tab:res_B} display an overview of the data sets,
-models, and results, respectively, for each study inside group C. In this group
-are 4 studies with distinct objectives. \cite{Bi2017} implements a fully
-convolutional neural network for lesion detection using a small dataset of U-CT
-images. \cite{Bi2022} creates a machine learning pipeline where the CNN
-embedding is used as input of an SVM to execute multiclass classification with a
-data set of CE-CT images. The data set had 5 classes: carcinoma, non-functional
-adenoma, ganglioneuroma, myelolipoma and pheochromocytoma.\cite{Kong2022} aimed
-at the differentiation between pheochromocytomas and non-pheochromocytomas with
-a T2W MRI dataset and a logistic regression model. \cite{Zheng2020} also used
-logistic regression but to characterize adenomas with a CT dataset.
+models, and results, respectively, for each study inside group C.
+
+In this group are 4 studies with distinct goals. \cite{Bi2017} implements a
+fully convolutional neural network for lesion detection using a small data set
+of U-CT images. The network receives as input complete CT images and outputs the
+lesion probability map. To surpass the small data set issue, the authors applied
+traditional augmentation methods such as random crops and contrast variations
+and used a pre-trained network. The lesion probability map was then refined
+using a random walk-based algorithm.
+
+\cite{Bi2022} creates a machine learning pipeline where the CNN embedding is
+used as input of an SVM to execute multiclass classification with a data set of
+CE-CT images. The data set has 5 classes: carcinoma, non-functional adenoma,
+ganglioneuroma, myelolipoma and pheochromocytoma. A ResNet-101 pretrained in the
+ImageNet data set was used to create the feature embedding. To improve the
+toleration to intra-class variations the authors created a similarity feature
+learning module. Another relevant contribution was the usage of two DL networks
+each using a different CT image but with a weighted sharing strategy. The goal
+was to improve performance with a highly unbalanced data set.
+
+\cite{Kong2022} aimed at the differentiation between pheochromocytomas and
+non-pheochromocytomas with a T2W MRI dataset and a logistic regression model.
+The presented sample size includes an external and an internal data set. The
+external data set was used for external validation of the developed pipeline.
+\cite{Zheng2020} also used logistic regression but to characterize adenomas with
+a CT dataset.
+
 \begin{table}[]
     \centering
     \begin{tabular}{ccccc}\toprule
@@ -634,6 +697,11 @@ logistic regression but to characterize adenomas with a CT dataset.
 \end{table}
 
 \subsection{Discussion}
+
+\begin{enumerate}
+    \item most promisssing
+    \item general limitations and future developments
+\end{enumerate}
 
 \printbibliography
 
