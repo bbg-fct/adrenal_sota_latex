@@ -389,9 +389,10 @@ adrenal images. DL models are different from ML models mostly because they
 demand bigger annotated data sets and they do not rely on the feature extraction
 step (all features are automatically extracted and classified by the model).
 
-their common and contrasting aspects. For each group, the analysis will be
-In the next sections each group of papers will be analysed in detail, exploring
-focused on the utilized data sets, models, and the obtained results.
+In the next 3 sections each group of papers will be analysed in detail,
+exploring their common and contrasting aspects. For each group, the analysis
+will be In the next sections each group of papers will be analysed in detail,
+exploring focused on the utilized data sets, models, and the obtained results.
 
 \subsection{Study Analysis}
 
@@ -439,13 +440,22 @@ carcinomas in both MRI and CT images. The objective of this work was to compare
 the different image modalities using the same machine learning approach. The
 authors have reported only the Area Under the Receiving Operating Characteristic
 Curve (AUC). The value presented in \ref{tab:res_A} refers to the best result,
-using CE-CT images and with MRI images the value decreases to 58 %. 
-Both works by Yi et al \cite{Yi2018, Yi20181} achieved impressive results. Both
-studies implemented a logistic regression model with the same radiomic features
-but using different CT images. However, \cite{Yi2018} adds clinical features
-such as necrosis or calcification and lesion dimensions, to the radiomic
-features. Also, to improve feature selection the authors used the Least Absolute
-Shrinkage and Selection Operator (LASSO). \textbf{– for discussing?}
+using CE-CT images and with MRI images the value decreases to 58 \%.
+
+Both works by Yi et al \cite{Yi2018, Yi20181} implemented a logistic regression
+model with the same radiomic features but using different CT images and achieved
+impressive results. However, \cite{Yi2018} adds clinical features such as
+necrosis or calcification and lesion dimensions, to the radiomic features. Also,
+to improve feature selection the authors used the Least Absolute Shrinkage and
+Selection Operator (LASSO).  However, \cite{Yi2018} adds clinical features such
+as necrosis or calcification and lesion dimensions, to the radiomic features.
+Also, to improve feature selection the authors used the Least Absolute Shrinkage
+and Selection Operator (LASSO). These studies achieved the best results of this
+group. However, in terms of sensitivity, \cite{Yi2018} has achieved an higher
+value. Overall, there are 4 studies in which their metrics average more than
+90\%: \cite{Yi2018, Yi20181, Kusunoki2022, Schieda2017}. Three of them use CT
+images. \cite{Schieda2017} had a very small unbalanced dataset and used CSI
+images. 
 
 
 \begin{table}[]
@@ -537,7 +547,7 @@ dozens to hundreds like in group A and most data sets are unbalanced.
 groups.
 
 Unlike group A, most of the studies in group B implement semi-automatic region
-of interest segmentation. All studies except \cite{Li20190} combine different
+of interest segmentation. All studies except \cite{Li2019} combine different
 radiomic features. In \cite{Li2019} only second-order statistics are used as
 input of a Bayesian Spatial Gaussian Classifier. Group B does not include any
 study with a DL model, however, there are two studies that use neural networks.
@@ -550,7 +560,7 @@ authors divided the dataset into 4 classes, each with one type of lesion, 3
 benign (adenoma, cyst and lipoma) and 1 malign (metastasis). For both workflows,
 ROI selection was made using manual and semi-automatic segmentation, and the
 same radiomic features were used. The results presented in Table \ref{tab:res_B}
-refer to the binary classification, and they were the best results of this
+refer to the binary classification using manual segmentation (the results using semiautomatic segmentation were worse), , and they were the best results of this
 group. For the multiclass classification, the results were poor, despite the
 high values of specificity and accuracy, 96.2 \% and 93.2 \%, respectively, the
 sensibility is extremely low, 59.6 \%, which can be explained by the high number
@@ -570,7 +580,7 @@ models are supervised learning models.
         \cite{Li2019}                       & U/CE-CT                                  & 210                                                & 114             & 96              \\
         \cite{Andersen2021}                 & CE-CT                                    & 160                                                & 89              & 71              \\
         \cite{Moawad2021}                   & U/CE-CT                                  & 40                                                 & 21              & 19              \\
-        \cite{Barstugan2020}                & T1W-OP/IP; T2W MRI                       & 114                                                & 9               & 105             \\
+        \cite{Barstugan2020}                & T1W-OP/IP; T2W MRI                       & 122                                                & 112               & 10             \\
         \cite{Stanzione2021}                & T1W-OP/IP; T2W MRI                       & 55                                                 & 37              & 18              \\
         \bottomrule
     \end{tabular}
