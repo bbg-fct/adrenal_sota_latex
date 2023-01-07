@@ -455,7 +455,7 @@ group. However, in terms of sensitivity, \cite{Yi2018} has achieved an higher
 value. Overall, there are 4 studies in which their metrics average more than
 90\%: \cite{Yi2018, Yi20181, Kusunoki2022, Schieda2017}. Three of them use CT
 images. \cite{Schieda2017} had a very small unbalanced dataset and used CSI
-images. 
+images to differentiate renal cell carcinomas from adenomas.  
 
 
 \begin{table}[]
@@ -567,6 +567,13 @@ sensibility is extremely low, 59.6 \%, which can be explained by the high number
 of classes and the lack of balance in the data set. In this group, all the
 models are supervised learning models.
 
+In this group there are only 2 studies where the average of the reported metrics
+is bigger than 90\% - \cite{Barstugan2020,Stanzione2021}, however, the last only
+reported accuracy and AUC. Both studies used the same type of images. In
+\cite{Stanzione2021} applied an extra trees classifier to distinguish between
+benign and malign adrenal lesions without drop in CS images. Extra Trees is
+random ensemble of decision trees that is much faster than a RanFor and has
+differences in the input sampling and the selection of cut points \footnote{\href{https://quantdare.com/what-is-the-difference-between-extra-trees-and-random-forest/}{https://quantdare.com/what-is-the-difference-between-extra-trees-and-random-forest/}}.
 
 
 \begin{table}[]
@@ -601,10 +608,10 @@ models are supervised learning models.
         \cite{Barstugan2020}                & ML                             &
         SVM                                 & Manual; Semi-auto
                                             & $2^{nd}$, higher                                                                                                                                     \\
-        \cite{Stanzione2021}                & ML                             & ExTre                                          & Manual                        & $1^{st}$, $2^{nd}$, higher, shape  \\
+        \cite{Stanzione2021}                & ML                             & DecTre                                          & Manual                        & $1^{st}$, $2^{nd}$, higher, shape  \\
         \bottomrule
     \end{tabular}
-    \caption{Modelling Details for each article in the Group B. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; BayCla: Bayesian Classifier; NN: Neural Network; ExTre: Extra Trees Classifier.
+    \caption{Modelling Details for each article in the Group B. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; BayCla: Bayesian Classifier; NN: Neural Network; DecTre: Extra Trees Classifier.
         RanFor: Random Forest; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
     \label{tab:model_B}
 \end{table}
@@ -630,8 +637,8 @@ models are supervised learning models.
 \subsubsection{Group C}
 
 Group C consists of the remaining studies that did not fit any of prior defined
-groups.  This group includes 18\% of the studies. Tables \ref{tab:data_B},
-\ref{tab:model_B} and \ref{tab:res_B} display an overview of the data sets,
+groups.  This group includes 18\% of the studies. Tables \ref{tab:data_C},
+\ref{tab:model_C} and \ref{tab:res_C} display an overview of the data sets,
 models, and results, respectively, for each study inside group C.
 
 In this group are 4 studies with distinct goals. \cite{Bi2017} implements a
@@ -658,6 +665,11 @@ The presented sample size includes an external and an internal data set. The
 external data set was used for external validation of the developed pipeline.
 \cite{Zheng2020} also used logistic regression but to characterize adenomas with
 a CT dataset.
+
+The results of the studies in this group cannot be compared due to the different
+objectives of each one. Nevertheless, the application of LogReg to analyse
+radiomic features is still a common practice that achieves impressive results
+even in multiclass classification.
 
 \begin{table}[]
     \centering
@@ -706,12 +718,49 @@ a CT dataset.
     \label{tab:res_C}
 \end{table}
 
-\subsection{Discussion}
+\subsection{General aspects}
 
-\begin{enumerate}
-    \item most promisssing
-    \item general limitations and future developments
-\end{enumerate}
+When analysing the reported studies, one of the major difficulties was the lack
+of coherence between the metrics used to measure the performance of the
+developed models. The metrics selected in this review are common and relevant
+however, several studies did not report them, and some even reported only one
+metric, which is not enough to evaluate the performance of predictive model.
+Indeed, the quality of reporting of the predictive models is well-established as
+poor \cite{Zhang2022}. 
+
+Almost all the reported studies stated that their datasets should be improved,
+because of the small size or the imbalance, which proves the difficulty of
+finding a suitable medical dataset for machine learning proposes. Furthermore,
+most of the studies made single-centre retrospective studies and declared
+selection bias as a limitation. In fact, to better transfer these academic
+studies to clinical practice there three shortcomings need to be tackled: lack
+of prospective studies, lack of external multicenter validation, and lack of
+comparison of diagnostic performance between the radiologist and the model
+\cite{Zhang2022}. 
+
+There is a lack of studies using DL models to analyse adrenal imaging. Despite
+the impressive results of traditional ML models, such as the LogReg, DL models
+pose an advantage as they minimize the amount the feature engineering that is
+necessary to perform a good classification. In addition, DL models have achieved
+higher performance results than ML models in several medical imaging analysis
+tasks \cite{Suganyadevi2022}. Another limitation related with traditional ML
+models is the necessity of segmentation methods to select the region of
+interest. From the analysed studies, it can be concluded that most of the
+studies used manual segmentation (which is a time-consuming and prone to human
+error process), and those that compared manual and semi-auto segmentation stated
+that the models that classify features from ROI obtained with manual
+segmentation achieved best results. DL models may play a crucial role in fully
+automatic adrenal lesion segmentation or detection as they have in other lesions
+and organs \cite{Suganyadevi2022}. DL models can be trained for lesion detection
+or segmentation, where the lesion is classified and localised in the medical
+slice. To our knowledge only one paper performed adrenal lesion detection, which
+proves that this is still an emerging field.
+
+The application of machine learning methods to the analysis of adrenal imaging
+has achieved outstanding results. However, the usage of non-realistic datasets,
+the lack of validation, the extreme necessity of feature engineering, and the
+lack of development of deep learning method are still shortcomings that need to
+be addressed to improve this field.
 
 \printbibliography
 
