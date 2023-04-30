@@ -1,1 +1,1 @@
-FROM qmcgaw/latexdevcontainer:latest-full
+FROM qmcgaw/latexdevcontainer

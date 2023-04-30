@@ -5,7 +5,7 @@ services:
     build: .
     image: latexdevcontainer
     volumes:
-      - ../:/adrenal_sota
+      - ../:/workspace
       # Docker socket to access Docker server
       - /var/run/docker.sock:/var/run/docker.sock
       # SSH directory
@@ -16,7 +16,7 @@ services:
       # Shell history persistence
       - ~/.zsh_history:/root/.zsh_history:z
       # Git config
-      - ~/.gitconfig:/root/.gitconfig
+      - ~/phd/my_repos/adrenal_sota_latex/.git:/workspace/.gitconfig
     environment:
       - TZ=
     entrypoint: ["zsh", "-c", "while sleep 1000; do :; done"]

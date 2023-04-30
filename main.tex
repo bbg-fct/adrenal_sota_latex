@@ -37,7 +37,34 @@
 
 \begin{document}
 \maketitle
+\begin{abstract}
+The adrenal glands are two small organs that are one of the main components responsible to maintain the
+homeostasis of the human body in the presence of chronic stressors. These glands
+can be affected by a wide variety of lesions, both malignant and benign. The
+most common adrenal lesions are the adenomas. Adrenal
+radiologic evaluation via conventional imaging is a complex process that depends largely on the
+experience and knowledge of the radiologist. The presence of pseudolesions, the
+overlap of imaging features of different lesions or the incorrect choice of
+imaging technique can lead to misdiagnosis, which can lead to increased
+treatment costs or unnecessary examination since most of the adrenal lesions do
+not require treatment. Machine learning methods have been proposed as a potential solution to
+improve the diagnosis of adrenal lesions. In this paper we are focusing on the
+analysis of research works that aim to diagnose/differentiate adrenal lesions
+using conventional imaging techniques, specifically, magnetic resonance and
+computed tomography, using machine learning methods. We divide our analysis in
+three groups: A contains all the studies that focus on the differentiation
+between adrenal adenomas and other adrenal lesions; B contains all the studies
+that target the differentiation between benign and malignant lesions; C contains
+the remaining studies, with dispersed focus. In total, we have analysed 23
+studies in terms of the following categories: used dataset, modeling details and
+evaluation metrics. We identified a lack of deep learning studies in this area,
+a lack of prospective studies, multicenter validations and comparison between
+the model diagnostic performance and the radiologist. Nevertheless, the
+traditional machine learning models analysis imaging features (radiomics) have
+achieved outstanding results when diagnosing adrenal lesions.
 
+
+\end{abstract}
 \section{Adrenal Glands and Lesions}
 
 \subsection{Anatomy, physiology and pathophysiology}
@@ -327,7 +354,7 @@ studies. Traditional machine learning models like K-means, Support Vector
 Machine (SVM), Logistic Regression (LogReg), or Random Forest (RanFor), are
 frequently used to classify radiomic features of regions of interest and have
 achieved high performance in different anatomical regions \cite{Zhang2022,
-    Wagner2021}. Deep Learning models, such as, Convolutional Neural Networks
+    Wagner2021}. Deep Learning models, such as Convolutional Neural Networks
 (CNNs), have been often applied to medical images from several anatomical
 regions with promising results \cite{Anaya-Isaza2021}. Despite that, only 13\%
 of the presented studies report the application of DL models to
@@ -346,7 +373,7 @@ The studies analysed in this section were selected according to the following PI
     \item[] \textbf{O (outcome) }– lesion differentiation (benign/malign and subtyping) and lesions detection.
 \end{enumerate}
 
-The studies were obtained by searching in PubMed and Web of Science databases in
+The studies were obtained by searching PubMed and Web of Science databases in
 September 2022. The following research string was used: (adrenal
 or suprarenal) AND (CT OR "computed tomography" OR MRI OR "magnetic resonance
 imaging" OR "MRI scan" OR "nuclear magnetic resonance" OR "magnetic resonance"
@@ -357,13 +384,13 @@ written in English, (c) did not report a modelling method, (d) did not have the
 full text available were excluded from this research. The publication dates of
 the studies range from 2017 until September of 2022.
 
-The research resulted in 23 studies that were divided in 3 groups according with
+The research resulted in 23 studies that were divided into 3 groups according with
 their object of study:
 \begin{enumerate}
     \item[] \textbf{Group A}: contains all the studies that focus on the
         differentiation between adrenal adenomas and other adrenal lesions.
     \item[] \textbf{Group B}: contains all the studies that target the
-        differentiation between benign and malign adrenal lesions.
+        differentiation between benign and malignant adrenal lesions.
     \item[] \textbf{Group C}: contains the remaining studies that did not fit
         any of the above categories.
 \end{enumerate}
@@ -389,7 +416,7 @@ lesions, eg. Metastases, pheochromocytomas.
     \label{tab:sota_sum}
 \end{table}
 
-In the next 3 sections each group of papers will be analysed in detail,
+In the next 3 sections, each group of papers will be analysed in detail,
 exploring their common and contrasting aspects. For each group, the analysis
 will be focused on the utilized data sets, models, and the obtained results.
 
