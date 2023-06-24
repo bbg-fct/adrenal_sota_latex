@@ -32,9 +32,9 @@
 \addbibresource{adrenal.bib}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Adrenal Lesions Diagnosis: Machine Learning Approach}
-\author{Bernardo Gonçalves - 58885 - Doctoral program in Biomedical Engineering}
-
+\title{A Review of Adrenal Lesions Diagnosis with Machine Learning}
+\author{Bernardo Gonçalves}
+\providecommand{\keywords}[1]{  \small  \textbf{\textit{Keywords---}} #1}
 
 
 
@@ -72,25 +72,18 @@
     identifying important research gaps that require further investigation.
 
 \end{abstract}
-\section{Adrenal Glands and Lesions}
-\subsection{Anatomy, physiology and pathophysiology}
-\label{subsec:anot}
+
+\keywords{Adrenal, Lesions, Machine Learning, Diagnosis, MRI, CT, Detection}
+
+\section{Introduction}
 
 The adrenal glands, or suprarenal glands, are two small glands located on top of
 the kidneys.  Each has a body and two limbs \cite{Baba2012}, and weights about
-5g \cite{brit}. Figure \ref{fig:adrenal_ana} shows the localisation and anatomy
-of these glands. The adrenal glands are a component of the
+5g \cite{brit}. The adrenal glands are a component of the
 Hypothalamic-Pituitary-Adrenal (HPA) axis, which is responsible to maintain
 homeostasis in the presence of chronic stressors, activating a complex range of
 responses from the endocrine, nervous and immune systems, generally known as the
 stress response \cite{open}.
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.8]{figures/adrenal_anatomy_cropped.png}
-    \caption{Adrenal glands localisation and anatomy.  Adapted from \cite{Grossman2022}}
-    \label{fig:adrenal_ana}
-\end{figure}
 
 The adrenal glands can be affected by a wide variety of benign and malignant
 lesions. Approximately 9\% of the global population is estimated to have adrenal
@@ -98,7 +91,6 @@ lesions, which are mostly detected incidentally during abdominal imaging
 \cite{Dhamija2015}. These lesions can be primary if they originated in the
 glands themselves (cortex or medulla) or secondary if they have another origin.
 Primary lesions can be functional if they produce hormones \cite{Panda2015}.
-Table \ref{tab:lesions} presents the origin and classification of the adrenal lesions.
 Adrenal adenomas represent 50-80\% of adrenal lesions \cite{Bracci2022}. Adenomas
 are often non-functional and remain asymptomatic, being discovered incidentally
 \cite{Platzek2019}. Adrenocortical carcinomas, despite being the most common
@@ -108,37 +100,6 @@ first decade and adults in their fourth and fifth decades \cite{Panda2015}.
 Also, the adrenals are a frequent location of metastases \cite{Platzek2019},
 approximately 25\% of patients with cancer have adrenal metastases on autopsy
 \cite{Bracci2022}.
-
-\begin{table}[]
-    \centering
-    \begin{tabular}{cccc}\toprule
-        \textbf{Adrenal Lesions}        & \textbf{Histologic origin}          & \textbf{Benign}       & \textbf{Malign}      \\
-        \midrule
-        \multirow{6}{*}{Primary}        & \multirow{4}{*}{Cortical}           & Adenoma               & Adrenocortical       \\
-                                        &                                     & Adrenal hyperplasia   & Carcinoma            \\
-                                        &                                     & Oncocytoma            & Malignant            \\
-                                        &                                     &                       & oncocytoma           \\
-        \cmidrule(lr){2-4}
-                                        & \multirow{4}{*}{Medullary}          & Pheochromocytoma      & Malignant            \\
-                                        &                                     &                       & pheochromocytoma     \\
-                                        &                                     & Ganglioneuroma        & Neuroblastoma        \\
-                                        &                                     &                       & Ganglioneuroblastoma \\
-        \midrule
-        \multirow{4}{*}{Secondary}      & \multirow{4}{*}{No specific origin} & Myelolipoma           & Metastases           \\
-                                        &                                     & Cysts                 & Lymphoma             \\
-                                        &                                     & Lipoma                &                      \\
-                                        &                                     & Hemorrhage            &                      \\
-        \midrule
-        \multirow{3}{*}{Other entities} & \multirow{2}{*}{Any cell origin/}   & Incidentalomas        & Colision tumours     \\
-                                        &                                     &                       & (adenoma+metastases) \\
-                                        & \multirow{1}{*}{either primary}     & Colision tumours      &                      \\
-                                        & \multirow{1}{*}{or secondary}       & (adenoma+myelolipoma) &
-
-        \\\bottomrule
-    \end{tabular}
-    \caption{Classification of adrenal lesions.  Adapted from \cite{Panda2015}.}
-    \label{tab:lesions}
-\end{table}
 
 In general, non-functional lesions do not require any treatment, therefore it is
 crucial to differentiate between adenomas (typical non-functional lesions) and
@@ -185,7 +146,7 @@ which mediate the short-term stress or the fight-or-flight response. This
 response has the goal of preparing the body for extreme physical exertion
 \cite{open}.
 
-\subsection{Adrenal Imaging - medical diagnosis of adrenal lesions}
+% Adrenal Imaging - medical diagnosis of adrenal lesions
 
 Structural medical imaging techniques are decisive in detecting and
 characterising adrenal lesions and complementary to functional imaging and
@@ -194,14 +155,7 @@ can also rule out invasive interventions. The most used imaging techniques to
 evaluate the adrenal glands are Computed Tomography (CT) and Magnetic Resonance
 Imaging (MRI). Ultrasonography (USG), although a common method to assess
 abdominal pathologies, is not a good method to perceive retroperitoneal
-structures (see Figure \ref{fig:retro_per}) such as adrenals \cite{Panda2015}.
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.15 ]{figures/retro_peritoneum.jpg}
-    \caption{Peritoneum representation. Adrenals are an example of a retroperitoneal organ. From \cite{retroimg}.}
-    \label{fig:retro_per}
-\end{figure}
+structures such as adrenals \cite{Panda2015}.
 
 Figure \ref{fig:adrenal_glands_normal} shows the V- (left) and Y-shaped (right)
 normal glands. Figure \ref{fig:adrenal_ct} is an axial contrast-enhanced CT
@@ -228,7 +182,7 @@ Chemical Shift Image (CSI) out-of-phase showing normal adrenal glands as well.
     \label{fig:adrenal_glands_normal}
 \end{figure}
 
-As stated in \ref{subsec:anot}, the differential diagnosis between adenomas and non-adenomas is
+The differential diagnosis between adenomas and non-adenomas is
 of extreme importance. This diagnosis can be hindered by the existence of
 lipid-poor adenomas that are more difficult to diagnose. Lipid-rich adenomas can
 be easily identified using unenhanced CT (less than 10 HU) \cite{Panda2015} or CSI
@@ -306,7 +260,7 @@ the adenoma diagnosis is confirmed based on CSI. However, if the adenoma is not
 confirmed, DCE sequences would help distinguish between adenomas and
 malignant lesions \cite{Platzek2019}.
 
-\section{Diagnosis of adrenal lesions - a machine learning approach}
+% Machine learning - for adrenal lesion
 
 The growing number of abdominal imaging studies has led to the increasing
 frequency of adrenal incidentalomas, which are usually benign, non-functional
@@ -327,8 +281,7 @@ not only to improve the diagnostic accuracy and efficiency of adrenal lesions. M
 imaging features extracted using radiomic methods that will be briefly explored
 in \ref{subsec:radiomic}.
 
-\subsection{Radiomics}
-\label{subsec:radiomic}
+% Radiomics
 
 Radiomics is the extraction of quantitative features from medical images, such
 as Positron Emission Tomography (PET), MRI, or CT. Before the feature extraction
@@ -367,7 +320,7 @@ adrenal images. DL models are different from ML models mostly because they
 demand bigger annotated data sets and they do not rely on the feature extraction
 step (all features are automatically extracted and classified by the model).
 
-\subsection{Research details}
+\section{Methods}
 
 The studies analysed in this section were selected according to the following PICO criteria:
 
@@ -379,7 +332,7 @@ The studies analysed in this section were selected according to the following PI
 \end{enumerate}
 
 The studies were obtained by searching PubMed and Web of Science databases in
-September 2022. The following research string was used: (adrenal
+June 2023. The following research string was used: (adrenal
 or suprarenal) AND (CT OR "computed tomography" OR MRI OR "magnetic resonance
 imaging" OR "MRI scan" OR "nuclear magnetic resonance" OR "magnetic resonance"
 OR NMR) AND ("deep learning" OR "convolutional networks" OR CNN OR "neural
@@ -387,7 +340,7 @@ networks" OR convolutional OR DNN OR SVM OR "Support vector machine" OR
 "decision tree" OR "machine learning"). Studies that were: (a) reviews, (b) not
 written in English, (c) did not report a modelling method, (d) did not have the
 full text available were excluded from this research. The publication dates of
-the studies range from 2017 until September 2022.
+the studies range from 2017 until June 2023.
 
 The research resulted in 23 studies that were divided into 3 groups according with
 their object of study:
@@ -405,7 +358,7 @@ adopt traditional machine learning models to classify imaging features
 (radiomics) from CT images to distinguish adenomas from other types of adrenal
 lesions, eg. Metastases, pheochromocytomas.
 
-\begin{table}[]
+\begin{table}[h]
     \centering
     \begin{tabular}{cccccccc}\toprule
         \multirow{2}{*}{\textbf{Group}} & \multicolumn{3}{c}{\textbf{Image Modality}} & \multicolumn{3}{c}{\textbf{Model Type}} & \multirow{2}{*}{\textbf{Total}}
@@ -425,7 +378,7 @@ In the next 3 sections, each group of papers will be analysed in detail,
 exploring their common and contrasting aspects. For each group, the analysis
 will be focused on the utilized data sets, models, and the obtained results.
 
-\subsection{Study Analysis}
+\subsection{Results}
 
 \subsubsection{Group A - Adenomas vs other lesions}
 
@@ -746,7 +699,7 @@ even in multiclass classification.
     \label{tab:res_C}
 \end{table}
 
-\subsection{General aspects}
+\subsection{Conclusions}
 
 When analysing the reported studies, one of the major difficulties was the lack
 of coherence between the metrics used to measure the performance of the
@@ -790,7 +743,10 @@ has achieved outstanding results
 \cite{Schieda2017,Yi20181,Yi2018,Kusunoki2022,Barstugan2020}. However, the usage
 of non-realistic datasets, the lack of validation, the extreme necessity of
 feature engineering and the lack of development of deep learning methods are
-still, shortcomings that need to be addressed to improve this field.
+still, shortcomings that need to be addressed to improve this field. To the best
+of our knowledge, this is the first review paper that compiles all studies that
+focus on the classification of adrenal lesions using traditional machine
+learning or deep learning models.
 
 
 \printbibliography
