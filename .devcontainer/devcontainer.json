@@ -5,7 +5,7 @@
     "runServices": ["vscode"],
     "shutdownAction": "stopCompose",
     "workspaceFolder": "/workspace",
-    "postCreateCommand": "",
+    "postCreateCommand": "tlmgr install caption biblatex multirow booktabs",
     "mounts": [
         "source=/mnt/c/Users/Bernardo-b2f/OneDrive - FCT NOVA/Documentos/Work/PhD/thesis/adrenal_sota/figures,target=/workspace/figures,bind=true"
     ],
