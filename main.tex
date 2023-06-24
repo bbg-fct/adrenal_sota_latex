@@ -10,7 +10,7 @@
 % 0.07 MB, 0.24 Mbit/s
 % extracting files from latexindent.tar.lzma...
 % ======================================================================
-\documentclass{article}
+\documentclass[11pt]{article}
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[english]{babel}
@@ -35,38 +35,19 @@
 \title{Adrenal Lesions Diagnosis: Machine Learning Approach}
 \author{Bernardo Gonçalves - 58885 - Doctoral program in Biomedical Engineering}
 
+
+
+
+
 \begin{document}
 \maketitle
-\begin{abstract}
-The adrenal glands are two small organs that are one of the main components responsible to maintain the
-homeostasis of the human body in the presence of chronic stressors. These glands
-can be affected by a wide variety of lesions, both malignant and benign. The
-most common adrenal lesions are the adenomas. Adrenal
-radiologic evaluation via conventional imaging is a complex process that depends largely on the
-experience and knowledge of the radiologist. The presence of pseudolesions, the
-overlap of imaging features of different lesions or the incorrect choice of
-imaging technique can lead to misdiagnosis, which can lead to increased
-treatment costs or unnecessary examination since most of the adrenal lesions do
-not require treatment. Machine learning methods have been proposed as a potential solution to
-improve the diagnosis of adrenal lesions. In this paper we are focusing on the
-analysis of research works that aim to diagnose/differentiate adrenal lesions
-using conventional imaging techniques, specifically, magnetic resonance and
-computed tomography, using machine learning methods. We divide our analysis in
-three groups: A contains all the studies that focus on the differentiation
-between adrenal adenomas and other adrenal lesions; B contains all the studies
-that target the differentiation between benign and malignant lesions; C contains
-the remaining studies, with dispersed focus. In total, we have analysed 23
-studies in terms of the following categories: used dataset, modeling details and
-evaluation metrics. We identified a lack of deep learning studies in this area,
-a lack of prospective studies, multicenter validations and comparison between
-the model diagnostic performance and the radiologist. Nevertheless, the
-traditional machine learning models analysis imaging features (radiomics) have
-achieved outstanding results when diagnosing adrenal lesions.
 
+\begin{abstract}
+
+TESTING ABSTRACT
 
 \end{abstract}
 \section{Adrenal Glands and Lesions}
-
 \subsection{Anatomy, physiology and pathophysiology}
 \label{subsec:anot}
 
@@ -136,7 +117,7 @@ approximately 25\% of patients with cancer have adrenal metastases on autopsy
 
 In general, non-functional lesions do not require any treatment, therefore it is
 crucial to differentiate between adenomas (typical non-functional lesions) and
-non-adenomas \cite{Platzek2019}, to avoid incurring in unnecessay treatment.
+non-adenomas \cite{Platzek2019}, to avoid incurring in unnecessary treatment.
 Commonly, adrenal adenomas have less than 1 cm in
 diameter and they can be lipid-rich or lipid-poor \cite{Panda2015}.
 About 70-80 \% of the adenomas are lipid-rich in contrast with the malignant
@@ -176,7 +157,7 @@ The adrenal medulla is the inner region of the gland, and it is a neuroendocrine
 tissue composed of postganglionic sympathetic nervous system (SNS) neurons. This
 region is responsible for the production of epinephrine and norepinephrine,
 which mediate the short-term stress or the fight-or-flight response. This
-response has the goal of prepare the body for extreme physical exertion
+response has the goal of preparing the body for extreme physical exertion
 \cite{open}.
 
 \subsection{Adrenal Imaging - medical diagnosis of adrenal lesions}
@@ -208,14 +189,14 @@ Chemical Shift Image (CSI) out-of-phase showing normal adrenal glands as well.
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/CT_adrenal_enhanced.png}
-        \caption{Adrenal glands in a contrast-enhanced CT axial slice in arterial phase. Due to the high level of retroperitoneal fat both glands are enhanced in this image slice. Reprinted from \cite{Panda2015}.}
+        \caption{Adrenal glands in a contrast-enhanced CT axial slice in the arterial phase. Due to the high level of retroperitoneal fat, both glands are enhanced in this image slice. Reprinted from \cite{Panda2015}.}
         \label{fig:adrenal_ct}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures/MRI_adrenal.png}
-        \caption{Adrenal glands in a MR CSI coronal slice. Both glands have a intermediate signal intensity. Reprinted from \cite{Panda2015}. }
+        \caption{Adrenal glands in an MR CSI coronal slice. Both glands have an intermediate signal intensity. Reprinted from \cite{Panda2015}. }
         \label{fig:adrenal_mri}
     \end{subfigure}
     \caption{Normal adrenal glands in CT and MR slices. The arrows indicate the localization of the glands.}
@@ -251,7 +232,7 @@ Adrenal-to-Liver Ratio (ALR) or the Adrenal-to-Muscle Ratio (AMR)
 \cite{Fujiyoshi2003}. A metanalysis with 1280
 lesions (859 adenomas, 421 non-adenomas) documented a sensitivity of 94\% and
 a specificity of 95\% in detecting adrenal adenomas with the CSI technique using
-visual evaluation and/or quantitative methods \cite{Platzek2019}. Despite these high values the
+visual evaluation and/or quantitative methods \cite{Platzek2019}. Despite these high values, the
 authors state that lipid-poor adenomas still pose an issue even using CSI.
 
 \begin{figure}
@@ -309,16 +290,15 @@ potential for being malignant, as soon as possible. The diagnosis of adrenal
 lesions is a complex process that involves both biochemical and radiological
 evaluation \cite{Anagnostis2009}. Adrenal radiologic evaluation via conventional
 imaging is a challenging process that depends largely on the experience and
-knowledge of the radiologist \cite{Zhang2022}. Several pitfalls can result in
-misdiagnosis of adrenal lesions, such as the presence of pseudolesions, overlap
+knowledge of the radiologist \cite{Zhang2022}. Several pitfalls can result in the
+misdiagnosis of adrenal lesions, such as the presence of pseudo lesions, overlap
 of imaging features of different lesions, or incorrect choice of the imaging
 technique \cite{Elsayes2020}. New approaches to the diagnosis of adrenal lesions
 are crucial to avoid misdiagnosis, which can lead to increased treatment costs
 or unnecessary examination \cite{Zhang2022}. Additionally, it would be important
 to decrease the number of imaging exams that are necessary to complete the
 diagnosis. Machine learning methods have been proposed as a potential solution
-not only to improve the diagnostic accuracy of adrenal lesions, but also to
-increase its efficiency. Most of these machine learning methods analyse medical
+not only to improve the diagnostic accuracy and efficiency of adrenal lesions. Most of these machine learning methods analyse medical
 imaging features extracted using radiomic methods that will be briefly explored
 in \ref{subsec:radiomic}.
 
@@ -328,11 +308,11 @@ in \ref{subsec:radiomic}.
 Radiomics is the extraction of quantitative features from medical images, such
 as Positron Emission Tomography (PET), MRI, or CT. Before the feature extraction
 is necessary to limit the amount of data that needs to be processed in order to
-extract features - ROI (region of interest) segmentation . This process can be manual, which is the gold
+extract features - ROI (region of interest) segmentation. This process can be manual, which is the gold
 standard, where a specialist selects the ROI. Manual segmentation is a
 time-consuming task that significantly depends on the skill of the operator.
 There are fully automatic methods for ROI segmentation however, they can fail in
-difficult cases, such as, lesions with indistinct borders and are highly
+difficult cases, such as lesions with indistinct borders and are highly
 dependent on the quality of the image. For that reason, the usage of
 semi-automatic methods is preferable. These methods have minimal user
 interaction (seed identification or manual correction). The extracted
@@ -382,7 +362,7 @@ networks" OR convolutional OR DNN OR SVM OR "Support vector machine" OR
 "decision tree" OR "machine learning"). Studies that were: (a) reviews, (b) not
 written in English, (c) did not report a modelling method, (d) did not have the
 full text available were excluded from this research. The publication dates of
-the studies range from 2017 until September of 2022.
+the studies range from 2017 until September 2022.
 
 The research resulted in 23 studies that were divided into 3 groups according with
 their object of study:
@@ -445,7 +425,7 @@ sample size of the studies ranges from dozens to hundreds of lesions, which is
 closely related to the applied inclusion criteria and the initial sample size.
 For example, one study had a database of 336 patients however only 19 met the
 inclusion criteria, each with one lesion \cite{Torresan2021}. Most of the
-presented data sets are unbalanced with much higher number of adenomas.
+presented data sets are unbalanced with a much higher number of adenomas.
 
 All studies, except one, performed lesion classification
 with ML models using radiomic features. The most frequent model is logistic
@@ -471,7 +451,7 @@ model with the same radiomic features but using different CT images and achieved
 impressive results. However, \cite{Yi2018} adds clinical features such as
 necrosis or calcification and lesion dimensions, to the radiomic features. Also,
 to improve feature selection the authors used the Least Absolute Shrinkage and
-Selection Operator (LASSO). These studies achieved the best results of this
+Selection Operator (LASSO). These studies achieved the best results for this
 group. However, in terms of sensitivity, a higher
 value was obtained by \cite{Yi2018}. Overall, there are 4 studies in which their metrics average more than
 90\%: \cite{Yi2018, Yi20181, Kusunoki2022, Schieda2017}. Three of them use CT
@@ -499,7 +479,7 @@ images to differentiate renal cell carcinomas from adenomas.
         \cite{Romeo2018}                    & T1W-OP/IP; T2W MRI                       & 60                                                 & 40                & 20
         \\\bottomrule
     \end{tabular}
-    \caption{Dataset Details for each article in the Group A. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
+    \caption{Dataset Details for each article in Group A. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
     \label{tab:data_A}
 \end{table}
 
@@ -594,8 +574,8 @@ In this group there are only 2 studies where the average of the reported metrics
 is bigger than 90\% - \cite{Barstugan2020,Stanzione2021}, however, the last only
 reported accuracy and AUC. Both studies used the same type of images. In
 \cite{Stanzione2021} applied an extra trees classifier to distinguish between
-benign and malign adrenal lesions without drop in CS images. Extra Trees is
-random ensemble of decision trees that is much faster than a RanFor and has
+benign and malign adrenal lesions without a drop in CS images. Extra Trees is
+a random ensemble of decision trees that is much faster than a RanFor and has
 differences in the input sampling and the selection of cut points \footnote{\href{https://quantdare.com/what-is-the-difference-between-extra-trees-and-random-forest/}{https://quantdare.com/what-is-the-difference-between-extra-trees-and-random-forest/}}.
 
 
@@ -614,7 +594,7 @@ differences in the input sampling and the selection of cut points \footnote{\hre
         \cite{Stanzione2021}                & T1W-OP/IP; T2W MRI                       & 55                                                 & 37              & 18              \\
         \bottomrule
     \end{tabular}
-    \caption{Dataset Details for each article in the Group B. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
+    \caption{Dataset Details for each article in Group B. CT: Computed Tomography; U: Unenhanced; CE: Contrast Enhanced; MRI: Magnetic Resonance Imaging; OP: Out-of-phase; IP: In-phase; T1W: T1-weighted; T2W: T2-weighted.}
     \label{tab:data_B}
 \end{table}
 
@@ -635,7 +615,7 @@ differences in the input sampling and the selection of cut points \footnote{\hre
         \bottomrule
     \end{tabular}
     \caption{Modelling Details for each article in the Group B. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; BayCla: Bayesian Classifier; NN: Neural Network; DecTre: Extra Trees Classifier.
-        RanFor: Random Forest; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
+        RanFor: Random Forest; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher-order statistics, respectively; shape: shape-based features.}
     \label{tab:model_B}
 \end{table}
 
@@ -653,13 +633,13 @@ differences in the input sampling and the selection of cut points \footnote{\hre
         \cite{Stanzione2021}                & -                                          & -                                          & 91.0                                    & 97.0                               \\
         \bottomrule
     \end{tabular}
-    \caption{Model metrics for each article in the Group B. AUC: Area Under the Receiving Operating Characteristic Curve.}
+    \caption{Model metrics for each article in Group B. AUC: Area Under the Receiving Operating Characteristic Curve.}
     \label{tab:res_B}
 \end{table}
 
 \subsubsection{Group C}
 
-Group C consists of the remaining studies that did not fit any of prior defined
+Group C consists of the remaining studies that did not fit any of the prior defined
 groups.  This group includes 18\% of the studies. Tables \ref{tab:data_C},
 \ref{tab:model_C} and \ref{tab:res_C} display an overview of the data sets,
 models, and results, respectively, for each study inside group C.
@@ -686,7 +666,7 @@ was to improve performance with a highly unbalanced data set.
 non-pheochromocytomas with a T2W MRI dataset and a logistic regression model.
 The presented sample size includes an external and an internal data set. The
 external data set was used for external validation of the developed pipeline.
-\cite{Zheng2020} also used logistic regression but to characterize adenomas with
+\cite{Zheng2020} also used logistic regression to characterize adenomas with
 a CT dataset.
 
 The results of the studies in this group cannot be compared due to the different
@@ -720,9 +700,9 @@ even in multiclass classification.
         \cite{Zheng2020}                    & ML                             & LogReg                          & Manual                        & $1^{st}$, higher, shape            \\
         \bottomrule
     \end{tabular}
-    \caption{Modelling Details for each article in the Group C. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression;
+    \caption{Modelling Details for each article in Group C. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression;
         BSGC: Bayesian Spatial Gaussian Classifiers; CNN: Convolutional Neural Network; SVM: Support Vector Machine;
-        $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
+        $1^{st}$, $2^{nd}$, higher: first, second, higher-order statistics, respectively; shape: shape-based features.}
     \label{tab:model_C}
 \end{table}
 
@@ -757,7 +737,7 @@ because they were small or unbalanced or both, which proves the difficulty of
 finding a suitable medical dataset for machine learning proposes. Furthermore,
 most of the studies made single-centre retrospective studies and declared
 selection bias as a limitation. In fact, to better transfer these academic
-studies to clinical practice there three shortcomings need to be tackled: lack
+studies to clinical practice there are at least three shortcomings need to be tackled: lack
 of prospective studies, lack of external multicenter validation, and lack of
 comparison of diagnostic performance between the radiologist and the model
 \cite{Zhang2022}.
@@ -767,13 +747,13 @@ the impressive results of traditional ML models, such as the LogReg, DL models
 pose an advantage as they minimize the amount the feature engineering that is
 necessary to perform a good classification. In addition, DL models have achieved
 higher performance results than ML models in several medical imaging analysis
-tasks \cite{Suganyadevi2022}. Another limitation related with traditional ML
+tasks \cite{Suganyadevi2022}. Another limitation related to traditional ML
 models is the necessity of segmentation methods to select the region of
 interest. From the analysed studies, it can be concluded that most of the
-studies used manual segmentation (which is a time-consuming and prone to human
+studies used manual segmentation (which is time-consuming and prone to human
 error process), and those that compared manual and semi-auto segmentation stated
 that the models that classify features from ROI obtained with manual
-segmentation achieved best results. DL models may play a crucial role in fully
+segmentation achieved the best results. DL models may play a crucial role in fully
 automatic adrenal lesion segmentation or detection as they have in other lesions
 and organs \cite{Suganyadevi2022}. DL models can be trained for lesion detection
 or segmentation, where the lesion is classified and localised in the medical
@@ -784,8 +764,8 @@ The application of machine learning methods to the analysis of adrenal imaging
 has achieved outstanding results
 \cite{Schieda2017,Yi20181,Yi2018,Kusunoki2022,Barstugan2020}. However, the usage
 of non-realistic datasets, the lack of validation, the extreme necessity of
-feature engineering, and the lack of development of deep learning method are
-still shortcomings that need to be addressed to improve this field.
+feature engineering and the lack of development of deep learning methods are
+still, shortcomings that need to be addressed to improve this field.
 
 
 \printbibliography
