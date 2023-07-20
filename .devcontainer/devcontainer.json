@@ -1,11 +1,11 @@
 {
-    "name": "adrenal_dota",
+    "name": "adrenal_sota",
     "dockerComposeFile": ["docker-compose.yml"],
     "service": "vscode",
     "runServices": ["vscode"],
     "shutdownAction": "stopCompose",
     "workspaceFolder": "/workspace",
-    "postCreateCommand": "tlmgr install caption biblatex multirow booktabs",
+    "postCreateCommand": "tlmgr install caption biblatex multirow booktabs tocbibind biblatex-ieee csquotes",
     "mounts": [
         "source=/mnt/c/Users/Bernardo-b2f/OneDrive - FCT NOVA/Documentos/Work/PhD/thesis/adrenal_sota/figures,target=/workspace/figures,bind=true"
     ],

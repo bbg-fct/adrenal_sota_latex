@@ -1,0 +1,2703 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{open}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OpenStaxCollege},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Last accessed 10 October 2022}
+    \field{title}{The Adrenal Glands – Anatomy and Physiology}
+    \verb{url}
+    \verb http://pressbooks-dev.oer.hawaii.edu/anatomyandphysiology/chapter/the
+    \verb -adrenal-glands/
+    \endverb
+  \endentry
+
+  \entry{Dhamija2015}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=DE}{%
+         family={Dhamija},
+         familyi={D\bibinitperiod},
+         given={Ekta},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Panda},
+         familyi={P\bibinitperiod},
+         given={Ananya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DCJ}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Chandan\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GAK}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={A.\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Medknow Publications}%
+    }
+    \keyw{Adrenal imaging,adrenal incidentalomas,adrenal lymphoma,adrenal medulla,adrenal metastases,bilateral adrenal masses,pheochromocytoma}
+    \strng{namehash}{DEPADCJ+1}
+    \strng{fullhash}{DEPADCJGAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Adrenal malignancies can be either primary adrenal tumors or secondary metastases, with metastases representing the most common malignant adrenal lesion. While imaging cannot always clearly differentiate between various adrenal malignancies, presence of certain imaging features, in conjunction with appropriate clinical background and hormonal profile, can suggest the appropriate diagnosis. The second part of the article on adrenal imaging describes adrenal medullary tumors, secondary adrenal lesions, bilateral adrenal lesions, adrenal incidentalomas and provides an algorithmic approach to adrenal lesions based on current imaging recommendations.%
+    }
+    \verb{doi}
+    \verb 10.4103/2230-8210.146859
+    \endverb
+    \field{issn}{22309500}
+    \field{issue}{1}
+    \field{pages}{16\bibrangedash 24}
+    \field{title}{Adrenal imaging (Part 2): Medullary and secondary adrenal lesions}
+    \field{volume}{19}
+    \field{journaltitle}{Indian Journal of Endocrinology and Metabolism}
+    \field{month}{01}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Bracci2022}{article}{}
+    \name{author}{14}{}{%
+      {{hash=BB}{%
+         family={Bracci},
+         familyi={B\bibinitperiod},
+         given={Benedetta},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SDD}{%
+         family={Santis},
+         familyi={S\bibinitperiod},
+         given={Domenico\bibnamedelima De},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=GAD}{%
+         family={Gaudio},
+         familyi={G\bibinitperiod},
+         given={Antonella\bibnamedelima Del},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=FMC}{%
+         family={Faugno},
+         familyi={F\bibinitperiod},
+         given={Maria\bibnamedelima Carla},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Romano},
+         familyi={R\bibinitperiod},
+         given={Allegra},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tarallo},
+         familyi={T\bibinitperiod},
+         given={Mariarita},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zerunian},
+         familyi={Z\bibinitperiod},
+         given={Marta},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Guido},
+         familyi={G\bibinitperiod},
+         given={Gisella},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Polici},
+         familyi={P\bibinitperiod},
+         given={Michela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Polidori},
+         familyi={P\bibinitperiod},
+         given={Tiziano},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Pucciarelli},
+         familyi={P\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={Matarazzo},
+         familyi={M\bibinitperiod},
+         given={Iolanda},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Laghi},
+         familyi={L\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Caruso},
+         familyi={C\bibinitperiod},
+         given={Damiano},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI}%
+    }
+    \keyw{adenoma,adrenal,computed tomography,incidentaloma,myelolipoma}
+    \strng{namehash}{BBSDDGAD+1}
+    \strng{fullhash}{BBSDDGADFMCRATMZMGGPMPTPFMILACD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    <p>Adrenal lesions are frequently incidentally diagnosed during investigations for other clinical conditions. Despite being usually benign, nonfunctioning, and silent, they can occasionally cause discomfort or be responsible for various clinical conditions due to hormonal dysregulation; therefore, their characterization is of paramount importance for establishing the best therapeutic strategy. Imaging techniques such as ultrasound, computed tomography, magnetic resonance, and PET-TC, providing anatomical and functional information, play a central role in the diagnostic workup, allowing clinicians and surgeons to choose the optimal lesion management. This review aims at providing an overview of the most encountered adrenal lesions, both benign and malignant, including describing their imaging characteristics.</p>%
+    }
+    \verb{doi}
+    \verb 10.3390/diagnostics12092171
+    \endverb
+    \field{issn}{2075-4418}
+    \field{issue}{9}
+    \field{pages}{2171}
+    \field{title}{Adrenal Lesions: A Review of Imaging}
+    \verb{url}
+    \verb https://www.mdpi.com/2075-4418/12/9/2171
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Diagnostics}
+    \field{month}{09}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Platzek2019}{misc}{}
+    \name{author}{6}{}{%
+      {{hash=PI}{%
+         family={Platzek},
+         familyi={P\bibinitperiod},
+         given={Ivan},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sieron},
+         familyi={S\bibinitperiod},
+         given={Dominik},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Plodeck},
+         familyi={P\bibinitperiod},
+         given={Verena},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Borkowetz},
+         familyi={B\bibinitperiod},
+         given={Angelika},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Laniado},
+         familyi={L\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HRT}{%
+         family={Hoffmann},
+         familyi={H\bibinitperiod},
+         given={Ralf\bibnamedelima Thorsten},
+         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Verlag}%
+    }
+    \keyw{Adrenal gland neoplasms,Adrenocortical adenoma,Chemical shift imaging,Magnetic resonance imaging}
+    \strng{namehash}{PISDPV+1}
+    \strng{fullhash}{PISDPVBALMHRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Objectives: To perform a systematic review and meta-analysis of published data to evaluate the utility of chemical shift imaging (CSI) for differentiating between adrenal adenomas and non-adenomas. Methods: A systematic search of the MEDLINE, Web of Science Core Collection, EMBASE and Cochrane Central Register of Controlled Trials electronic databases was performed. The methodological quality of the included studies was assessed by using the QUADAS-2 (Quality Assessment of Diagnostic Accuracy Studies) tool. A bivariate random effect model was used to determine summary and subgroup sensitivity and specificity and calculate summary receiver operating characteristic curves (SROC). Results: Eighteen studies with 1138 patients and 1280 lesions (859 adenomas, 421 non-adenomas) in total were included. In addition to summary analysis, quantitative analyses of the adrenal signal intensity index (SII, 978 lesions, 14 studies), adrenal-to-spleen ratio (ASR; 394 lesions, 7 studies) and visual analysis (560 lesions, 5 studies) were performed. The resultant data showed considerable heterogeneity (inconsistency index I2 of 94\%, based on the diagnostic odds ratio, DOR). The pooled sensitivity of CSI for adenoma was 0.94 [95\% confidence interval (CI) 0.88–0.97] and pooled specificity was 0.95 (95\% CI 0.89–0.97). The area (AUC) under the SROC curve was 0.98 (95\% CI 0.96–0.99). The corresponding AUCs were 0.98, 0.99 and 0.95 for SII, ASR and visual evaluation, respectively. Conclusion: CSI has high sensitivity, specificity and accuracy for adrenal adenoma. Diagnostic performance does not improve when quantitative indices are used. Key Points: • Inclusion of CSI in abdominal MRI protocols provides an effective solution for classifying adrenal masses discovered on MR exams • Visual evaluation of adrenal CSI is sufficient; use of quantitative indices does not improve diagnostic accuracy.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00330-018-5626-5
+    \endverb
+    \field{issn}{14321084}
+    \field{issue}{2}
+    \field{pages}{806\bibrangedash 817}
+    \field{title}{Chemical shift imaging for evaluation of adrenal masses: a systematic review and meta-analysis}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/30014203/
+    \endverb
+    \field{volume}{29}
+    \field{journaltitle}{European Radiology}
+    \field{month}{02}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Panda2015}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PA}{%
+         family={Panda},
+         familyi={P\bibinitperiod},
+         given={Ananya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DCJ}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Chandan\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DE}{%
+         family={Dhamija},
+         familyi={D\bibinitperiod},
+         given={Ekta},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Rakesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GAK}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={A.\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Medknow Publications}%
+    }
+    \keyw{Adrenal adenoma,adrenal cancer,adrenal imaging,adrenocortical carcinoma}
+    \strng{namehash}{PADCJDE+1}
+    \strng{fullhash}{PADCJDEKRGAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Adrenal glands can be affected by a variety of lesions. Adrenal lesions can either be primary, of adrenal origin, or secondary to other pathologies. Primary adrenal lesions can further be either of cortical or medullary origin. Functioning adrenal lesions can also give clues to the histologic diagnosis and direct workup. Over the years, various imaging techniques have been developed that have increased diagnostic accuracy and helped in better characterization of adrenal lesions non-invasively. In the first part of the two part series, we review adrenal imaging techniques and adrenal cortical tumors such as adenomas, adrenocortical tumors, adrenal hyperplasia and oncocytomas.%
+    }
+    \verb{doi}
+    \verb 10.4103/2230-8210.146858
+    \endverb
+    \field{issn}{22309500}
+    \field{issue}{1}
+    \field{pages}{8\bibrangedash 15}
+    \field{title}{Adrenal imaging (Part 1): Imaging techniques and primary cortical lesions}
+    \field{volume}{19}
+    \field{journaltitle}{Indian Journal of Endocrinology and Metabolism}
+    \field{month}{01}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Israel2004}{article}{}
+    \name{author}{5}{}{%
+      {{hash=IGM}{%
+         family={Israel},
+         familyi={I\bibinitperiod},
+         given={Gary\bibnamedelima M.},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Korobkin},
+         familyi={K\bibinitperiod},
+         given={Melvyn},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Chun},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HEN}{%
+         family={Hecht},
+         familyi={H\bibinitperiod},
+         given={Elizabeth\bibnamedelima N.},
+         giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=KGA}{%
+         family={Krinsky},
+         familyi={K\bibinitperiod},
+         given={Glenn\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Roentgen Ray Society}%
+    }
+    \keyw{Adenoma / chemistry,Adenoma / diagnosis*,Adrenal Gland Neoplasms / chemistry,Adrenal Gland Neoplasms / diagnosis*,Aged,Comparative Study,Female,Gary M Israel,Glenn A Krinsky,Humans,Lipid Metabolism,MEDLINE,Magnetic Resonance Imaging*,Male,Melvyn Korobkin,NCBI,NIH,NLM,National Center for Biotechnology Information,National Institutes of Health,National Library of Medicine,PubMed Abstract,Retrospective Studies,Tomography,X-Ray Computed*,doi:10.2214/ajr.183.1.1830215,pmid:15208141}
+    \strng{namehash}{IGMKMWC+1}
+    \strng{fullhash}{IGMKMWCHENKGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    OBJECTIVE. Our aim was to evaluate adrenal adenomas in patients who underwent both unenhanced CT and chemical shift MRI to determine if adenomas can be characterized with MRI when the findings of CT are indeterminate. MATERIALS AND METHODS. Between January 1999 and June 2003, 40 patients (42 adrenal masses) underwent unenhanced CT and chemical shift MRI and were retrospectively analyzed. Hounsfield units, adrenal-to-spleen chemical shift ratio, and signal-intensity index were obtained for each adrenal mass. Qualitative analysis for loss of signal in each adrenal mass on the opposed-phase images was also performed by two reviewers and compared with the quantitative analyses. A lipid-rich adenoma was diagnosed if the mass measured equal to or less than 10 H, had an adrenal-to-spleen chemical shift ratio of less than 0.71, and had a signal-intensity index of greater than 16.5\% or if the mass fulfilled two of the preceding criteria and had follow-up imaging without change. RESULTS. The sensitivities and specificities for diagnosing a lipid-rich adenoma using the qualitative, adrenal-to-spleen chemical shift ratio, signal-intensity index, and unenhanced CT attenuation analyses were 92\% (33/36) and 17\% (1/6), 100\% (36/36) and 100\% (6/6), 100\% (36/36) and 67\% (4/6), and 78\% (28/36) and 83\% (5/6), respectively. Twenty-eight (67\%) lipid-rich adenomas measured equal to or less than 10 H, had an adrenal-to-spleen chemical shift ratio of less than 0.71, and had a signal-intensity index of greater than 16.5\%. Eight masses (19\%) measured greater than 10 H but had an adrenal-to-spleen chemical shift ratio of less than 0.71 and a signal-intensity index greater than 16.5\% and were unchanged at follow-up. CONCLUSION. Eight (62\%) of 13 adrenal adenomas measuring greater than 10 H on unenhanced CT were definitively characterized with chemical shift MRI.%
+    }
+    \verb{doi}
+    \verb 10.2214/ajr.183.1.1830215
+    \endverb
+    \field{issn}{0361803X}
+    \field{issue}{1}
+    \field{pages}{215\bibrangedash 219}
+    \field{title}{Comparison of unenhanced CT and chemical shift MRI in evaluating lipid-rich adrenal adenomas}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/15208141/
+    \endverb
+    \field{volume}{183}
+    \field{journaltitle}{American Journal of Roentgenology}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Jahanvi2021}{article}{}
+    \name{author}{2}{}{%
+      {{hash=JV}{%
+         family={Jahanvi},
+         familyi={J\bibinitperiod},
+         given={Vandana},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kelkar},
+         familyi={K\bibinitperiod},
+         given={Abhimanyu},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JVKA1}
+    \strng{fullhash}{JVKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.4102/sajr
+    \endverb
+    \field{issn}{2078-6778}
+    \field{title}{Chemical shift imaging: An indispensable tool in diagnosing musculoskeletal pathologies}
+    \verb{url}
+    \verb http://www.sajr.org.za
+    \endverb
+    \field{journaltitle}{SA Journal of Radiology}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Fujiyoshi2003}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FF}{%
+         family={Fujiyoshi},
+         familyi={F\bibinitperiod},
+         given={Fumito},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nakajo},
+         familyi={N\bibinitperiod},
+         given={Masayuki},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FY}{%
+         family={Fukukura},
+         familyi={F\bibinitperiod},
+         given={Yoshihiko},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tsuchimochi},
+         familyi={T\bibinitperiod},
+         given={Shinsaku},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FFNMFY+1}
+    \strng{fullhash}{FFNMFYTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    OBJECTIVE. The aim of our study was to assess quantitative methods of distinguishing ad-enomas from malignant adrenal lesions using chemical shift fast low-angle shot MR imaging. MATERIALS AND METHODS. We assessed 102 adrenal tumors in 88 patients (27 hy-perfunctioning and 44 nonhyperfunctioning adenomas, 19 metastases, nine pheochromocyto-mas, and three other adrenal tumors) using chemical shift MR imaging. On the chemical shift imaging, signal intensity index, calculated as [(signal intensity on in-phase imaging-signal intensity on opposed-phase imaging) / (signal intensity on in-phase imaging)] × 100%, was compared with the adrenal-to-spleen ratio, adrenal-to-muscle ratio, and adrenal-to-liver ratio for signal change on opposed-phase fast low-angle shot MR imaging. The tissues in the spleen, paraspinal muscle, and liver were reference tissues. RESULTS. The signal intensity index had several advantages over the other three parameters calculated. We found no overlap in indexes between adenomas and metastatic tumors. The accuracy in distinguishing adenomas from metastatic tumors was 100% if the cutoff value of the signal intensity index selected was 11.2-16.5%. CONCLUSION. The signal intensity index is the most reliable evaluation method for differentiating adrenal adenomas from metastatic adrenal tumors. ccurate characterization of adre-nal masses has been a focus of medical imaging for many years. Adrenal masses are detected with increasing frequency as an incidental finding during cross-sectional imaging, such as CT or abdominal sonography [1, 2]. When adrenal masses are discovered, two critical tasks are distinguishing benign from malignant lesions and determining whether the lesion is primary or secondary. If no evidence of other metastatic lesions is present, the accurate staging of tumors in patients with known malignant disease may depend on correctly diagnosing an adre-nal mass. Also important is determining whether the adrenal lesion is a cortical ade-noma or a nonadenoma; some nonadenomas, such as pheochromocytomas, may be malignant and usually require surgical removal. In 1992, Mitchell et al. [3] reported that chemical shift techniques and simple visual analyses could be used to help identify adre-nal adenomas by detecting the lipid frequently present in these tumors. Chemical shift-induced signal intensity changes for the adrenal mass relative to the liver and muscle were calculated by comparing these ratios on conventional T1-weighted images and chemical shift images. Tsushima et al. [4] described the utility of chemical shift fast low-angle shot (FLASH) imaging for differentiating adrenal masses. When the signal intensity indexes of adrenal masses, calculated as [(signal intensity on in-phase imaging-signal intensity on opposed phase imaging) / (signal intensity on in-phase imaging)] × 100%, were determined, all adenomas had signal intensity indexes that were greater than 5%, whereas the signal intensity indexes of metastatic tumors and pheo-chromocytomas were less than 5%. These researchers found that the degree of accuracy for differentiating adenomas from nonade-nomas was 100%. Although the value of chemical shift imaging for accurately diagnosing adrenal masses has been established in a number of quantitative [3-11] and qualitative studies [5, 7, 9], considerable differences in methodology have made direct comparisons difficult. These differences include magnetic field strength, gradient strength, TE, and the formulas used to calculate the percentage of rel%
+    }
+    \verb{doi}
+    \verb 10.2214/ajr.180.6.1801649
+    \endverb
+    \field{issn}{0361-803X}
+    \field{issue}{6}
+    \field{pages}{1649\bibrangedash 1657}
+    \field{title}{Characterization of Adrenal Tumors by Chemical Shift Fast Low-Angle Shot MR Imaging: Comparison of Four Methods of Quantitative Evaluation}
+    \verb{url}
+    \verb https://www.ajronline.org/doi/10.2214/ajr.180.6.1801649
+    \endverb
+    \field{volume}{180}
+    \field{journaltitle}{American Journal of Roentgenology}
+    \field{month}{06}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Barat2022}{article}{}
+    \name{author}{13}{}{%
+      {{hash=BM}{%
+         family={Barat},
+         familyi={B\bibinitperiod},
+         given={Maxime},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CAS}{%
+         family={Cottereau},
+         familyi={C\bibinitperiod},
+         given={Anne-Ségolène},
+         giveni={A\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gaujoux},
+         familyi={G\bibinitperiod},
+         given={Sébastien},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={Tenenbaum},
+         familyi={T\bibinitperiod},
+         given={Florence},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sibony},
+         familyi={S\bibinitperiod},
+         given={Mathilde},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bertherat},
+         familyi={B\bibinitperiod},
+         given={Jérôme},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Libé},
+         familyi={L\bibinitperiod},
+         given={Rossella},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gaillard},
+         familyi={G\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jouinot},
+         familyi={J\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AG}{%
+         family={Assié},
+         familyi={A\bibinitperiod},
+         given={Guillaume},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hoeffel},
+         familyi={H\bibinitperiod},
+         given={Christine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Soyer},
+         familyi={S\bibinitperiod},
+         given={Philippe},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dohan},
+         familyi={D\bibinitperiod},
+         given={Anthony},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI}%
+    }
+    \keyw{Adrenal gland disease,Adrenal glands,Adrenal glands neoplasm,Artificial intelligence,Magnetic resonance imaging,Positron emission tomography,Tomography,X-rays computed}
+    \strng{namehash}{BMCASGS+1}
+    \strng{fullhash}{BMCASGSTFSMBJLRGMJAAGHCSPDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    <p>Detection and characterization of adrenal lesions have evolved during the past two decades. Although the role of imaging in adrenal lesions associated with hormonal secretion is usually straightforward, characterization of non-functioning adrenal lesions may be challenging to confidently identify those that need to be resected. Although many adrenal lesions can be readily diagnosed when they display typical imaging features, the diagnosis may be challenging for atypical lesions. Computed tomography (CT) remains the cornerstone of adrenal imaging, but other morphological or functional modalities can be used in combination to reach a diagnosis and avoid useless biopsy or surgery. Early- and delayed-phase contrast-enhanced CT images are essential for diagnosing lipid-poor adenoma. Ongoing studies are evaluating the capabilities of dual-energy CT to provide valid virtual non-contrast attenuation and iodine density measurements from contrast-enhanced examinations. Adrenal lesions with attenuation values between 10 and 30 Hounsfield units (HU) on unenhanced CT can be characterized by MRI when iodinated contrast material injection cannot be performed. 18F-FDG PET/CT helps differentiate between atypical benign and malignant adrenal lesions, with the adrenal-to-liver maximum standardized uptake value ratio being the most discriminative variable. Recent studies evaluating the capabilities of radiomics and artificial intelligence have shown encouraging results.</p>%
+    }
+    \verb{doi}
+    \verb 10.3390/cancers14030569
+    \endverb
+    \field{issn}{2072-6694}
+    \field{issue}{3}
+    \field{pages}{569}
+    \field{title}{Adrenal Mass Characterization in the Era of Quantitative Imaging: State of the Art}
+    \verb{url}
+    \verb https://www.mdpi.com/2072-6694/14/3/569
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Cancers}
+    \field{month}{01}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Chung2001}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJJ}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={J\bibnamedelima J},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SRC}{%
+         family={Semelka},
+         familyi={S\bibinitperiod},
+         given={R\bibnamedelima C},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MDR}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={D\bibnamedelima R},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJJSRCMDR1}
+    \strng{fullhash}{CJJSRCMDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We sought to evaluate dynamic post-gadolinium contrast enhanced magnetic resonance (MR) imaging characteristics of adrenal adenomas with comparison to those of malignant adrenal tumors. MR images, including in- and out-of-phase spoiled gradient echo (SGE) and dynamic gadolinium enhancement, of 35 adrenal adenomas in 34 patients, and 12 malignant adrenal tumors in 12 patients, were reviewed retrospectively. MR images were assessed for the presence of a capillary blush on immediate postgadolinium SGE images, and for rapid washout of contrast on 45-second postgadolinium SGE images. Thirty-five adrenal adenomas (mean size, 3.1 cm) and 12 malignant adrenal tumors (mean size, 7.4 cm) were assessed. Of 35 adrenal adenomas, 25 (71\%) showed a homogeneous capillary blush on immediate postgadolinium images. Thirty-three (94\%) adrenal adenomas demonstrated rapid washout on 45-second postgadolinium images (P < 0.001). Of 35 adrenal adenomas, 30 (86\%) showed diminished signal intensity (SI) on out-of-phase images. Of 12 malignant adrenal tumors, none showed a homogeneous capillary blush on immediate postgadolinium images. Six (50\%) malignant tumors showed negligible enhancement, four (33\%) showed irregular patchy enhancement, and two (17\%) showed peripheral enhancement (P < 0.001). On 45-second postgadolinium images, 11 (92\%) of 12 malignant adrenal tumors showed irregular enhancement. In the majority of adrenal adenomas, an initial homogeneous capillary blush and rapid washout are demonstrated on gadolinium-enhanced dynamic MR imaging. Our preliminary results suggest that this may provide useful complementary information to the appearance of adrenal masses on in- and out-of-phase images.%
+    }
+    \verb{doi}
+    \verb 10.1002/1522-2586(200102)13:2<242::aid-jmri1035>3.0.co;2-#
+    \endverb
+    \field{issn}{1053-1807}
+    \field{issue}{2}
+    \field{pages}{242\bibrangedash 8}
+    \field{title}{Adrenal adenomas: characteristic postgadolinium capillary blush on dynamic MR imaging.}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/11169830
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Journal of magnetic resonance imaging : JMRI}
+    \field{month}{02}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Anagnostis2009}{article}{}
+    \name{author}{6}{}{%
+      {{hash=AP}{%
+         family={Anagnostis},
+         familyi={A\bibinitperiod},
+         given={Panagiotis},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Karagiannis},
+         familyi={K\bibinitperiod},
+         given={Asterios},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Tziomalos},
+         familyi={T\bibinitperiod},
+         given={Konstantinos},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kakafika},
+         familyi={K\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AV}{%
+         family={Athyros},
+         familyi={A\bibinitperiod},
+         given={Vasilios},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mikhailidis},
+         familyi={M\bibinitperiod},
+         given={Dimitri},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{Adrenal mass,Cushing's syndrome,Incidentaloma,Pheochromo-cytoma,Αldosteronoma}
+    \strng{namehash}{APKATK+1}
+    \strng{fullhash}{APKATKKAAVMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The widespread application of abdominal imaging procedures has resulted in an increased frequency of clinically silent adrenal masses. Adrenal incidentaloma (AI) is a term applied to an accidentally discovered adrenal mass on imaging performed for the investigation of an unrelated complaint. Adrenal incidentalomas (AIs) are a cluster of different pathologies, the majority of which are benign and non-functioning adrenal adenomas. However, mild hormonal alterations as well as metabolic abnormalities may be present in patients with AIs. Thus, a multidisciplinary approach with biochemical and radiologic evaluation is needed to characterize these lesions and identify patients who are at high risk for hormonal or malignant evolution. Significant new information has helped resolve controversies regarding the most reliable approach to this clinical problem. The present review considers the prevalence, pathology and natural history of AIs. We also discuss the reliability of available screening methods and lo-calization techniques and consider optimal management and follow-up strategies.%
+    }
+    \verb{doi}
+    \verb 10.14310/horm.2002.1233
+    \endverb
+    \field{issn}{11093099}
+    \field{issue}{3}
+    \field{pages}{163\bibrangedash 184}
+    \field{title}{Adrenal incidentaloma: a diagnostic challenge}
+    \verb{url}
+    \verb http://www.hormones.gr/520/article/adrenal-incidentaloma:-a-diagnosti
+    \verb c-challenge%E2%80%A6.html
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{HORMONES}
+    \field{month}{07}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Zhang2022}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZH}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Lei},
+         familyi={L\bibinitperiod},
+         given={Hanqi},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pang},
+         familyi={P\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZHLHPJ1}
+    \strng{fullhash}{ZHLHPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Objectives: (1) To assess the methodological quality and risk of bias of radiomics studies investigating the diagnostic performance in adrenal masses and (2) to determine the potential diagnostic value of radiomics in adrenal tumors by quantitative analysis. Methods: PubMed, Embase, Web of Science, and Cochrane Library databases were searched for eligible literature. Methodological quality and risk of bias in the included studies were assessed by the Quality Assessment of Diagnostic Accuracy Studies 2 (QUADAS-2) and Radiomics Quality Score (RQS). The diagnostic performance was evaluated by pooled sensitivity, specificity, diagnostic odds ratio (DOR), and area under the curve (AUC). Spearman’s correlation coefficient and subgroup analysis were used to investigate the cause of heterogeneity. Publication bias was examined using the Deeks’ funnel plot. Results: Twenty-eight studies investigating the diagnostic performance of radiomics in adrenal tumors were identified, with a total of 3579 samples. The average RQS was 5.11 (14.2% of total) with an acceptable inter-rater agreement (ICC 0.94, 95% CI 0.93–0.95). The risk of bias was moderate according to the result of QUADAS-2. Nine studies investigating the use of CT-based radiomics in differentiating malignant from benign adrenal tumors were included in the quantitative analysis. The pooled sensitivity, specificity, DOR and AUC with 95% confidence intervals were 0.80 (0.68-0.88), 0.83 (0.73-0.90), 19.06 (7.87-46.19) and 0.88 (0.85–0.91), respectively. There was significant heterogeneity among the included studies but no threshold effect in the meta-analysis. The result of subgroup analysis demonstrated that radiomics based on unenhanced and contrast-enhanced CT possessed higher diagnostic performance, and second-order or higher-order features could enhance the diagnostic sensitivity but also increase the false positive rate. No significant difference in diagnostic ability was observed between studies with machine learning and those without. Conclusions: The methodological quality and risk of bias of studies investigating the diagnostic performance of radiomics in adrenal tumors should be further improved in the future. CT-based radiomics has the potential benefits in differentiating malignant from benign adrenal tumors. The heterogeneity between the included studies was a major limitation to obtaining more accurate conclusions. Systematic Review Registration: https://www.crd.york.ac.uk/PROSPERO/ CRD 42022331999.%
+    }
+    \verb{doi}
+    \verb 10.3389/fonc.2022.975183
+    \endverb
+    \field{issn}{2234-943X}
+    \field{title}{Diagnostic performance of radiomics in adrenal masses: A systematic review and meta-analysis}
+    \verb{url}
+    \verb https://www.frontiersin.org/articles/10.3389/fonc.2022.975183/full
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Frontiers in Oncology}
+    \field{month}{09}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Elsayes2020}{article}{}
+    \name{author}{7}{}{%
+      {{hash=EKM}{%
+         family={Elsayes},
+         familyi={E\bibinitperiod},
+         given={Khaled\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=EMM}{%
+         family={Elmohr},
+         familyi={E\bibinitperiod},
+         given={Mohab\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Javadi},
+         familyi={J\bibinitperiod},
+         given={Sanaz},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MCO}{%
+         family={Menias},
+         familyi={M\bibinitperiod},
+         given={Christine\bibnamedelima O.},
+         giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=REM}{%
+         family={Remer},
+         familyi={R\bibinitperiod},
+         given={Erick\bibnamedelima M.},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MAC}{%
+         family={Morani},
+         familyi={M\bibinitperiod},
+         given={Ajaykumar\bibnamedelima C.},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SAM}{%
+         family={Shaaban},
+         familyi={S\bibinitperiod},
+         given={Akram\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \keyw{Adrenal gland,CT,MRI,Mimics}
+    \strng{namehash}{EKMEMMJS+1}
+    \strng{fullhash}{EKMEMMJSMCOREMMACSAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Due to the widespread use of imaging, incidental adrenal masses are commonly encountered. A number of pitfalls can result in misdiagnosis of these lesions, including inappropriate choice of imaging technique, presence of pseudolesions, and overlap of imaging features of different adrenal lesions. This article explores the potential pitfalls in imaging of the adrenal glands, on computed tomography and magnetic resonance imaging, that can lead to misinterpretation. Clues to correct diagnoses are provided to evade potential misinterpretation.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00261-019-02082-4
+    \endverb
+    \field{issn}{2366-004X}
+    \field{issue}{4}
+    \field{pages}{982\bibrangedash 1000}
+    \field{title}{Mimics, pitfalls, and misdiagnoses of adrenal masses on CT and MRI}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/s00261-019-02082-4
+    \endverb
+    \field{volume}{45}
+    \field{journaltitle}{Abdominal Radiology}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Wagner2021}{article}{}
+    \name{author}{6}{}{%
+      {{hash=WMW}{%
+         family={Wagner},
+         familyi={W\bibinitperiod},
+         given={Matthias\bibnamedelima W.},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Namdar},
+         familyi={N\bibinitperiod},
+         given={Khashayar},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Biswas},
+         familyi={B\bibinitperiod},
+         given={Asthik},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Monah},
+         familyi={M\bibinitperiod},
+         given={Suranna},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Khalvati},
+         familyi={K\bibinitperiod},
+         given={Farzad},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=EWBB}{%
+         family={Ertl-Wagner},
+         familyi={E\bibinithyphendelim W\bibinitperiod},
+         given={Birgit\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Springer Science}%
+      {Business Media Deutschland GmbH}%
+    }
+    \keyw{Artificial intelligence,Machine learning,Neuroradiology,Radiomics}
+    \strng{namehash}{WMWNKBA+1}
+    \strng{fullhash}{WMWNKBAMSKFEWBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    PURPOSE Artificial intelligence (AI) is playing an ever-increasing role in Neuroradiology. METHODS When designing AI-based research in neuroradiology and appreciating the literature, it is important to understand the fundamental principles of AI. Training, validation, and test datasets must be defined and set apart as priorities. External validation and testing datasets are preferable, when feasible. The specific type of learning process (supervised vs. unsupervised) and the machine learning model also require definition. Deep learning (DL) is an AI-based approach that is modelled on the structure of neurons of the brain; convolutional neural networks (CNN) are a commonly used example in neuroradiology. RESULTS Radiomics is a frequently used approach in which a multitude of imaging features are extracted from a region of interest and subsequently reduced and selected to convey diagnostic or prognostic information. Deep radiomics uses CNNs to directly extract features and obviate the need for predefined features. CONCLUSION Common limitations and pitfalls in AI-based research in neuroradiology are limited sample sizes ("small-n-large-p problem"), selection bias, as well as overfitting and underfitting.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00234-021-02813-9
+    \endverb
+    \field{issn}{0028-3940}
+    \field{issue}{12}
+    \field{pages}{1957\bibrangedash 1967}
+    \field{title}{Radiomics, machine learning, and artificial intelligence—what the neuroradiologist needs to know}
+    \verb{url}
+    \verb https://link.springer.com/10.1007/s00234-021-02813-9
+    \endverb
+    \field{volume}{63}
+    \field{journaltitle}{Neuroradiology}
+    \field{month}{12}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Anaya-Isaza2021}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AIA}{%
+         family={Anaya-Isaza},
+         familyi={A\bibinithyphendelim I\bibinitperiod},
+         given={Andrés},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MJL}{%
+         family={Mera-Jiménez},
+         familyi={M\bibinithyphendelim J\bibinitperiod},
+         given={Leonel},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZDM}{%
+         family={Zequera-Diaz},
+         familyi={Z\bibinithyphendelim D\bibinitperiod},
+         given={Martha},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \keyw{Attention models,Convolutional neural networks,Deep learning,Medical imaging,Recurrent neural networks,Transformers}
+    \strng{namehash}{AIAMJLZDM1}
+    \strng{fullhash}{AIAMJLZDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Deep learning (DL) is one of the branches of artificial intelligence that has seen exponential growth in recent years. The scientific community has focused its attention on DL due to its versatility, high performance, high generalization capacity, and multidisciplinary uses, among many other qualities. In addition, a large amount of medical data and the development of more powerful computers has also fostered an interest in this area. This paper presents an overview of current deep learning methods, starting from the most straightforward concept but accompanied by the mathematical models that are behind the functionality of this type of intelligence. In the first instance, the fundamental concept of artificial neural networks is introduced, progressively covering convolutional structures, recurrent networks, attention models, up to the current structure known as the Transformer. Secondly, all the basic concepts involved in training and other common elements in the design of the architectures are introduced. Thirdly, some of the key elements in modern networks for medical image classification and segmentation are shown. Subsequently, a review of some applications realized in the last years is shown, where the main features related to DL are highlighted. Finally, the perspectives and future expectations of deep learning are presented.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.imu.2021.100723
+    \endverb
+    \field{issn}{23529148}
+    \field{pages}{100723}
+    \field{title}{An overview of deep learning in medical imaging}
+    \verb{url}
+    \verb https://linkinghub.elsevier.com/retrieve/pii/S2352914821002033
+    \endverb
+    \field{volume}{26}
+    \field{journaltitle}{Informatics in Medicine Unlocked}
+    \field{month}{01}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Schieda2017}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SN}{%
+         family={Schieda},
+         familyi={S\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Krishna},
+         familyi={K\bibinitperiod},
+         given={Satheesh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MMD}{%
+         family={McInnes},
+         familyi={M\bibinitperiod},
+         given={Matthew\bibnamedelima D.F.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Moosavi},
+         familyi={M\bibinitperiod},
+         given={Bardia},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Alrashed},
+         familyi={A\bibinitperiod},
+         given={Abdulmohsen},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Moreland},
+         familyi={M\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SES}{%
+         family={Siegelman},
+         familyi={S\bibinitperiod},
+         given={Evan\bibnamedelima S.},
+         giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AJR Am J Roentgenol}%
+    }
+    \keyw{Adrenal Gland Neoplasms / diagnostic imaging*,Adrenal Gland Neoplasms / pathology*,Adrenocortical Adenoma / diagnostic imaging*,Adrenocortical Adenoma / pathology*,Biopsy,Carcinoma,Contrast Media,Diagnosis,Differential,Evan S Siegelman,Female,Humans,Kidney Neoplasms / diagnostic imaging*,Kidney Neoplasms / secondary*,MEDLINE,Magnetic Resonance Imaging / methods*,Male,Middle Aged,NCBI,NIH,NLM,National Center for Biotechnology Information,National Institutes of Health,National Library of Medicine,Needle,Nicola Schieda,PubMed Abstract,Renal Cell / pathology*,Renal Cell / secondary*,Retrospective Studies,Satheesh Krishna,doi:10.2214/AJR.16.17649,pmid:28742373}
+    \strng{namehash}{SNKSMMD+1}
+    \strng{fullhash}{SNKSMMDMBAAMRSES1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    OBJECTIVE. The purpose of this study is to compare MRI features of clear cell renal cell carcinoma (RCC) adrenal metastases and adenomas. MATERIALS AND METHODS. Fifteen clear cell RCC adrenal metastases imaged with MRI were compared to 29 consecutive adenomas between 2006 and 2015. Two blinded radiologists assessed homogeneity (homogeneous vs heterogeneous), signal intensity (SI) decrease on chemical-shift MRI, and T2-weighted SI (isointense, mildly hyperintense, or markedly hyperintense) relative to muscle. A third blinded radiologist measured the chemical-shift SI index, adrenal-to-spleen SI ratio, T2-weighted SI ratio, AUC for contrast-enhanced MRI, and histogram analysis. Analyses were performed using chi-square, linear regression, ROC, and logistic regression modeling. RESULTS. Clear cell RCC metastases were larger than adenomas (mean [± SD], 5.0 ± 4.2 cm [range, 1.1-15 cm] vs 2.0 ± 0.7 cm [range, 1.2-3.7 cm]; p < 0.0001). Subjectively, 33.3\% (5/15) of metastases and 68.9\% (20/29) of adenomas showed an SI decrease on chemical-shift MRI (p = 0.0421; = 0.76). Chemical-shift SI index (mean, 9.2\% ± 20.6\%; range, 30.0\% to 57.9\%) and adrenal-to-spleen SI ratio (0.94 ± 0.23 [range, 0.44-1.33]) for metastases differed significantly from those for adenomas (47.3\% ± 27.8\% [range, 9.4\% to 86\%] and 0.52 ± 0.28 [range, 0.13-1.11], respectively) (p < 0.0001). Twenty percent (3/15) of metastases had chemical-shift SI index in the adenoma range (> 16.5\%). Metastases had higher T2-weighted SI than did adenomas, both quantitatively (5.1 ± 3.0 [range, 1.5-10.6] vs 1.8 ± 0.8 [range, 0.5-3.8]; p < 0.0001) and subjectively (p < 0.0001; = 0.89). Metastases had higher entropy than did adenomas (6.76 ± 0.61 vs 6.1 ± 0.74; p = 0.0051) and were subjectively more heterogeneous (p < 0.0001; = 0.86). The contrast-enhanced MRI AUC, skewness, and kurtosis did not differ between groups (p > 0.05). The ROC AUCs were 0.91 (95\% CI, 0.79-1.0) for T2-weighted SI ratio and 0.85 (95\% CI, 0.68-1.0) for entropy. The logistic regression model of T2-weighted SI ratio plus entropy improved accuracy (ROC AUC, 0.97; 95\% CI, 0.93-1.0]) compared with either feature alone (p = 0.0215). CONCLUSION. Increased T2-weighted SI and heterogeneity are features that can differentiate clear cell RCC adrenal metastases from adenomas using quantitative and subjective analysis.%
+    }
+    \verb{doi}
+    \verb 10.2214/AJR.16.17649
+    \endverb
+    \field{issn}{1546-3141}
+    \field{issue}{3}
+    \field{pages}{W152\bibrangedash W159}
+    \field{title}{Utility of MRI to Differentiate Clear Cell Renal Cell Carcinoma Adrenal Metastases From Adrenal Adenomas}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/28742373/
+    \endverb
+    \field{volume}{209}
+    \field{journaltitle}{AJR. American journal of roentgenology}
+    \field{month}{09}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Tu2018}{article}{}
+    \name{author}{6}{}{%
+      {{hash=TW}{%
+         family={Tu},
+         familyi={T\bibinitperiod},
+         given={Wendy},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=VR}{%
+         family={Verma},
+         familyi={V\bibinitperiod},
+         given={Raman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Krishna},
+         familyi={K\bibinitperiod},
+         given={Satheesh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MMD}{%
+         family={McInnes},
+         familyi={M\bibinitperiod},
+         given={Matthew\bibnamedelima D.F.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=FTA}{%
+         family={Flood},
+         familyi={F\bibinitperiod},
+         given={Trevor\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Schieda},
+         familyi={S\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Roentgen Ray Society}%
+    }
+    \keyw{CT,adenoma,adrenal,metastases,texture analysis}
+    \strng{namehash}{TWVRKS+1}
+    \strng{fullhash}{TWVRKSMMDFTASN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    OBJECTIVE. The purpose of this study is to evaluate whether adrenal metastases can be reliably differentiated from adenomas at single-phase contrast-enhanced CT. MATERIALS AND METHODS. Sixty-one co...%
+    }
+    \verb{doi}
+    \verb 10.2214/AJR.17.19276
+    \endverb
+    \field{issn}{15463141}
+    \field{issue}{5}
+    \field{pages}{1044\bibrangedash 1050}
+    \field{title}{Can Adrenal Adenomas Be Differentiated From Adrenal Metastases at Single-Phase Contrast-Enhanced CT?}
+    \verb{url}
+    \verb www.ajronline.org
+    \endverb
+    \field{volume}{211}
+    \field{journaltitle}{American Journal of Roentgenology}
+    \field{month}{09}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Tu2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=TW}{%
+         family={Tu},
+         familyi={T\bibinitperiod},
+         given={Wendy},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=AGJ}{%
+         family={Abreu-Gomez},
+         familyi={A\bibinithyphendelim G\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=UA}{%
+         family={Udare},
+         familyi={U\bibinitperiod},
+         given={Amar},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Alrashed},
+         familyi={A\bibinitperiod},
+         given={Abdulmohsen},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Schieda},
+         familyi={S\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Radiological Society of North America Inc.}%
+    }
+    \strng{namehash}{TWAGJUA+1}
+    \strng{fullhash}{TWAGJUAAASN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Purpose: To evaluate T2-weighted MRI features to differentiate adrenal metastases from lipid-poor adenomas. Materials and Methods: With institutional review board approval, this study retrospectively compared 40 consecutive patients (mean age, 66 years ± 10 [standard deviation]) with metastases to 23 patients (mean age, 60 years ± 15) with lipid-poor adenomas at 1.5-and 3-T MRI between June 2016 and March 2019. A blinded radiologist measured T2-weighted signal intensity (SI) ratio (SInodule / SIpsoas muscle ), T2-weighted histogram features, and chemical shift SI index. Two blinded radiologists (radiologist 1 and radiologist 2) assessed T2-weighted SI and T2-weighted heterogeneity using five-point Likert scales. Results: Subjectively, T2-weighted SI (P < .001 for radiologist 1 and radiologist 2) and T2-weighted heterogeneity (P < .001, for radiologist 1 and radiologist 2) were higher in metastases compared with adenomas when assessed by both radiologists. Agreement between the radiologists was substantial for T2-weighted SI (Cohen k = 0.67) and T2-weighted heterogeneity (k = 0.62). Metastases had higher T2-weighted SI ratio than adenomas (3.6 ± 1.7 [95\% confidence interval \{CI\}: 0.2, 8.2] vs 2.2 ± 1.0 [95\% CI: 0.6, 4.3], P < .001) and higher T2-weighted entropy (6.6 ± 0.6 [95\% CI: 4.9, 7.5] vs 5.0 ± 0.8 [95\% CI: 3.5, 6.6], P < .001). At multivariate analysis, T2-weighted entropy was the best differentiating feature (P < .001). Chemical shift SI index did not differ between metastases and adenomas (P = .748). Area under the receiver operating characteristic curve (AUC) for T2-weighted SI ratio and T2-weighted entropy were 0.76 (95\% CI: 0.64, 0.88) and 0.94 (95\% CI: 0.88, 0.99). The logistic regression model combining T2-weighted SI ratio with T2-weighted entropy yielded AUC of 0.95 (95\% CI: 0.91, 0.99) and did not differ compared with T2-weighted entropy alone (P = .268). There was no difference in logistic regression model accuracy comparing the data by either field strength, 1.5-or 3-T MRI (P > .05). Conclusion Logistic regression models combining T2-weighted SI and T2-weighted heterogeneity can differentiate metastases from lipid-poor adenomas. Validation of these preliminary results is required.%
+    }
+    \verb{doi}
+    \verb 10.1148/rycan.2020200011
+    \endverb
+    \field{issn}{2638616X}
+    \field{issue}{6}
+    \field{title}{Utility of t2-weighted mri to differentiate adrenal metastases from lipid-poor adrenal adenomas}
+    \field{volume}{2}
+    \field{journaltitle}{Radiology: Imaging Cancer}
+    \field{month}{11}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Yi20181}{article}{}
+    \name{author}{12}{}{%
+      {{hash=YX}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={Xiaoping},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=GX}{%
+         family={Guan},
+         familyi={G\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Youming},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Zhe},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Minghao},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Peihua},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Anze},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Long},
+         familyi={L\bibinitperiod},
+         given={Xueying},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Longfei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CBT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Bihong\bibnamedelima T},
+         giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zee},
+         familyi={Z\bibinitperiod},
+         given={Chishing},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YXGXCC+1}
+    \strng{fullhash}{YXGXCCZYZZLMLPYALXLLCBTZC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Objective: To evaluate the feasibility and accuracy of machine learning based texture analysis of unenhanced CT images in differentiating subclinical pheochromocytoma (sPHEO) from lipid-poor adenoma (LPA) in adrenal incidentaloma (AI). Methods: Seventy-nine patients with 80 LPA and 29 patients with 30 sPHEO were included in the study. Texture parameters were derived using imaging software (MaZda). Thirty texture features were selected and LPA was performed for the features selected. The number of positive features was used to predict results. Logistic multiple regression analysis was performed on the 30 texture features, and a predictive equation was created based on the coefficients obtained. Results: LPA yielded a misclassification rate of 19.39\% in differentiating sPHEO from LPA. Our predictive model had an accuracy rate of 94.4\% (102/108), with a sensitivity of 86.2\% (25/29) and a specificity of 97.5\% (77/79) for differentiation. When the number of positive features was greater than 8, the accuracy of prediction was 85.2\% (92/108), with a sensitivity of 96.6\% (28/29) and a specificity of 81\% (64/79). Conclusions: Machine learning-based quantitative texture analysis of unenhanced CT may be a reliable quantitative method in differentiating sPHEO from LPA when AI is present.%
+    }
+    \verb{doi}
+    \verb 10.7150/jca.26356
+    \endverb
+    \field{issn}{1837-9664}
+    \field{issue}{19}
+    \field{pages}{3577\bibrangedash 3582}
+    \field{title}{Adrenal incidentaloma: machine learning-based quantitative texture analysis of unenhanced CT can effectively differentiate sPHEO from lipid-poor adrenal adenoma}
+    \verb{url}
+    \verb http://www.jcancer.org/v09p3577.htm
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{Journal of Cancer}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Yi2018}{article}{}
+    \name{author}{11}{}{%
+      {{hash=YX}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={Xiaoping},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=GX}{%
+         family={Guan},
+         familyi={G\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Youming},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Longfei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Long},
+         familyi={L\bibinitperiod},
+         given={Xueying},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yin},
+         familyi={Y\bibinitperiod},
+         given={Hongling},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhongjie},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xuejun},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liao},
+         familyi={L\bibinitperiod},
+         given={Weihua},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CBT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Bihong\bibnamedelima T.},
+         giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zee},
+         familyi={Z\bibinitperiod},
+         given={Chishing},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \keyw{Adrenal adenoma,Adrenal gland neoplasms,Computed tomography,Pheochromocytoma,Predictive preventive personalized medicine,Radiomics}
+    \strng{namehash}{YXGXZY+1}
+    \strng{fullhash}{YXGXZYLLLXYHWZLXLWCBTZC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Objectives: This study aims to define a radiomic signature for pre-operative differentiation between subclinical pheochromocytoma (sPHEO) and lipid-poor adrenal adenoma (LPA) in adrenal incidentaloma. The goal was to apply a predictive, preventive, and personalized medical approach to the management of adrenal tumors. Patients and methods: This retrospective study consisted of 265 consecutive patients (training cohort, 212 (LPA, 145; sPHEO, 67); validation cohort, 53 (LPA, 36; sPHEO, 17)). Computed tomography (CT) imaging features were evaluated, including long diameter (LD), short diameter (SD), pre-enhanced CT value (CTpre), enhanced CT value (CTpost), shape, homogeneity, necrosis or cystic degeneration (N/C). Radiomic features were extracted and then were used to construct a radiomic signature (Rad-score) and radiomic nomogram. The area under the receiver operating characteristic curve (AUC) was used to evaluate their performance. Results: Sixteen of three hundred forty candidate features were used to build a radiomic signature. The signature was significantly different between the sPHEO and LPA groups (AUC: training, 0.907; validation, 0.902). The radiomic nomogram based on enhanced CT features (M1) consisted of Rad-score, LD, SD, CTpre, shape, homogeneity and N/C (AUC: training, 0.957; validation, 0.967). The pre-enhanced CT features based radiomic nomogram (M2) included Rad-score, LD, SD, CTpre, shape, and homogeneity (AUC: training, 0.955; validation, 0.958). Conclusions: Our radiomic nomograms based on pre-enhanced and enhanced CT images distinguished sPHEO from LPA. In addition, the promising result using pre-enhanced CT images for predictive diagnostics is important because patients could avoid the additional radiation and risk associated with enhanced CT.%
+    }
+    \verb{doi}
+    \verb 10.1007/s13167-018-0149-3
+    \endverb
+    \field{issn}{18785085}
+    \field{issue}{4}
+    \field{pages}{421\bibrangedash 429}
+    \field{title}{Radiomics improves efficiency for differentiating subclinical pheochromocytoma from lipid-poor adenoma: a predictive, preventive and personalized medical approach in adrenal incidentalomas}
+    \field{volume}{9}
+    \field{journaltitle}{EPMA Journal}
+    \field{month}{12}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Liu2022}{article}{}
+    \name{author}{9}{}{%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Haipeng},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GX}{%
+         family={Guan},
+         familyi={G\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=XB}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Beibei},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Feiyue},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Changyong},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=YHL}{%
+         family={Yin},
+         familyi={Y\bibinitperiod},
+         given={Hong\bibnamedelima Ling},
+         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={Xiaoping},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=PY}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Yousong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CBT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Bihong\bibnamedelima T},
+         giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LHGXXB+1}
+    \strng{fullhash}{LHGXXBZFCCYHLYXPYCBT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Objectives: To assess the accuracy of computed tomography (CT)-based machine learning models for differentiating subclinical pheochromocytoma (sPHEO) from lipid-poor adenoma (LPA) in patients with adrenal incidentalomas. Patients and Methods: The study included 188 tumors in the 183 patients with LPA and 92 tumors in 86 patients with sPHEO. Pre-enhanced CT imaging features of the tumors were evaluated. Machine learning prediction models and scoring systems for differentiating sPHEO from LPA were built using logistic regression (LR), support vector machine (SVM) and random forest (RF) approaches. Results: The LR model performed better than other models. The LR model (M1) including three CT features: CTpre value, shape, and necrosis/cystic changes had an area under the receiver operating characteristic curve (AUC) of 0.917 and an accuracy of 0.864. The LR model (M2) including three CT features: CTpre value, shape and homogeneity had an AUC of 0.888 and an accuracy of 0.832. The S2 scoring system (sensitivity: 0.859, specificity: 0.824) had comparable diagnostic value to S1 (sensitivity: 0.815; specificity: 0.910). Conclusions: Our results indicated the potential of using a non-invasive imaging method such as CT-based machine learning models and scoring systems for predicting histology of adrenal incidentalomas. This approach may assist the diagnosis and personalized care of patients with adrenal tumors.%
+    }
+    \verb{doi}
+    \verb 10.3389/fendo.2022.833413
+    \endverb
+    \field{issn}{1664-2392}
+    \field{title}{Computed Tomography-Based Machine Learning Differentiates Adrenal Pheochromocytoma From Lipid-Poor Adenoma}
+    \verb{url}
+    \verb https://www.frontiersin.org/articles/10.3389/fendo.2022.833413/full
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Frontiers in Endocrinology}
+    \field{month}{03}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Liu2021}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Junhong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XK}{%
+         family={Xue},
+         familyi={X\bibinitperiod},
+         given={Kangkang},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Shujian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Jingliang},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE Publications Inc.}%
+    }
+    \keyw{adrenocortical tumor,diagnosis,magnetic resonance imaging,pheochromocytoma,support vector machine}
+    \strng{namehash}{LJXKLS+1}
+    \strng{fullhash}{LJXKLSZYCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Purpose: This study aimed to determine whether a combined diagnosis of whole-lesion histogram analysis of T1- and T2-weighted imaging based on support vector machine (SVM) can distinguish pheochromocytoma from adrenal adenoma. Methods: A pathology database was retrospectively appraised over a period of 7 years and we obtained 40 histopathologically proven adrenal adenomas and 20 pheochromocytomas with magnetic resonance images. The T1-weighted imaging (T1WI, including both in phase and opposed phase) and T2-weighted imaging (T2WI) images of each patients were analyzed using Mazda software. Nine parameters were selected as indicators of comparison: variance, skewness, kurtosis, mean, 1st percentile, 10th percentile, 50th percentile, 90th percentile, and 99th percentile. The parameters with differential-diagnosis significance were used to establish the combined diagnostic model of SVM. Results: Among the 9 parameters extracted using histogram analysis, the 1st percentile, 10th percentile, and 50th percentile of T1WI (in phase) and the skewness of T2WI and almost all parameters of T1WI (opposed phase), except variance and 99th percentile, showed statistical significance between groups. Among the above parameters, the area under the curve (AUC) of 10th percentile of T1WI (opposed phase) was the largest with the value of 0.909 (100.0\% sensitivity and 80.0\% specificity). After the analysis of combined diagnosis was performed, the AUC of SVM model in testing set showed the value of 0.917 (85.0\% accuracy). Conclusions: Whole-lesion histogram analysis of T1WI and T2WI may help differentiate adrenal adenomas from pheochromocytomas. Furthermore, the combined diagnosis of T1WI and T2WI histogram based on SVM was more effective than most of individual histogram parameters.%
+    }
+    \verb{doi}
+    \verb 10.1177/0846537120911736
+    \endverb
+    \field{issn}{0846-5371}
+    \field{issue}{3}
+    \field{pages}{452\bibrangedash 459}
+    \field{title}{Combined Diagnosis of Whole-Lesion Histogram Analysis of T1- and T2-Weighted Imaging for Differentiating Adrenal Adenoma and Pheochromocytoma: A Support Vector Machine-Based Study}
+    \verb{url}
+    \verb http://journals.sagepub.com/doi/10.1177/0846537120911736
+    \endverb
+    \field{volume}{72}
+    \field{journaltitle}{Canadian Association of Radiologists Journal}
+    \field{month}{08}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Elmohr2019}{article}{}
+    \name{author}{12}{}{%
+      {{hash=EMM}{%
+         family={Elmohr},
+         familyi={E\bibinitperiod},
+         given={M.\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FD}{%
+         family={Fuentes},
+         familyi={F\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HMA}{%
+         family={Habra},
+         familyi={H\bibinitperiod},
+         given={M.\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BPR}{%
+         family={Bhosale},
+         familyi={B\bibinitperiod},
+         given={P.\bibnamedelima R.},
+         giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=QAA}{%
+         family={Qayyum},
+         familyi={Q\bibinitperiod},
+         given={A.\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Gates},
+         familyi={G\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MAI}{%
+         family={Morshid},
+         familyi={M\bibinitperiod},
+         given={A.\bibnamedelima I.},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=HJD}{%
+         family={Hazle},
+         familyi={H\bibinitperiod},
+         given={J.\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=EKM}{%
+         family={Elsayes},
+         familyi={E\bibinitperiod},
+         given={K.\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=IAM}{%
+         family={I},
+         familyi={I},
+         given={A\bibnamedelima Morshid},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HJD}{%
+         family={Hazle},
+         familyi={H\bibinitperiod},
+         given={J.\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=EKM}{%
+         family={Elsayes},
+         familyi={E\bibinitperiod},
+         given={K.\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {W.B. Saunders Ltd}%
+    }
+    \strng{namehash}{EMMFDHMA+1}
+    \strng{fullhash}{EMMFDHMABPRQAAGEMAIHJDEKMIAMHJDEKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    AIM: To compare the efficacy of computed tomography (CT) texture analysis and conventional evaluation by radiologists for differentiation between large adrenal adenomas and carcinomas. MATERIALS AND METHODS: Quantitative CT texture analysis was used to evaluate 54 histopathologically proven adrenal masses (mean size=5.9 cm; range=4.1–10 cm) from 54 patients referred to Anderson Cancer Center from January 2002 through April 2014. The patient group included 32 women (mean age at mass evaluation=59 years) and 22 men (mean age at mass evaluation=61 years). Adrenal lesions seen on precontrast and venous-phase CT images were labelled by three different readers, and the labels were used to generate intensity- and geometry-based textural features. The textural features and the attenuation values were considered as input values for a random forest-based classifier. Similarly, the adrenal lesions were classified by two different radiologists based on morphological criteria. Prediction accuracy and interobserver agreement were compared. RESULTS: The textural predictive model achieved a mean accuracy of 82\%, whereas the mean accuracy for the radiologists was 68.5\% (p<0.0001). The interobserver agreements between the predictive model and radiologists 1 and 2 were 0.44 (p<0.0005; 95\% confidence interval [CI]: 0.25–0.62) and 0.47 (p<0.0005; 95\% CI: 0.28–0.66), respectively. The Dice similarity coefficient between the readers' image labels was 0.875±0.04. CONCLUSION: CT texture analysis of large adrenal adenomas and carcinomas is likely to improve CT evaluation of adrenal cortical tumours.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.crad.2019.06.021
+    \endverb
+    \field{issn}{0009-9260}
+    \field{issue}{10}
+    \field{pages}{818.e1\bibrangedash 818.e7}
+    \field{title}{Machine learning-based texture analysis for differentiation of large adrenal cortical tumours on CT}
+    \field{volume}{74}
+    \field{journaltitle}{CLINICAL RADIOLOGY}
+    \field{month}{10}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Torresan2021}{article}{}
+    \name{author}{12}{}{%
+      {{hash=TF}{%
+         family={Torresan},
+         familyi={T\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Crimì},
+         familyi={C\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Ceccato},
+         familyi={C\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zavan},
+         familyi={Z\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Barbot},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lacognata},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Motta},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={Armellin},
+         familyi={A\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Scaroni},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=QE}{%
+         family={Quaia},
+         familyi={Q\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Campi},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Iacobone},
+         familyi={I\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {NLM (Medline)}%
+    }
+    \strng{namehash}{TFCFCF+1}
+    \strng{fullhash}{TFCFCFZFBMLCMRACSCQECCIM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    BACKGROUND: The main challenge in the management of indeterminate incidentally discovered adrenal tumours is to differentiate benign from malignant lesions. In the absence of clear signs of invasion or metastases, imaging techniques do not always precisely define the nature of the mass. The present pilot study aimed to determine whether radiomics may predict malignancy in adrenocortical tumours. METHODS: CT images in unenhanced, arterial, and venous phases from 19 patients who had undergone resection of adrenocortical tumours and a cohort who had undergone surveillance for at least 5 years for incidentalomas were reviewed. A volume of interest was drawn for each lesion using dedicated software, and, for each phase, first-order (histogram) and second-order (grey-level colour matrix and run-length matrix) radiological features were extracted. Data were revised by an unsupervised machine learning approach using the K-means clustering technique. RESULTS: Of operated patients, nine had non-functional adenoma and 10 carcinoma. There were 11 patients in the surveillance group. Two first-order features in unenhanced CT and one in arterial CT, and 14 second-order parameters in unenhanced and venous CT and 10 second-order features in arterial CT, were able to differentiate adrenocortical carcinoma from adenoma (P < 0.050). After excluding two malignant outliers, the unsupervised machine learning approach correctly predicted malignancy in seven of eight adrenocortical carcinomas in all phases. CONCLUSION: Radiomics with CT texture analysis was able to discriminate malignant from benign adrenocortical tumours, even by an unsupervised machine learning approach, in nearly all patients.%
+    }
+    \verb{doi}
+    \verb 10.1093/bjsopen/zraa061
+    \endverb
+    \field{issn}{24749842}
+    \field{issue}{1}
+    \field{title}{Radiomics: a new tool to differentiate adrenocortical adenoma from carcinoma}
+    \field{volume}{5}
+    \field{journaltitle}{BJS open}
+    \field{month}{01}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Ho2019}{article}{}
+    \name{author}{7}{}{%
+      {{hash=HLM}{%
+         family={Ho},
+         familyi={H\bibinitperiod},
+         given={Lisa\bibnamedelima M.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Samei},
+         familyi={S\bibinitperiod},
+         given={Ehsan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Mazurowski},
+         familyi={M\bibinitperiod},
+         given={Maciej\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Yuese},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ABC}{%
+         family={Allen},
+         familyi={A\bibinitperiod},
+         given={Brian\bibnamedelima C.},
+         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=NRC}{%
+         family={Nelson},
+         familyi={N\bibinitperiod},
+         given={Rendon\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marin},
+         familyi={M\bibinitperiod},
+         given={Daniele},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Roentgen Ray Society}%
+    }
+    \keyw{Adrenal nodules,Chemical-shift MRI,Contrast-enhanced CT,Texture analysis}
+    \strng{namehash}{HLMSEMMA+1}
+    \strng{fullhash}{HLMSEMMAZYABCNRCMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    OBJECTIVE. The purpose of this study is to determine whether second-order texture analysis can be used to distinguish lipid-poor adenomas from malignant adrenal nodules on unenhanced CT, contrast-enhanced CT (CECT), and chemical-shift MRI. MATERIALS AND METHODS. In this retrospective study, 23 adrenal nodules (15 lipid-poor adenomas and eight adrenal malignancies) in 20 patients (nine female patients and 11 male patients; mean age, 59 years [range, 15–80 years]) were assessed. All patients underwent unenhanced CT, CECT, and chemical-shift MRI. Twenty-one second-order texture features from the gray-level cooccurrence matrix and gray-level run-length matrix were calculated in 3D. The mean values for 21 texture features and four imaging features (lesion size, unenhanced CT attenuation, CECT attenuation, and signal intensity index) were compared using a t test. The diagnostic performance of texture analysis versus imaging features was also compared using AUC values. Multivariate logistic regression models to predict malignancy were constructed for texture analysis and imaging features. RESULTS. Lesion size, unenhanced CT attenuation, and the signal intensity index showed significant differences between benign and malignant adrenal nodules. No significant difference was seen for CECT attenuation. Eighteen of 21 CECT texture features and nine of 21 unenhanced CT texture features revealed significant differences between benign and malignant adrenal nodules. CECT texture features (mean AUC value, 0.80) performed better than CECT attenuation (mean AUC value, 0.60). Multivariate logistic regression models showed that CECT texture features, chemical-shift MRI texture features, and imaging features were predictive of malignancy. CONCLUSION. Texture analysis has a potential role in distinguishing benign from malignant adrenal nodules on CECT and may decrease the need for additional imaging studies in the workup of incidentally discovered adrenal nodules.%
+    }
+    \verb{doi}
+    \verb 10.2214/AJR.18.20097
+    \endverb
+    \field{issn}{0361-803X}
+    \field{issue}{3}
+    \field{pages}{554\bibrangedash 561}
+    \field{title}{Can Texture Analysis Be Used to Distinguish Benign From Malignant Adrenal Nodules on Unenhanced CT, Contrast-Enhanced CT, or In-Phase and Opposed-Phase MRI?}
+    \verb{url}
+    \verb https://www.ajronline.org/doi/10.2214/AJR.18.20097
+    \endverb
+    \field{volume}{212}
+    \field{journaltitle}{American Journal of Roentgenology}
+    \field{month}{03}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Romeo2018}{article}{}
+    \name{author}{9}{}{%
+      {{hash=RV}{%
+         family={Romeo},
+         familyi={R\bibinitperiod},
+         given={Valeria},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Maurea},
+         familyi={M\bibinitperiod},
+         given={Simone},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Cuocolo},
+         familyi={C\bibinitperiod},
+         given={Renato},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Petretta},
+         familyi={P\bibinitperiod},
+         given={Mario},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MPP}{%
+         family={Mainenti},
+         familyi={M\bibinitperiod},
+         given={Pier\bibnamedelima Paolo},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=VF}{%
+         family={Verde},
+         familyi={V\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Coppola},
+         familyi={C\bibinitperiod},
+         given={Milena},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dell'Aversana},
+         familyi={D\bibinitperiod},
+         given={Serena},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Brunetti},
+         familyi={B\bibinitperiod},
+         given={Arturo},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons Inc.}%
+    }
+    \keyw{adrenal glands,machine learning,magnetic resonance imaging,texture analysis}
+    \strng{namehash}{RVMSCR+1}
+    \strng{fullhash}{RVMSCRPMMPPVFCMDSBA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Background: Adrenal adenomas (AA) are the most common benign adrenal lesions, often characterized based on intralesional fat content as either lipid-rich (LRA) or lipid-poor (LPA). The differentiation of AA, particularly LPA, from nonadenoma adrenal lesions (NAL) may be challenging. Texture analysis (TA) can extract quantitative parameters from MR images. Machine learning is a technique for recognizing patterns that can be applied to medical images by identifying the best combination of TA features to create a predictive model for the diagnosis of interest. Purpose/Hypothesis: To assess the diagnostic efficacy of TA-derived parameters extracted from MR images in characterizing LRA, LPA, and NAL using a machine-learning approach. Study Type: Retrospective, observational study. Population/Subjects/Phantom/Specimen/Animal Model: Sixty MR examinations, including 20 LRA, 20 LPA, and 20 NAL. Field Strength/Sequence: Unenhanced T 1 -weighted in-phase (IP) and out-of-phase (OP) as well as T 2 -weighted (T 2 -w) MR images acquired at 3T. Assessment: Adrenal lesions were manually segmented, placing a spherical volume of interest on IP, OP, and T 2 -w images. Different selection methods were trained and tested using the J48 machine-learning classifiers. Statistical Tests: The feature selection method that obtained the highest diagnostic performance using the J48 classifier was identified; the diagnostic performance was also compared with that of a senior radiologist by means of McNemar's test. Results: A total of 138 TA-derived features were extracted; among these, four features were selected, extracted from the IP (Short_Run_High_Gray_Level_Emphasis), OP (Mean_Intensity and Maximum_3D_Diameter), and T 2 -w (Standard_Deviation) images; the J48 classifier obtained a diagnostic accuracy of 80\%. The expert radiologist obtained a diagnostic accuracy of 73\%. McNemar's test did not show significant differences in terms of diagnostic performance between the J48 classifier and the expert radiologist. Data Conclusion: Machine learning conducted on MR TA-derived features is a potential tool to characterize adrenal lesions. Level of Evidence: 4. Technical Efficacy: Stage 2. J. Magn. Reson. Imaging 2018.%
+    }
+    \verb{doi}
+    \verb 10.1002/jmri.25954
+    \endverb
+    \field{issn}{10531807}
+    \field{issue}{1}
+    \field{pages}{198\bibrangedash 204}
+    \field{title}{Characterization of Adrenal Lesions on Unenhanced MRI Using Texture Analysis: A Machine-Learning Approach}
+    \verb{url}
+    \verb http://doi.wiley.com/10.1002/jmri.25954
+    \endverb
+    \field{volume}{48}
+    \field{journaltitle}{Journal of Magnetic Resonance Imaging}
+    \field{month}{07}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Kusunoki2022}{article}{}
+    \name{author}{8}{}{%
+      {{hash=KM}{%
+         family={Kusunoki},
+         familyi={K\bibinitperiod},
+         given={Masaoki},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nakayama},
+         familyi={N\bibinitperiod},
+         given={Tomohiro},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nishie},
+         familyi={N\bibinitperiod},
+         given={Akihiro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yamashita},
+         familyi={Y\bibinitperiod},
+         given={Yasuo},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kikuchi},
+         familyi={K\bibinitperiod},
+         given={Kazufumi},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Eto},
+         familyi={E\bibinitperiod},
+         given={Masatoshi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=OY}{%
+         family={Oda},
+         familyi={O\bibinitperiod},
+         given={Yoshinao},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=IK}{%
+         family={Ishigami},
+         familyi={I\bibinitperiod},
+         given={Kousei},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KMNTNA+1}
+    \strng{fullhash}{KMNTNAYYKKEMOYIK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Objective: To develop and validate deep convolutional neural network (DCNN) models for the diagnosis of adrenal adenoma (AA) using CT. Methods: This retrospective study enrolled 112 patients who underwent abdominal CT (non-contrast, early, and delayed phases) with 107 adrenal lesions (83 AAs and 24 non-AAs) confirmed pathologically and with 8 lesions confirmed by follow-up as metastatic carcinomas. Three patients had adrenal lesions on both sides. We constructed six DCNN models from six types of input images for comparison: non-contrast images only (Model A), delayed phase images only (Model B), three phasic images merged into a 3-channel (Model C), relative washout rate (RWR) image maps only (Model D), non-contrast and RWR maps merged into a 2-channel (Model E), and delayed phase and RWR maps merged into a 2-channel (Model F). These input images were prepared manually with cropping and registration of CT images. Each DCNN model with six convolutional layers was trained with data augmentation and hyperparameter tuning. The optimal threshold values for binary classification were determined from the receiveroperating characteristic curve analyses. We adopted the nested cross-validation method, in which the outer fivefold cross-validation was used to assess the diagnostic performance of the models and the inner fivefold cross-validation was used to tune hyperparameters of the models. Results: The areas under the curve with 95\% confidence intervals of Models A–F were 0.94 [0.90, 0.98], 0.80 [0.69, 0.89], 0.97 [0.94, 1.00], 0.92 [0.85, 0.97], 0.99 [0.97, 1.00] and 0.94 [0.86, 0.99], respectively. Model E showed high area under the curve greater than 0.95. Conclusion: DCNN models may be a useful tool for the diagnosis of AA using CT. Advances in knowledge: The current study demonstrates a deep learning-based approach could differentiate adrenal adenoma from non-adenoma using multiphasic CT.%
+    }
+    \verb{doi}
+    \verb 10.1259/bjr.20211066
+    \endverb
+    \field{issn}{0007-1285}
+    \field{issue}{1135}
+    \field{title}{A deep learning-based approach for the diagnosis of adrenal adenoma: a new trial using CT}
+    \verb{url}
+    \verb https://www.birpublications.org/doi/10.1259/bjr.20211066
+    \endverb
+    \field{volume}{95}
+    \field{journaltitle}{The British Journal of Radiology}
+    \field{month}{07}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Shoemaker2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SK}{%
+         family={Shoemaker},
+         familyi={S\bibinitperiod},
+         given={Katherine},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HBP}{%
+         family={Hobbs},
+         familyi={H\bibinitperiod},
+         given={Brian\bibnamedelima P},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Bharath},
+         familyi={B\bibinitperiod},
+         given={Karthik},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NCS}{%
+         family={Ng},
+         familyi={N\bibinitperiod},
+         given={Chaan\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={Baladandayuthapani},
+         familyi={B\bibinitperiod},
+         given={Veerabhadran},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \name{editor}{6}{}{%
+      {{hash=TAR}{%
+         family={TE\bibnamedelima Altman},
+         familyi={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+         given={RB},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dunker},
+         familyi={D\bibinitperiod},
+         given={AK},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HL}{%
+         family={Hunter},
+         familyi={H\bibinitperiod},
+         given={L},
+         giveni={L},
+      }}%
+      {{hash=RM}{%
+         family={Ritchie},
+         familyi={R\bibinitperiod},
+         given={MD},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Murray},
+         familyi={M\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=K}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {WORLD SCIENTIFIC}%
+    }
+    \keyw{Galton-Watson trees,Heterogeneity,Imaging features,Radiomics}
+    \strng{namehash}{SKHBPBK+1}
+    \strng{fullhash}{SKHBPBKNCSBV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Solid lesions emerge within diverse tissue environments making their characterization and diagnosis a challenge. With the advent of cancer radiomics, a variety of techniques have been developed to transform images into quantifiable feature sets producing summary statistics that describe the morphology and texture of solid masses. Relying on empirical distribution summaries as well as grey-level co-occurrence statistics, several approaches have been devised to characterize tissue density heterogeneity. This article proposes a novel decision-tree based approach which quantifies the tissue density heterogeneity of a given lesion through its resultant distribution of tree-structured dissimilarity metrics computed with least common ancestor trees under repeated pixel re-sampling. The methodology, based on statistics derived from Galton-Watson trees, produces metrics that are minimally correlated with existing features, adding new information to the feature space and improving quantitative characterization of the extent to which a CT image conveys heterogeneous density distribution. We demonstrate its practical application through a diagnostic study of adrenal lesions. Integrating the proposed with existing features identifies classifiers of three important lesion types; malignant from benign (AUC = 0.78), functioning from non-functioning (AUC = 0.93) and calcified from non-calcified (AUC of 1).%
+    }
+    \field{issn}{2335-6936}
+    \field{issue}{212669}
+    \field{pages}{216\bibrangedash 227}
+    \field{title}{Tree-based Methods for Characterizing Tumor Density Heterogeneity.}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/29218883 http://www.pubmedcentral.
+    \verb nih.gov/articlerender.fcgi?artid=PMC5749399
+    \endverb
+    \field{volume}{23}
+    \field{journaltitle}{Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing}
+    \field{month}{01}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Li2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Guindani},
+         familyi={G\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NCS}{%
+         family={Ng},
+         familyi={N\bibinitperiod},
+         given={Chaan\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HBP}{%
+         family={Hobbs},
+         familyi={H\bibinitperiod},
+         given={Brian\bibnamedelima P},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Taylor}%
+      {Francis Ltd.}%
+    }
+    \keyw{Bayesian prediction,Markov random field,cancer detection,gray-level co-occurrence matrix,radiomics,texture analysis}
+    \strng{namehash}{LXGMNCS+1}
+    \strng{fullhash}{LXGMNCSHBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The emerging field of cancer radiomics endeavors to characterize intrinsic patterns of tumor phenotypes and surrogate markers of response by transforming medical images into objects that yield quantifiable summary statistics to which regression and machine learning algorithms may be applied for statistical interrogation. Recent literature has identified clinicopathological association based on textural features deriving from gray-level co-occurrence matrices (GLCM) which facilitate evaluations of gray-level spatial dependence within a delineated region of interest. GLCM-derived features, however, tend to contribute highly redundant information. Moreover, when reporting selected feature sets, investigators often fail to adjust for multiplicities and commonly fail to convey the predictive power of their findings. This article presents a Bayesian probabilistic modeling framework for the GLCM as a multivariate object as well as describes its application within a cancer detection context based on computed tomography. The methodology, which circumvents processing steps and avoids evaluations of reductive and highly correlated feature sets, uses latent Gaussian Markov random field structure to characterize spatial dependencies among GLCM cells and facilitates classification via predictive probability. Correctly predicting the underlying pathology of 81\% of the adrenal lesions in our case study, the proposed method outperformed current practices which achieved a maximum accuracy of only 59\%. Simulations and theory are presented to further elucidate this comparison as well as ascertain the utility of applying multivariate Gaussian spatial processes to GLCM objects.%
+    }
+    \verb{doi}
+    \verb 10.1080/02664763.2018.1473348
+    \endverb
+    \field{issn}{0266-4763}
+    \field{issue}{2}
+    \field{pages}{230\bibrangedash 246}
+    \field{title}{Spatial Bayesian modeling of GLCM with application to malignant lesion characterization}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/31439980 http://www.pubmedcentral.
+    \verb nih.gov/articlerender.fcgi?artid=PMC6706247
+    \endverb
+    \field{volume}{46}
+    \field{journaltitle}{Journal of applied statistics}
+    \field{month}{01}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Koyuncu2019}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KH}{%
+         family={Koyuncu},
+         familyi={K\bibinitperiod},
+         given={Hasan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Ceylan},
+         familyi={C\bibinitperiod},
+         given={Rahime},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Asoglu},
+         familyi={A\bibinitperiod},
+         given={Semih},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Cebeci},
+         familyi={C\bibinitperiod},
+         given={Hakan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Koplay},
+         familyi={K\bibinitperiod},
+         given={Mustafa},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Nature}%
+    }
+    \keyw{ADRENAL tumors,Adrenal tumours,BIOPSY,COMPUTED tomography,Computed tomography,HORMONES,Hybrid classifier,IMMUNE system,Optimisation,Tumour classification}
+    \strng{namehash}{KHCRAS+1}
+    \strng{fullhash}{KHCRASCHKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    On adrenal glands, benign tumours generally change the hormone equilibrium, and malign tumours usually tend to spread to the nearby tissues and to the organs of the immune system. These features can give a trace about the type of adrenal tumours; however, they cannot be observed all the time. Different tumour types can be confused in terms of having a similar shape, size and intensity features on scans. To support the evaluation process, biopsy process is applied that includes injury and complication risks. In this study, we handle the binary characterisation of adrenal tumours by using dynamic computed tomography images. Concerning this, the usage of one more imaging modalities and biopsy process is wanted to be excluded. The used dataset consists of 8 subtypes of adrenal tumours, and it seemed as the worst-case scenario in which all handicaps are available against tumour classification. Histogram, grey level co-occurrence matrix and wavelet-based features are investigated to reveal the most effective one on the identification of adrenal tumours. Binary classification is proposed utilising four-promising algorithms that have proven oneself on the task of binary-medical pattern classification. For this purpose, optimised neural networks are examined using six dataset inspired by the aforementioned features, and an efficient framework is offered before the use of a biopsy. Accuracy, sensitivity, specificity, and AUC are used to evaluate the performance of classifiers. Consequently, malign/benign characterisation is performed by proposed framework, with success rates of 80.7\%, 75\%, 82.22\% and 78.61\% for the metrics, respectively. Graphical abstract. [ABSTRACT FROM AUTHOR]%
+    }
+    \verb{doi}
+    \verb 10.1007/s11517-018-1923-z
+    \endverb
+    \field{issn}{01400118}
+    \field{issue}{4}
+    \field{pages}{849\bibrangedash 862}
+    \field{title}{An extensive study for binary characterisation of adrenal tumours.}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1007/s11517-018-1923-z
+    \endverb
+    \field{volume}{57}
+    \field{journaltitle}{Medical \& Biological Engineering \& Computing}
+    \field{month}{04}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Barstugan2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BM}{%
+         family={Barstugan},
+         familyi={B\bibinitperiod},
+         given={Mucahid},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Ceylan},
+         familyi={C\bibinitperiod},
+         given={Rahime},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ASSS}{%
+         family={Asoglu},
+         familyi={A\bibinitperiod},
+         given={Sewall Semih\bibnamedelima Sewall},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Cebeci},
+         familyi={C\bibinitperiod},
+         given={Hakan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Koplay},
+         familyi={K\bibinitperiod},
+         given={Mustafa},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons Inc.}%
+    }
+    \keyw{MR images,adrenal glands,adrenal tumor classification,feature extraction,segmentation}
+    \strng{namehash}{BMCRASSS+1}
+    \strng{fullhash}{BMCRASSSCHKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Adrenal tumors occur on adrenal glands and are generally detected on abdominal area scans. Adrenal tumors, which are incidentally detected, release vital hormones. These types of tumors that can be malignant affect body metabolism. Both of benign and malign adrenal tumors can have a similar size, intensity, and shape, this situation may lead to wrong decision during diagnosis and characterization of tumors. Thus, biopsy is done to confirm diagnosis of tumor types. In this study, adrenal tumor characterization is handled by using magnetic resonance images. In this way, it is wanted that patient can be disentangled from one or more imaging modalities (some of them can includes X-ray) and biopsy. An adrenal tumor image set, which includes five types of adrenal tumors and has 112 benign tumors and 10 malign tumors, was used in this study. Two data sets were created from the adrenal tumor image set by manually/semiautomatically segmented adrenal tumors and feature sets of these data sets are constituted by different methods. Two-dimensional gray-level co-occurrence matrix (2D-GLCM), gray-level run-length matrix (GLRLM), and two-dimensional discrete wavelet transform (2D-DWT) methods were analyzed to reveal the most effective features on adrenal tumor characterization. Feature sets were classified in two ways: benign/malign (binary classification) and type characterization (multiclass classification). Support vector machine and artificial neural network classified feature sets. The best performance on benign/malign classification was obtained by the 2D-GLCM feature set. The best results were assessed with sensitivity, specificity, accuracy, precision, and F-score metrics and they were 99.17\%, 90\%, 98.4\%, 99.17\%, and 99.13\%, respectively. The highest classification performance on type characterization was obtained by the 2D-DWT feature set as 59.62\%, 96.17\%, 93.19\%, 54.69\%, and 54.94\% for sensitivity, specificity, accuracy, precision, and F-score metrics, respectively.%
+    }
+    \verb{doi}
+    \verb 10.1002/ima.22358
+    \endverb
+    \field{issn}{0899-9457}
+    \field{issue}{1}
+    \field{pages}{252\bibrangedash 265}
+    \field{title}{Adrenal tumor characterization on magnetic resonance images}
+    \verb{url}
+    \verb http://search.ebscohost.com/login.aspx?direct=true&db=edb&AN=14152697
+    \verb 5&site=eds-live https://onlinelibrary.wiley.com/doi/abs/10.1002/ima.2
+    \verb 2358
+    \endverb
+    \field{volume}{30}
+    \field{journaltitle}{International Journal of Imaging Systems and Technology}
+    \field{month}{03}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Stanzione2021}{article}{}
+    \name{author}{10}{}{%
+      {{hash=SA}{%
+         family={Stanzione},
+         familyi={S\bibinitperiod},
+         given={Arnaldo},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Cuocolo},
+         familyi={C\bibinitperiod},
+         given={Renato},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VF}{%
+         family={Verde},
+         familyi={V\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Galatola},
+         familyi={G\bibinitperiod},
+         given={Roberta},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Romeo},
+         familyi={R\bibinitperiod},
+         given={Valeria},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=MPP}{%
+         family={Mainenti},
+         familyi={M\bibinitperiod},
+         given={Pier\bibnamedelima Paolo},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=AG}{%
+         family={Aprea},
+         familyi={A\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Guadagno},
+         familyi={G\bibinitperiod},
+         given={Elia},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CMDBD}{%
+         family={Caro},
+         familyi={C\bibinitperiod},
+         given={Marialaura Del Basso\bibnamedelima De},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Maurea},
+         familyi={M\bibinitperiod},
+         given={Simone},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier BV}%
+    }
+    \keyw{Adrenal glands,Chemical shift imaging,Machine learning,Magnetic resonance imaging,Neoplasms}
+    \strng{namehash}{SACRVF+1}
+    \strng{fullhash}{SACRVFGRRVMPPAGGECMDBDMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    PURPOSE To assess a radiomic machine learning (ML) model in classifying solid adrenal lesions (ALs) without fat signal drop on chemical shift (CS) as benign or malignant. METHOD 55 indeterminate ALs (21 lipid poor adenomas, 15 benign pheocromocytomas, 1 oncocytoma, 12 metastases, 6 primary tumors) showing no fat signal drop on CS were retrospectively included. Manual 3D segmentation on T2-weighted and CS images was performed for subsequent radiomic feature extraction. After feature stability testing and an 80-20\% train-test split, the train set was balanced via oversampling. Following a multi-step feature selection, an Extra Trees model was tuned with 5-fold stratified cross-validation in the train set and then tested on the hold-out test set. RESULTS A total of 3396 features were extracted from each AL, of which 133 resulted unstable while none had low variance (< 0.01). Highly correlated (r > 0.8) features were also excluded, leaving 440 parameters. Among these, Support Vector Machine 5-fold stratified cross-validated recursive feature elimination selected a subset of 6 features. ML obtained a cross-validation accuracy of 0.94 on the train and 0.91 on the test sets. Precision, recall and F1 score were respectively 0.92, 0.91 and 0.91. CONCLUSIONS Our MRI handcrafted radiomics and ML pipeline proved useful to characterize benign and malignant solid indeterminate adrenal lesions.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.mri.2021.03.009
+    \endverb
+    \field{issn}{0730725X}
+    \field{pages}{52\bibrangedash 58}
+    \field{title}{Handcrafted MRI radiomics and machine learning: Classification of indeterminate solid adrenal lesions}
+    \verb{url}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/33727148 https://linkinghub.elsevi
+    \verb er.com/retrieve/pii/S0730725X21000394
+    \endverb
+    \field{volume}{79}
+    \field{journaltitle}{Magnetic Resonance Imaging}
+    \field{month}{06}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Andersen2021}{article}{}
+    \name{author}{6}{}{%
+      {{hash=AMB}{%
+         family={Andersen},
+         familyi={A\bibinitperiod},
+         given={Michael\bibnamedelima Brun},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BU}{%
+         family={Bodtger},
+         familyi={B\bibinitperiod},
+         given={Uffe},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=AIR}{%
+         family={Andersen},
+         familyi={A\bibinitperiod},
+         given={Iben\bibnamedelima Rahbek},
+         giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=TKS}{%
+         family={Thorup},
+         familyi={T\bibinitperiod},
+         given={Kennet\bibnamedelima Sønderstgaard},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Ganeshan},
+         familyi={G\bibinitperiod},
+         given={Balaji},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Rasmussen},
+         familyi={R\bibinitperiod},
+         given={Finn},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ireland Ltd}%
+    }
+    \keyw{Adrenal gland,Computed tomography,Lung cancer,Texture analysis}
+    \strng{namehash}{AMBBUAIR+1}
+    \strng{fullhash}{AMBBUAIRTKSGBRF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Introduction: Distant metastases are found in the many of patients with lung cancer at time of diagnosis. Several diagnostic tools are available to distinguish between metastatic spread and benign lesions in the adrenal gland. However, all require additional diagnostic steps after the initial CT. The purpose of this study was to evaluate if texture analysis of CT-abnormal adrenal glands on the initial CT correctly differentiates between malignant and benign lesions in patients with confirmed lung cancer. Materials and methods: In this retrospective study 160 patients with endoscopic ultrasound-guided biopsy from the left adrenal gland and a contrast-enhanced CT in portal venous phase were assessed with texture analysis. A region of interest encircling the entire adrenal gland was used and from this dataset the slice with the largest cross section of the lesion was analyzed individually. Results: Several texture parameters showed statistically significantly difference between metastatic and benign lesions but with considerable between-groups overlaps in confidence intervals. Sensitivity and specificity were assessed using ROC-curves, and in univariate binary logistic regression the area under the curve ranged from 36 \% (Kurtosis 0.5) to 69 \% (Entropy 2.5) compared to 73 \% in the best fitting model using multivariate binary logistic regression. Conclusion: In lung cancer patients with abnormal adrenal gland at imaging, adrenal gland texture analyses appear not to have any role in discriminating benign from malignant lesions.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ejrad.2021.109664
+    \endverb
+    \field{issn}{0720048X}
+    \field{pages}{109664}
+    \field{title}{Metastases or benign adrenal lesions in patients with histopathological verification of lung cancer: Can CT texture analysis distinguish?}
+    \verb{url}
+    \verb https://linkinghub.elsevier.com/retrieve/pii/S0720048X21001443
+    \endverb
+    \field{volume}{138}
+    \field{journaltitle}{European Journal of Radiology}
+    \field{month}{05}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Moawad2021}{article}{}
+    \name{author}{6}{}{%
+      {{hash=MAW}{%
+         family={Moawad},
+         familyi={M\bibinitperiod},
+         given={Ahmed\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Ayahallah},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FDT}{%
+         family={Fuentes},
+         familyi={F\bibinitperiod},
+         given={David\bibnamedelima T.},
+         giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HJD}{%
+         family={Hazle},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HMA}{%
+         family={Habra},
+         familyi={H\bibinitperiod},
+         given={Mouhammed\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=EKM}{%
+         family={Elsayes},
+         familyi={E\bibinitperiod},
+         given={Khaled\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \keyw{Classification,Indeterminate adrenal tumors,Machine learning,Radiomics}
+    \strng{namehash}{MAWAAFDT+1}
+    \strng{fullhash}{MAWAAFDTHJDHMAEKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Goal: To evaluate the ability of radiomic feature extraction and a machine learning algorithm to differentiate between benign and malignant indeterminate adrenal lesions on contrast-enhanced computed tomography (CT) studies. Background: Adrenal “incidentalomas” are adrenal lesions that are accidentally discovered during workup not related to the adrenal glands; they have an incidence as high as 5\%. Small adrenal incidentalomas (< 4 cm) with high attenuation values on pre-contrast CT(> 10 HU) need further evaluation to calculate the absolute percentage of washout (APW). If the APW is < 60\%, these lesions are considered non-adenomas and commonly classified as indeterminate adrenal lesions. Further workup for indeterminate lesions includes more complicated and expensive radiological studies or invasive procedures like biopsy or surgical resection. Methods: We searched our institutional database for indeterminate adrenal lesions with the following characteristics: < 4 cm, pre-attenuation value > 10 HU, and APW < 60\%. Exclusion criteria included pheochromocytoma and no histopathological examination. CT images were converted to Nifti format, and adrenal tumors were segmented using Amira software. Radiomic features from the adrenal mask were extracted using PyRadiomics software after removing redundant features (highly pairwise correlated features and low-variance features) using recursive feature extraction to select the final discriminative set of features. Lastly, the final features were used to build a binary classification model using a random forest algorithm, which was validated and tested using leave-one-out cross-validation, confusion matrix, and receiver operating characteristic curve. Results: We found 40 indeterminate adrenal lesions (21 benign and 19 malignant). Feature extraction resulted in 3947 features, which reduced down to 62 features after removing redundancies. Recursive feature elimination resulted in the following top 4 discriminative features: gray-level size zone matrix-derived size zone non-uniformity from pre-contrast and delayed phases, gray-level dependency matrix-derived large dependence high gray-level emphasis from venous-phase, and gray-level co-occurrence matrix-derived cluster shade from delayed-phase. A binary classification model with leave-one-out cross-validation showed AUC = 0.85, sensitivity = 84.2\%, and specificity = 71.4\%. Conclusion: Machine learning and radiomic features extraction can differentiate between benign and malignant indeterminate adrenal tumors and can be used to direct further workup with high sensitivity and specificity.%
+    }
+    \verb{doi}
+    \verb 10.1007/S00261-021-03136-2
+    \endverb
+    \field{issn}{23660058}
+    \field{issue}{10}
+    \field{pages}{4853\bibrangedash 4863}
+    \field{title}{Machine learning-based texture analysis for differentiation of radiologically indeterminate small adrenal tumors on adrenal protocol CT scans}
+    \field{volume}{46}
+    \field{journaltitle}{Abdominal Radiology}
+    \field{month}{10}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Bi2017}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=BL}{%
+         family={Bi},
+         familyi={B\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jinman},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Tingwei},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Fulham},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FD}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Dagan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Ning},
+         familyi={N\bibinitperiod},
+         given={Guang},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \keyw{Adrenal lesions,Detection,Fully Convolutional Networks (FCN)}
+    \strng{namehash}{BLKJST+1}
+    \strng{fullhash}{BLKJSTFMFDNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Adrenal lesions include a wide variety of benign and malignant neoplasms of the adrenal gland, and are seen in up to 5\% of computed tomography (CT) examinations of the abdomen. Better identification of these lesions is important for effective management and patient prognosis. Detection on low-contrast CT images, however, even for experienced physicians can be difficult and error-prone, because the lesions are often problematic to be separated from the normal surrounding structures. Existing lesion detection techniques have problems in identifying and differentiating low-contrast tumors, which is related to their use of low-level features rather than high level of semantics. Hence we propose an automated approach using fully convolutional networks (FCNs) and multi-scale integration to detect adrenal lesion on low-contrast CT scans. The architecture of FCNs includes deep, coarse, semantic information and shallow, fine, appearance information in a hierarchical manner and it enables the encoding of image-wide location and semantics, which are desirable characteristics for adrenal lesion detection. We also propose a multi-scale integration with a superpixel based random walk (MI-SRW) approach to refine the lesion boundaries on different scales. The MI-SRW technique enables us to constrain the spatial and appearance consistency and then use complementary information provided on different scales to detect adrenal lesions of various sizes and characteristics. We used 38 adrenal lesions detected on low-contrast CT and compared our approach to existing 'state-of-the-art' methods and found that our approach had superior detection performance.%
+    }
+    \verb{doi}
+    \verb 10.1109/ISBI.2017.7950660
+    \endverb
+    \field{isbn}{9781509011711}
+    \field{issn}{19458452}
+    \field{pages}{895\bibrangedash 898}
+    \field{title}{Adrenal lesions detection on low-contrast CT images using fully convolutional networks with multi-scale integration}
+    \field{journaltitle}{Proceedings - International Symposium on Biomedical Imaging}
+    \field{month}{06}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Bi2022}{article}{}
+    \name{author}{6}{}{%
+      {{hash=BL}{%
+         family={Bi},
+         familyi={B\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jinman},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Tingwei},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Fulham},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FDD}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={David\bibnamedelima Dagan},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Ning},
+         familyi={N\bibinitperiod},
+         given={Guang},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BLKJST+1}
+    \strng{fullhash}{BLKJSTFMFDDNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Objective: The accurate classification of mass lesions in the adrenal glands (‘adrenal masses’), detected with computed tomography (CT), is important for diagnosis and patient management. Adrenal masses can be benign or malignant and benign masses have varying prevalence. Classification methods based on convolutional neural networks (CNNs) are the state-of-the-art in maximizing inter-class differences in large medical imaging training datasets. The application of CNNs, to adrenal masses is challenging due to large intra-class variations, large inter-class similarities and imbalanced training data due to the size of the mass lesions. Methods: We developed a deep multi-scale resemblance network (DMRN) to overcome these limitations and leveraged paired CNNs to evaluate the intra-class similarities. We used multi-scale feature embedding to improve the inter-class separability by iteratively combining complementary information produced at different scales of the input to create structured feature descriptors. We augmented the training data with randomly sampled paired adrenal masses to reduce the influence of imbalanced training data. Results: We used 229 CT scans of patients with adrenal masses for evaluation. In a five-fold cross-validation, our method had the best results (89.52 \% in accuracy) when compared to the state-of-the-art methods (p < 0.05). We conducted a generalizability analysis of our method on the ImageCLEF 2016 competition dataset for medical subfigure classification, which consists of a training set of 6776 images and a test set of 4166 images across 30 classes. Our method achieved better classification performance (85.90 \% in accuracy) when compared to the existing methods and was competitive when compared with methods that require additional training data (1.47 \% lower in accuracy). Conclusion: Our DMRN sub-classified adrenal masses on CT and was superior to state-of-the-art approaches.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.artmed.2022.102374
+    \endverb
+    \field{issn}{09333657}
+    \field{pages}{102374}
+    \field{title}{Deep multi-scale resemblance network for the sub-class differentiation of adrenal masses on computed tomography images}
+    \verb{url}
+    \verb https://linkinghub.elsevier.com/retrieve/pii/S0933365722001336
+    \endverb
+    \field{volume}{132}
+    \field{journaltitle}{Artificial Intelligence in Medicine}
+    \field{month}{10}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Kong2022}{article}{}
+    \name{author}{17}{}{%
+      {{hash=KJ}{%
+         family={Kong},
+         familyi={K\bibinitperiod},
+         given={Jianqiu},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Junjiong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Jieying},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Shaoxu},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Jinhua},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Diao},
+         familyi={D\bibinitperiod},
+         given={Xiayao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=XW}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Weibin},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CX}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Xiong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HL}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Lifang},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Hongpeng},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Xinxiang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=QH}{%
+         family={Qin},
+         familyi={Q\bibinitperiod},
+         given={Haide},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Zhuo},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Tianxin},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central Ltd}%
+    }
+    \keyw{Magnetic resonance imaging,Nomogram,Pheochromocytoma,Prediction,Radiomics}
+    \strng{namehash}{KJZJWJ+1}
+    \strng{fullhash}{KJZJWJWSCJDXXWCXYHHLFHFXQHLYWZHJLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Background: Preoperative diagnosis of pheochromocytoma (PHEO) accurately impacts preoperative preparation and surgical outcome in PHEO patients. Highly reliable model to diagnose PHEO is lacking. We aimed to develop a magnetic resonance imaging (MRI)-based radiomic-clinical model to distinguish PHEO from adrenal lesions. Methods: In total, 305 patients with 309 adrenal lesions were included and divided into different sets. The least absolute shrinkage and selection operator (LASSO) regression model was used for data dimension reduction, feature selection, and radiomics signature building. In addition, a nomogram incorporating the obtained radiomics signature and selected clinical predictors was developed by using multivariable logistic regression analysis. The performance of the radiomic-clinical model was assessed with respect to its discrimination, calibration, and clinical usefulness. Results: Seven radiomics features were selected among the 1301 features obtained as they could differentiate PHEOs from other adrenal lesions in the training (area under the curve [AUC], 0.887), internal validation (AUC, 0.880), and external validation cohorts (AUC, 0.807). Predictors contained in the individualized prediction nomogram included the radiomics signature and symptom number (symptoms include headache, palpitation, and diaphoresis). The training set yielded an AUC of 0.893 for the nomogram, which was confirmed in the internal and external validation sets with AUCs of 0.906 and 0.844, respectively. Decision curve analyses indicated the nomogram was clinically useful. In addition, 25 patients with 25 lesions were recruited for prospective validation, which yielded an AUC of 0.917 for the nomogram. Conclusion: We propose a radiomic-based nomogram incorporating clinically useful signatures as an easy-to-use, predictive and individualized tool for PHEO diagnosis.%
+    }
+    \verb{doi}
+    \verb 10.1186/s12967-022-03233-w
+    \endverb
+    \field{issn}{14795876}
+    \field{issue}{1}
+    \field{title}{Development of a radiomics model to diagnose pheochromocytoma preoperatively: a multicenter study with prospective validation}
+    \field{volume}{20}
+    \field{journaltitle}{Journal of Translational Medicine}
+    \field{month}{12}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Zheng2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ZY}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Yineng},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhong},
+         familyi={Z\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lv},
+         familyi={L\bibinitperiod},
+         given={Fajin},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Haitao},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Frontiers Media S.A.}%
+    }
+    \keyw{adrenocortical adenoma,computer-assisted diagnosis,machine learning,multidetector computed tomography,radiomics}
+    \strng{namehash}{ZYLXZY+1}
+    \strng{fullhash}{ZYLXZYLFYH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Purpose: To explore the application value of multiparametric computed tomography (CT) radiomics in non-invasive differentiation between aldosterone-producing and cortisol-producing functional adrenocortical adenomas. Methods: This retrospective review analyzed 83 patients including 41 patients with aldosterone-producing adenoma and 42 patients with cortisol-producing adenoma. The quantitative radiomics features were extracted from the complete unenhanced, arterial, and venous phase CT images. A comparative study of several frequently used machine learning models (linear discriminant analysis, logistic regression, random forest, and support vector machine) combined with different feature selection methods was implemented in order to determine which was most advantageous for differential diagnosis using radiomics features. Then, the integrated model using the combination of radiomic signature and clinic–radiological features was built, and the associated calibration curve was also presented. The diagnostic performance of these models was estimated and compared using the area under the receiver operating characteristic (ROC) curve (AUC). Result: In the radiomics-based machine learning model, logistic regression model with LASSO (least absolute shrinkage and selection operator) outperformed the other models, which yielded a sensitivity of 0.935, a specificity of 0.823, and an accuracy of 0.887 [AUC = 0.882, 95\% confidence interval (CI) = 0.819–0.945]. Moreover, the nomogram representing the integrated model achieved good discrimination performances, which yielded a sensitivity of 0.915, a specificity of 0.928, and an accuracy of 0.922 (AUC = 0.902, 95\% CI = 0.822–0.982), and it was better than that of the radiomics model alone. Conclusion: This study found that the combination of multiparametric radiomics signature and clinic–radiological features can non-invasively differentiate the subtypes of hormone-secreting functional adrenocortical adenomas, which may have good potential for facilitating the diagnosis and treatment in clinical practice.%
+    }
+    \verb{doi}
+    \verb 10.3389/fonc.2020.570502
+    \endverb
+    \field{issn}{2234943X}
+    \field{title}{A Preliminary Study for Distinguish Hormone-Secreting Functional Adrenocortical Adenoma Subtypes Using Multiparametric CT Radiomics-Based Machine Learning Model and Nomogram}
+    \field{volume}{10}
+    \field{journaltitle}{Frontiers in Oncology}
+    \field{month}{09}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Suganyadevi2022}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SS}{%
+         family={Suganyadevi},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Seethalakshmi},
+         familyi={S\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Balasamy},
+         familyi={B\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Springer Science}%
+      {Business Media Deutschland GmbH}%
+    }
+    \keyw{Accuracy,Deep learning,Image classes,Medical image analysis,Survey}
+    \strng{namehash}{SSSVBK1}
+    \strng{fullhash}{SSSVBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Ongoing improvements in AI, particularly concerning deep learning techniques, are assisting to identify, classify, and quantify patterns in clinical images. Deep learning is the quickest developing field in artificial intelligence and is effectively utilized lately in numerous areas, including medication. A brief outline is given on studies carried out on the region of application: neuro, brain, retinal, pneumonic, computerized pathology, bosom, heart, breast, bone, stomach, and musculoskeletal. For information exploration, knowledge deployment, and knowledge-based prediction, deep learning networks can be successfully applied to big data. In the field of medical image processing methods and analysis, fundamental information and state-of-the-art approaches with deep learning are presented in this paper. The primary goals of this paper are to present research on medical image processing as well as to define and implement the key guidelines that are identified and addressed.%
+    }
+    \verb{doi}
+    \verb 10.1007/s13735-021-00218-1
+    \endverb
+    \field{issn}{2192-6611}
+    \field{issue}{1}
+    \field{pages}{19\bibrangedash 38}
+    \field{title}{A review on deep learning in medical image analysis}
+    \verb{url}
+    \verb https://link.springer.com/10.1007/s13735-021-00218-1
+    \endverb
+    \field{volume}{11}
+    \field{journaltitle}{International Journal of Multimedia Information Retrieval}
+    \field{month}{03}
+    \field{year}{2022}
+  \endentry
+\enddatalist
+\endinput

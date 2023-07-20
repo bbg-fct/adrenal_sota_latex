@@ -25,10 +25,7 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage[nottoc]{tocbibind}
-\usepackage[
-    backend=bibtex,
-    style=ieee,
-  ]{biblatex}
+\usepackage[backend=bibtex,style=ieee]{biblatex}
 \addbibresource{adrenal.bib}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
@@ -49,14 +46,15 @@
     including adrenal adenomas, which are the most common lesions. The
     diagnosis of these lesions is made via conventional imaging techniques, such
     as magnetic resonance imaging and computed tomography, is complex and
-    depends heavily on the radiologist's expertise. Misdiagnosis due to the
+    depends heavily on the radiologist's knowledge and experience. Misdiagnosis due to the
     presence of pseudo lesions, imaging features overlap, or incorrect technique
     selection can lead to unnecessary costs and examinations, as most adrenal
     lesions do not require treatment. Machine learning methods have been
-    proposed to improve adrenal lesion diagnosis. In this paper, we analyse all
+    proposed to improve adrenal lesion diagnosis.
+    In this paper, we analyse all
     studies from 2017 until September 2022 that aim to diagnose or differentiate
-    adrenal lesions using MRI or CT scans and machine learning methods and that
-    did not meet our exclusion criteria. The studies that were not written in
+    adrenal lesions using MRI or CT scans and machine learning methods. 
+    The studies that were not written in
     English, that were state-of-the-art reviews, that did not report which
     machine learning model was used, or that did not have the full text
     available were excluded from our analysis. For the sake of clarity, we
@@ -77,9 +75,7 @@
 
 \section{Introduction}
 
-The adrenal glands, or suprarenal glands, are two small glands located on top of
-the kidneys.  Each has a body and two limbs \cite{Baba2012}, and weights about
-5g \cite{brit}. The adrenal glands are a component of the
+The adrenal glands, or suprarenal glands, are a component of the
 Hypothalamic-Pituitary-Adrenal (HPA) axis, which is responsible to maintain
 homeostasis in the presence of chronic stressors, activating a complex range of
 responses from the endocrine, nervous and immune systems, generally known as the
@@ -88,63 +84,25 @@ stress response \cite{open}.
 The adrenal glands can be affected by a wide variety of benign and malignant
 lesions. Approximately 9\% of the global population is estimated to have adrenal
 lesions, which are mostly detected incidentally during abdominal imaging
-\cite{Dhamija2015}. These lesions can be primary if they originated in the
-glands themselves (cortex or medulla) or secondary if they have another origin.
-Primary lesions can be functional if they produce hormones \cite{Panda2015}.
-Adrenal adenomas represent 50-80\% of adrenal lesions \cite{Bracci2022}. Adenomas
-are often non-functional and remain asymptomatic, being discovered incidentally
+\cite{Dhamija2015}. Adrenal adenomas represent 50 to 80\% of all adrenal lesions
+\cite{Bracci2022}. 
+Adenomas are often non-functional and remain asymptomatic, being discovered incidentally
 \cite{Platzek2019}. Adrenocortical carcinomas, despite being the most common
 primary adrenal lesion, are very rare, representing only 0.7–2.0 cases per million
-habitants per year \cite{Bracci2022}. These lesions affect children in their
-first decade and adults in their fourth and fifth decades \cite{Panda2015}.
+habitants per year \cite{Bracci2022}. 
 Also, the adrenals are a frequent location of metastases \cite{Platzek2019},
 approximately 25\% of patients with cancer have adrenal metastases on autopsy
 \cite{Bracci2022}.
 
 In general, non-functional lesions do not require any treatment, therefore it is
 crucial to differentiate between adenomas (typical non-functional lesions) and
-non-adenomas \cite{Platzek2019}, to avoid incurring in unnecessary treatment.
+non-adenomas \cite{Platzek2019}, to avoid unnecessary treatment.
 Commonly, adrenal adenomas have less than 1 cm in
 diameter and they can be lipid-rich or lipid-poor \cite{Panda2015}.
 About 70-80 \% of the adenomas are lipid-rich in contrast with the malignant
 lesions \cite{Platzek2019}. This results in a 20-30 \% overlap between adenomas
 and malignant lesions in terms of intracytoplasmic lipid content
 \cite{Israel2004}.
-
-Functional lesions can cause endocrines syndromes, such as
-Conn and Cushing syndrome. Cushing syndrome or hypercortisolism is caused by
-elevated cortisol values and is associated with adrenal adenomas. Adrenocortical carcinomas or pheochromocytomas can also cause Cushing syndrome.
-This syndrome is defined by symptoms such as obesity, rounded face, abnormal
-skin pigmentation, muscle weakness, hypertension, diabetes, and others. On the
-other hand, the Conn syndrome or primary aldosteronism is related to the
-excessive production of aldosterone. The most common symptoms of this syndrome
-are sodium retention, plasma renin suppression, hypertension, cardiovascular
-damage, and increased potassium excretion. Like the Conn syndrome, this syndrome
-is commonly caused by adrenal adenomas.  In opposition to the above-mentioned
-syndromes, the Addison disease is caused by adrenal insufficiency, which can be
-caused by malignant lesions. Patients with this disease can experience weight
-loss, weakness, fatigue, gastrointestinal upset, orthostatic hypotension, and
-abnormal skin pigmentation. These symptoms can progress to dehydration, shock,
-hyperkalaemia (high potassium) and hyponatremia (high sodium) when entering
-acute adrenal insufficiency \cite{Wang2018}.
-
-The adrenal gland has two different regions: the adrenal cortex and the adrenal
-medulla. The adrenal cortex is the outer region of the gland and is derived from
-neural crest cells. The cortex itself comprises three zones: zona glomerosa, the
-zona fasciculata, and zona reticularis, each responsible for producing a
-different set of hormones. The adrenal cortex secretes hormones relevant to the
-regulation of long-term stress response, blood pressure and blood volume,
-nutrient uptake and storage, fluid and electrolyte balance, and inflammation.
-For example, this region is responsible for producing cortisol, corticosterone,
-and cortisone, which increase blood glucose levels, and aldosterone production,
-which increases the sodium level in blood \cite{open}.
-
-The adrenal medulla is the inner region of the gland, and it is a neuroendocrine
-tissue composed of postganglionic sympathetic nervous system (SNS) neurons. This
-region is responsible for the production of epinephrine and norepinephrine,
-which mediate the short-term stress or the fight-or-flight response. This
-response has the goal of preparing the body for extreme physical exertion
-\cite{open}.
 
 % Adrenal Imaging - medical diagnosis of adrenal lesions
 
@@ -153,9 +111,7 @@ characterising adrenal lesions and complementary to functional imaging and
 endocrine evaluation in the assessment of functional lesions. Imaging techniques
 can also rule out invasive interventions. The most used imaging techniques to
 evaluate the adrenal glands are Computed Tomography (CT) and Magnetic Resonance
-Imaging (MRI). Ultrasonography (USG), although a common method to assess
-abdominal pathologies, is not a good method to perceive retroperitoneal
-structures such as adrenals \cite{Panda2015}.
+Imaging (MRI) \cite{Panda2015}.
 
 Figure \ref{fig:adrenal_glands_normal} shows the V- (left) and Y-shaped (right)
 normal glands. Figure \ref{fig:adrenal_ct} is an axial contrast-enhanced CT
@@ -202,7 +158,7 @@ margins of fatty and normal tissues \cite{Jahanvi2021}, creating a darker
 boundary in lipid-rich lesions such as most adenomas. Figure \ref{fig:adenomas}
 shows two adenomas, one lipid-rich (up) and the other lipid-poor (down) using
 CSI. The red boxes surround the adenomas. The
-difference in signal in the region of the lesion between IP and OP images is much greater in lipid-rich
+signal difference in the region of the lesion between IP and OP images is much greater in lipid-rich
 adenomas than in lipid-poor adenomas, facilitating the diagnostic process of
 lipid-rich adenomas. Given these images, the diagnosis of
 adenoma can be made by visual evaluation or by quantitative indices such as the
@@ -211,8 +167,9 @@ Adrenal-to-Liver Ratio (ALR) or the Adrenal-to-Muscle Ratio (AMR)
 \cite{Fujiyoshi2003}. A metanalysis with 1280
 lesions (859 adenomas, 421 non-adenomas) documented a sensitivity of 94\% and
 a specificity of 95\% in detecting adrenal adenomas with the CSI technique using
-visual evaluation and/or quantitative methods \cite{Platzek2019}. Despite these high values, the
-authors state that lipid-poor adenomas still pose an issue even using CSI.
+visual evaluation and/or quantitative methods \cite{Platzek2019}. Despite the
+elevated values, the authors assert that lipid-poor adenomas continue to present
+challenges, even when employing CSI. 
 
 \begin{figure}
     \centering
@@ -251,8 +208,8 @@ When analysing lipid-poor adenomas, the addition of Dynamic Contrast-Enhanced (D
 favourable, increasing the diagnostic performance \cite{Barat2022}. In
 \cite{Chung2001} 35 adrenal adenomas were analysed and it was concluded that the
 enhancement pattern of the adenomas is different from the one presented by
-malignant lesions. Adenomas present a homogeneous capillary blush on 18 seconds
-post-gadolinium images and a rapid washout on 45 seconds post-gadolinium images.
+malignant lesions. Adenomas present a homogeneous capillary blush in 18 seconds
+post-gadolinium images and a rapid washout in 45 seconds post-gadolinium images.
 In \cite{Platzek2019} it was concluded that the
 quantitative methods do not present a significant advantage to the visual
 diagnosis. In addition, the authors do not recommend any additional imaging if
@@ -264,8 +221,8 @@ malignant lesions \cite{Platzek2019}.
 
 The growing number of abdominal imaging studies has led to the increasing
 frequency of adrenal incidentalomas, which are usually benign, non-functional
-adenomas. Despite this, it is important to evaluate their functional status and
-potential for being malignant, as soon as possible. The diagnosis of adrenal
+adenomas. Nevertheless, it is important to evaluate their functional status and
+malignancy, as soon as possible. The diagnosis of adrenal
 lesions is a complex process that involves both biochemical and radiological
 evaluation \cite{Anagnostis2009}. Adrenal radiologic evaluation via conventional
 imaging is a challenging process that depends largely on the experience and
@@ -378,9 +335,9 @@ In the next 3 sections, each group of papers will be analysed in detail,
 exploring their common and contrasting aspects. For each group, the analysis
 will be focused on the utilized data sets, models, and the obtained results.
 
-\subsection{Results}
+\section{Results}
 
-\subsubsection{Group A - Adenomas vs other lesions}
+\subsection{Group A - Adenomas vs other lesions}
 
 Group A comprises all studies that focus on the differentiation between adenomas
 and other lesions. This group corresponds to 52\% of all analysed studies.
@@ -483,7 +440,7 @@ images to differentiate renal cell carcinomas from adenomas.
         \cite{Romeo2018}                    & ML                             & DecTre                                         & Manual                        & $1^{st}$, $2^{nd}$                 \\
         \bottomrule
     \end{tabular}
-    \caption{Modelling Details  for each article in the Group A. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; LASSO: Least Absolute Shrinkage and Selection Operator; DecTre: Decision Tree; RanFor: Random Forest; PCA: Principal Components Analysis; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
+    \caption{Modelling Details for each article in the Group A. ML: Traditional Machine Learning models; DL: Deep Learning models; LogReg: Logistic Regression; LASSO: Least Absolute Shrinkage and Selection Operator; DecTre: Decision Tree; RanFor: Random Forest; PCA: Principal Components Analysis; SVM: Support Vector Machine; $1^{st}$, $2^{nd}$, higher: first, second, higher order statistics, respectively; shape: shape-based features.}
     \label{tab:model_A}
 \end{table}
 
@@ -510,7 +467,7 @@ images to differentiate renal cell carcinomas from adenomas.
     \label{tab:res_A}
 \end{table}
 
-\subsubsection{Group B - Malign vs benign lesions}
+\subsection{Group B - Malign vs benign lesions}
 
 Group B consists of studies that aim at the differentiation between benign and
 malignant lesions. This group includes 30\% of the studies. Tables
@@ -615,7 +572,7 @@ differences in the input sampling and the selection of cut points \footnote{\hre
     \label{tab:res_B}
 \end{table}
 
-\subsubsection{Group C}
+\subsection{Group C}
 
 Group C consists of the remaining studies that did not fit any of the prior defined
 groups.  This group includes 18\% of the studies. Tables \ref{tab:data_C},
@@ -699,7 +656,7 @@ even in multiclass classification.
     \label{tab:res_C}
 \end{table}
 
-\subsection{Conclusions}
+\section{Conclusions}
 
 When analysing the reported studies, one of the major difficulties was the lack
 of coherence between the metrics used to measure the performance of the
