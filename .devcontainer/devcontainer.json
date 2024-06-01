@@ -7,7 +7,7 @@
     "workspaceFolder": "/workspace",
     "postCreateCommand": "tlmgr install caption biblatex multirow booktabs tocbibind biblatex-ieee csquotes",
     "mounts": [
-        "source=/mnt/c/Users/Bernardo-b2f/OneDrive - FCT NOVA/Documentos/Work/PhD/thesis/adrenal_sota/figures,target=/workspace/figures,bind=true"
+        "source=${PHD_THESIS_FOLDER}/adrenal_sota/figures,target=/workspace/figures,bind=true"
     ],
     "customizations": {
         "vscode": {
