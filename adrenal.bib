@@ -1,95 +1,354 @@
-@ARTICLE{Piskin2023-ts,
-  title    = "A machine learning approach to distinguishing between
-              non-functioning and autonomous cortisol secreting adrenal
-              incidentaloma on magnetic resonance imaging using texture analysis",
-  author   = "Piskin, Ferhat Can and Akkus, Gamze and Yucel, Sevinc Puren and
-              Unal, Ilker and Balli, Huseyin Tugsan and Olgun, Mehtap Evran and
-              Sert, Murat and Tetiker, Bekir Tamer and Aikimbaev, Kairgeldy",
-  journal  = "Ir. J. Med. Sci.",
-  volume   =  192,
-  number   =  3,
-  pages    = "1155--1161",
-  abstract = "PURPOSE: To investigate the possibility of distinguishing between
-              nonfunctioning adrenal incidentalomas (NFAI) and autonomous
-              cortisol secreting adrenal incidentalomas (ACSAI) with a model
-              created with magnetic resonance imaging (MRI)-based radiomics and
-              clinical features. METHODS: In this study, 100 adrenal lesions
-              were evaluated. The lesions were segmented on unenhanced
-              T1-weighted in-phase (IP) and opposed-phase (OP) as well as on
-              T2-weighted (T2-W) 3Tesla MRIs. The LASSO regression model was
-              used to select potential predictors from 108 texture features for
-              each sequence. Subsequently, a combined radiomics score and
-              clinical features were created and compared. RESULTS: A
-              significant difference was found between median rad-scores for
-              ACSAI and NFAI in training and test sets (p < 0.05 for all
-              sequences). Multivariate logistic regression analysis revealed
-              that the length of the tumor (OR = 1.09, p = 0.007) was an
-              independent risk factor related to ACSAI. Multivariate logistic
-              regression analysis was used for building clinical-radiomics
-              (combined) models. The Op, IP, and IP plus T2-W model had a higher
-              performance with area under curve (AUC) 0.758, 0.746, and 0.721 on
-              the test dataset, respectively. CONCLUSION: ACSAI can be
-              distinguished from NFAI with high accuracy on unenhanced MRI.
-              Radiomics analysis and the model constructed by machine learning
-              algorithms seem superior to another radiologic assessment method.
-              The inclusion of chemical shift MRI and the length of the tumor in
-              the radiomics model could increase the power of the test.",
-  month    =  jun,
+@ARTICLE{Platzek2019-tk,
+  title     = "Chemical shift imaging for evaluation of adrenal masses: a
+               systematic review and meta-analysis",
+  author    = "Platzek, Ivan and Sieron, Dominik and Plodeck, Verena and
+               Borkowetz, Angelika and Laniado, Michael and Hoffmann, Ralf
+               Thorsten",
+  journal   = "Eur. Radiol.",
+  publisher = "Springer Verlag",
+  volume    =  29,
+  pages     = "806--817",
+  abstract  = "Objectives: To perform a systematic review and meta-analysis of
+               published data to evaluate the utility of chemical shift imaging
+               (CSI) for differentiating between adrenal adenomas and
+               non-adenomas. Methods: A systematic search of the MEDLINE, Web of
+               Science Core Collection, EMBASE and Cochrane Central Register of
+               Controlled Trials electronic databases was performed. The
+               methodological quality of the included studies was assessed by
+               using the QUADAS-2 (Quality Assessment of Diagnostic Accuracy
+               Studies) tool. A bivariate random effect model was used to
+               determine summary and subgroup sensitivity and specificity and
+               calculate summary receiver operating characteristic curves
+               (SROC). Results: Eighteen studies with 1138 patients and 1280
+               lesions (859 adenomas, 421 non-adenomas) in total were included.
+               In addition to summary analysis, quantitative analyses of the
+               adrenal signal intensity index (SII, 978 lesions, 14 studies),
+               adrenal-to-spleen ratio (ASR; 394 lesions, 7 studies) and visual
+               analysis (560 lesions, 5 studies) were performed. The resultant
+               data showed considerable heterogeneity (inconsistency index I2 of
+               94\%, based on the diagnostic odds ratio, DOR). The pooled
+               sensitivity of CSI for adenoma was 0.94 [95\% confidence interval
+               (CI) 0.88–0.97] and pooled specificity was 0.95 (95\% CI
+               0.89–0.97). The area (AUC) under the SROC curve was 0.98 (95\% CI
+               0.96–0.99). The corresponding AUCs were 0.98, 0.99 and 0.95 for
+               SII, ASR and visual evaluation, respectively. Conclusion: CSI has
+               high sensitivity, specificity and accuracy for adrenal adenoma.
+               Diagnostic performance does not improve when quantitative indices
+               are used. Key Points: • Inclusion of CSI in abdominal MRI
+               protocols provides an effective solution for classifying adrenal
+               masses discovered on MR exams • Visual evaluation of adrenal CSI
+               is sufficient; use of quantitative indices does not improve
+               diagnostic accuracy.",
+  year      =  2019,
+  keywords  = "Adrenal gland neoplasms,Adrenocortical adenoma,Chemical shift
+               imaging,Magnetic resonance imaging"
+}
+
+@ARTICLE{Qi2023-nt,
+  title    = "Using {CT} radiomic features based on machine learning models to
+              subtype adrenal adenoma",
+  author   = "Qi, Shouliang and Zuo, Yifan and Chang, Runsheng and Huang, Kun
+              and Liu, Jing and Zhang, Zhe",
+  journal  = "BMC Cancer",
+  volume   =  23,
+  number   =  1,
+  pages    =  111,
+  abstract = "BACKGROUND: Functioning and non-functioning adrenocortical adenoma
+              are two subtypes of benign adrenal adenoma, and their differential
+              diagnosis is crucial. Current diagnostic procedures use an
+              invasive method, adrenal venous sampling, for endocrinologic
+              assessment. METHODS: This study proposes establishing an accurate
+              differential model for subtyping adrenal adenoma using computed
+              tomography (CT) radiomic features and machine learning (ML)
+              methods. Dataset 1 (289 patients with adrenal adenoma) was
+              collected to develop the models, and Dataset 2 (54 patients) was
+              utilized for external validation. Cuboids containing the lesion
+              were cropped from the non-contrast, arterial, and venous phase CT
+              images, and 1,967 features were extracted from each cuboid. Ten
+              discriminative features were selected from each phase or the
+              combined phases. Random forest, support vector machine, logistic
+              regression (LR), Gradient Boosting Machine, and eXtreme Gradient
+              Boosting were used to establish prediction models. RESULTS: The
+              highest accuracies were 72.7\%, 72.7\%, and 76.1\% in the
+              arterial, venous, and non-contrast phases, respectively, when
+              using radiomic features alone with the ML classifier of LR. When
+              features from the three CT phases were combined, the accuracy of
+              LR reached 83.0\%. After adding clinical information, the area
+              under the receiver operating characteristic curve increased for
+              all the machine learning methods except for LR. In Dataset 2, the
+              accuracy of LR was the highest, reaching 77.8\%. CONCLUSION: The
+              radiomic features of the lesion in three-phase CT images can
+              potentially suggest the functioning or non-functioning nature of
+              adrenal adenoma. The resulting radiomic models can be a
+              non-invasive, low-cost, and rapid method of minimizing unnecessary
+              testing in asymptomatic patients with incidentally discovered
+              adrenal adenoma.",
+  month    =  jan,
   year     =  2023,
-  keywords = "Adrenal incidentalomas; Hormone secretion; Machine
-              learning-magnetic resonance imaging",
+  keywords = "Adrenal adenoma; Computed tomography; Machine learning; Radiomic
+              features; Radiomics",
   language = "en"
 }
 
-@ARTICLE{Schieda2017-ah,
-  title     = "Utility of {MRI} to Differentiate Clear Cell Renal Cell Carcinoma
-               Adrenal Metastases From Adrenal Adenomas",
-  author    = "Schieda, Nicola and Krishna, Satheesh and McInnes, Matthew D F
-               and Moosavi, Bardia and Alrashed, Abdulmohsen and Moreland,
-               Robert and Siegelman, Evan S",
-  journal   = "AJR Am. J. Roentgenol.",
-  publisher = "AJR Am J Roentgenol",
-  volume    =  209,
-  pages     = "W152--W159",
-  abstract  = "OBJECTIVE. The purpose of this study is to compare MRI features
-               of clear cell renal cell carcinoma (RCC) adrenal metastases and
-               adenomas. MATERIALS AND METHODS. Fifteen clear cell RCC adrenal
-               metastases imaged with MRI were compared to 29 consecutive
-               adenomas between 2006 and 2015. Two blinded radiologists assessed
-               homogeneity (homogeneous vs heterogeneous), signal intensity (SI)
-               decrease on chemical-shift MRI, and T2-weighted SI (isointense,
-               mildly hyperintense, or markedly hyperintense) relative to
-               muscle. A third blinded radiologist measured the chemical-shift
-               SI index, adrenal-to-spleen SI ratio, T2-weighted SI ratio, AUC
-               for contrast-enhanced MRI, and histogram analysis. Analyses were
-               performed using chi-square, linear regression, ROC, and logistic
-               regression modeling. RESULTS. Clear cell RCC metastases were
-               larger than adenomas (mean [± SD], 5.0 ± 4.2 cm [range, 1.1-15
-               cm] vs 2.0 ± 0.7 cm [range, 1.2-3.7 cm]; p 16.5\%). Metastases
-               had higher T2-weighted SI than did adenomas, both quantitatively
-               (5.1 ± 3.0 [range, 1.5-10.6] vs 1.8 ± 0.8 [range, 0.5-3.8]; p
-               0.05). The ROC AUCs were 0.91 (95\% CI, 0.79-1.0) for T2-weighted
-               SI ratio and 0.85 (95\% CI, 0.68-1.0) for entropy. The logistic
-               regression model of T2-weighted SI ratio plus entropy improved
-               accuracy (ROC AUC, 0.97; 95\% CI, 0.93-1.0]) compared with either
-               feature alone (p = 0.0215). CONCLUSION. Increased T2-weighted SI
-               and heterogeneity are features that can differentiate clear cell
-               RCC adrenal metastases from adenomas using quantitative and
-               subjective analysis.",
-  year      =  2017,
-  keywords  = "Adrenal Gland Neoplasms / diagnostic imaging*,Adrenal Gland
-               Neoplasms / pathology*,Adrenocortical Adenoma / diagnostic
-               imaging*,Adrenocortical Adenoma /
-               pathology*,Biopsy,Carcinoma,Contrast
-               Media,Diagnosis,Differential,Evan S
-               Siegelman,Female,Humans,Kidney Neoplasms / diagnostic
-               imaging*,Kidney Neoplasms / secondary*,MEDLINE,Magnetic Resonance
-               Imaging / methods*,Male,Middle Aged,NCBI,NIH,NLM,National Center
-               for Biotechnology Information,National Institutes of
-               Health,National Library of Medicine,Needle,Nicola Schieda,PubMed
-               Abstract,Renal Cell / pathology*,Renal Cell /
-               secondary*,Retrospective Studies,Satheesh
-               Krishna,doi:10.2214/AJR.16.17649,pmid:28742373"
+@ARTICLE{Andersen2021-ef,
+  title     = "Metastases or benign adrenal lesions in patients with
+               histopathological verification of lung cancer: Can {CT} texture
+               analysis distinguish?",
+  author    = "Andersen, Michael Brun and Bodtger, Uffe and Andersen, Iben
+               Rahbek and Thorup, Kennet Sønderstgaard and Ganeshan, Balaji and
+               Rasmussen, Finn",
+  journal   = "Eur. J. Radiol.",
+  publisher = "Elsevier Ireland Ltd",
+  volume    =  138,
+  pages     =  109664,
+  abstract  = "Introduction: Distant metastases are found in the many of
+               patients with lung cancer at time of diagnosis. Several
+               diagnostic tools are available to distinguish between metastatic
+               spread and benign lesions in the adrenal gland. However, all
+               require additional diagnostic steps after the initial CT. The
+               purpose of this study was to evaluate if texture analysis of
+               CT-abnormal adrenal glands on the initial CT correctly
+               differentiates between malignant and benign lesions in patients
+               with confirmed lung cancer. Materials and methods: In this
+               retrospective study 160 patients with endoscopic
+               ultrasound-guided biopsy from the left adrenal gland and a
+               contrast-enhanced CT in portal venous phase were assessed with
+               texture analysis. A region of interest encircling the entire
+               adrenal gland was used and from this dataset the slice with the
+               largest cross section of the lesion was analyzed individually.
+               Results: Several texture parameters showed statistically
+               significantly difference between metastatic and benign lesions
+               but with considerable between-groups overlaps in confidence
+               intervals. Sensitivity and specificity were assessed using
+               ROC-curves, and in univariate binary logistic regression the area
+               under the curve ranged from 36 \% (Kurtosis 0.5) to 69 \%
+               (Entropy 2.5) compared to 73 \% in the best fitting model using
+               multivariate binary logistic regression. Conclusion: In lung
+               cancer patients with abnormal adrenal gland at imaging, adrenal
+               gland texture analyses appear not to have any role in
+               discriminating benign from malignant lesions.",
+  year      =  2021,
+  keywords  = "Adrenal gland,Computed tomography,Lung cancer,Texture analysis"
+}
+
+@ARTICLE{Moawad2021-kz,
+  title     = "Machine learning-based texture analysis for differentiation of
+               radiologically indeterminate small adrenal tumors on adrenal
+               protocol {CT} scans",
+  author    = "Moawad, Ahmed W and Ahmed, Ayahallah and Fuentes, David T and
+               Hazle, John D and Habra, Mouhammed A and Elsayes, Khaled M",
+  journal   = "Abdominal Radiology",
+  publisher = "Springer",
+  volume    =  46,
+  pages     = "4853--4863",
+  abstract  = "Goal: To evaluate the ability of radiomic feature extraction and
+               a machine learning algorithm to differentiate between benign and
+               malignant indeterminate adrenal lesions on contrast-enhanced
+               computed tomography (CT) studies. Background: Adrenal
+               “incidentalomas” are adrenal lesions that are accidentally
+               discovered during workup not related to the adrenal glands; they
+               have an incidence as high as 5\%. Small adrenal incidentalomas (
+               10 HU) need further evaluation to calculate the absolute
+               percentage of washout (APW). If the APW is 10 HU, and APW < 60\%.
+               Exclusion criteria included pheochromocytoma and no
+               histopathological examination. CT images were converted to Nifti
+               format, and adrenal tumors were segmented using Amira software.
+               Radiomic features from the adrenal mask were extracted using
+               PyRadiomics software after removing redundant features (highly
+               pairwise correlated features and low-variance features) using
+               recursive feature extraction to select the final discriminative
+               set of features. Lastly, the final features were used to build a
+               binary classification model using a random forest algorithm,
+               which was validated and tested using leave-one-out
+               cross-validation, confusion matrix, and receiver operating
+               characteristic curve. Results: We found 40 indeterminate adrenal
+               lesions (21 benign and 19 malignant). Feature extraction resulted
+               in 3947 features, which reduced down to 62 features after
+               removing redundancies. Recursive feature elimination resulted in
+               the following top 4 discriminative features: gray-level size zone
+               matrix-derived size zone non-uniformity from pre-contrast and
+               delayed phases, gray-level dependency matrix-derived large
+               dependence high gray-level emphasis from venous-phase, and
+               gray-level co-occurrence matrix-derived cluster shade from
+               delayed-phase. A binary classification model with leave-one-out
+               cross-validation showed AUC = 0.85, sensitivity = 84.2\%, and
+               specificity = 71.4\%. Conclusion: Machine learning and radiomic
+               features extraction can differentiate between benign and
+               malignant indeterminate adrenal tumors and can be used to direct
+               further workup with high sensitivity and specificity.",
+  year      =  2021,
+  keywords  = "Classification,Indeterminate adrenal tumors,Machine
+               learning,Radiomics"
+}
+
+@ARTICLE{Wang2018-wh,
+  title    = "{CT} and {MRI} of adrenal gland pathologies",
+  author   = "Wang, Fuqin and Liu, Junwei and Zhang, Ruoxi and Bai, Yonghua and
+              Li, Cailin and Li, Bangguo and Liu, Heng and Zhang, Tijiang",
+  journal  = "Quant. Imaging Med. Surg.",
+  volume   =  8,
+  number   =  8,
+  abstract = "Besides ultrasound and nuclear medicine techniques, computed
+              tomography (CT) and magnetic resonance imaging (MRI) are commonly
+              used to examine adrenal lesions in both symptomatic and
+              asymptomatic patients. Some adrenal lesions have characteristic
+              radiological features. If an adrenal nodule is discovered
+              incidentally, determining whether the lesion is benign or
+              malignant is of great importance. According to their biological
+              behavior, lesions can be divided into benign (mainly: adenoma,
+              hyperplasia, pheochromocytoma, cyst, hemorrhage, cystic
+              lymphangioma, myelolipoma, hemangioma, ganglioneuroma, teratoma)
+              and malignant (mainly: metastases, adrenal cortical carcinoma,
+              neuroblastoma, lymphoma) conditions. In this paper, we review
+              CT/MRI findings of common adrenal gland lesions.",
+  year     =  2018
+}
+
+@INPROCEEDINGS{Chen2018-ln,
+  title       = "Bayesian classifiers of solid lesions with dynamic {CT}:
+                 Integrating enhancement density with washout density and delay
+                 interval",
+  author      = "Chen, Nan and Ng, Chaan and Hobbs, Brian Paul",
+  publisher   = "IEEE",
+  institution = "IEEE; IEEE Signal Proc Soc; Engn Med \& Biol Soc",
+  pages       = "236--239",
+  abstract    = "Solid lesions emerge within diverse host tissue environments,
+                 making their diagnosis a challenge on the basis of non-invasive
+                 techniques alone. Various techniques have been developed to
+                 transform images into quantifiable feature sets producing
+                 summary statistics that describe enhancement distributions of
+                 solid masses. Relying on empirical distributional summaries,
+                 conventional approaches to cancer radiomics analysis are
+                 limited by the application of regression or machine learning
+                 algorithms to correlated feature sets. Moreover, often relying
+                 on summary statistics that derive from a single scan, current
+                 analytical approaches ignore temporal patterns that describe
+                 washout across multiple scans with contrast. Motivated by the
+                 diagnosis of adrenal masses on the basis of dynamic contrast
+                 enhanced computed tomography, this article presents novel
+                 statistical methodology for formulating similarity networks
+                 that integrate the entire enhancement and washout distributions
+                 of a delineated region of interest (ROI) with the duration of
+                 the delay scan interval. Applying consensus clustering to the
+                 network, we demonstrate unsupervised learning, revealing five
+                 discrete patterns of the combination of non-contrast
+                 enhancement distribution and contrast washout. Additionally, we
+                 demonstrate how the resultant network may be used to train a
+                 supervised Bayesian classifier based on the concept of partial
+                 exchangeability. When applied to predict the true
+                 pathology-verified malignancy status of adrenal lesions in our
+                 study, classification using Bayesian predictive probabilities
+                 deriving from the similarity network yielded an area under the
+                 ROC curve of 0.908 outperforming prediction with conventional
+                 regression analysis based on summary statistics of the
+                 enhancement densities, which yielded only 0.828.",
+  year        =  2018
+}
+
+@ARTICLE{Torresan2021-vb,
+  title     = "Radiomics: a new tool to differentiate adrenocortical adenoma
+               from carcinoma",
+  author    = "Torresan, F and Crimì, F and Ceccato, F and Zavan, F and Barbot,
+               M and Lacognata, C and Motta, R and Armellin, C and Scaroni, C
+               and Quaia, E and Campi, C and Iacobone, M",
+  journal   = "BJS open",
+  publisher = "NLM (Medline)",
+  volume    =  5,
+  abstract  = "BACKGROUND: The main challenge in the management of indeterminate
+               incidentally discovered adrenal tumours is to differentiate
+               benign from malignant lesions. In the absence of clear signs of
+               invasion or metastases, imaging techniques do not always
+               precisely define the nature of the mass. The present pilot study
+               aimed to determine whether radiomics may predict malignancy in
+               adrenocortical tumours. METHODS: CT images in unenhanced,
+               arterial, and venous phases from 19 patients who had undergone
+               resection of adrenocortical tumours and a cohort who had
+               undergone surveillance for at least 5 years for incidentalomas
+               were reviewed. A volume of interest was drawn for each lesion
+               using dedicated software, and, for each phase, first-order
+               (histogram) and second-order (grey-level colour matrix and
+               run-length matrix) radiological features were extracted. Data
+               were revised by an unsupervised machine learning approach using
+               the K-means clustering technique. RESULTS: Of operated patients,
+               nine had non-functional adenoma and 10 carcinoma. There were 11
+               patients in the surveillance group. Two first-order features in
+               unenhanced CT and one in arterial CT, and 14 second-order
+               parameters in unenhanced and venous CT and 10 second-order
+               features in arterial CT, were able to differentiate
+               adrenocortical carcinoma from adenoma (P < 0.050). After
+               excluding two malignant outliers, the unsupervised machine
+               learning approach correctly predicted malignancy in seven of
+               eight adrenocortical carcinomas in all phases. CONCLUSION:
+               Radiomics with CT texture analysis was able to discriminate
+               malignant from benign adrenocortical tumours, even by an
+               unsupervised machine learning approach, in nearly all patients.",
+  year      =  2021
+}
+
+@ARTICLE{Baba2012-pz,
+  title     = "Adrenal gland",
+  author    = "Baba, Yahya and Bashir, Omar",
+  journal   = "Radiopaedia. org",
+  publisher = "Radiopaedia.org",
+  year      =  2012
+}
+
+@MISC{noauthor_2012-py,
+  title = "adrenal gland | Definition, Anatomy, and Function | Britannica",
+  year  =  2012
+}
+
+@MISC{Grossman2022-tz,
+  title  = "Overview of the Adrenal Glands",
+  author = "Grossman, Ashley",
+  year   =  2022
+}
+
+@ARTICLE{Kong2022-zv,
+  title     = "Development of a radiomics model to diagnose pheochromocytoma
+               preoperatively: a multicenter study with prospective validation",
+  author    = "Kong, Jianqiu and Zheng, Junjiong and Wu, Jieying and Wu, Shaoxu
+               and Cai, Jinhua and Diao, Xiayao and Xie, Weibin and Chen, Xiong
+               and Yu, Hao and Huang, Lifang and Fang, Hongpeng and Fan,
+               Xinxiang and Qin, Haide and Li, Yong and Wu, Zhuo and Huang, Jian
+               and Lin, Tianxin",
+  journal   = "J. Transl. Med.",
+  publisher = "BioMed Central Ltd",
+  volume    =  20,
+  abstract  = "Background: Preoperative diagnosis of pheochromocytoma (PHEO)
+               accurately impacts preoperative preparation and surgical outcome
+               in PHEO patients. Highly reliable model to diagnose PHEO is
+               lacking. We aimed to develop a magnetic resonance imaging
+               (MRI)-based radiomic-clinical model to distinguish PHEO from
+               adrenal lesions. Methods: In total, 305 patients with 309 adrenal
+               lesions were included and divided into different sets. The least
+               absolute shrinkage and selection operator (LASSO) regression
+               model was used for data dimension reduction, feature selection,
+               and radiomics signature building. In addition, a nomogram
+               incorporating the obtained radiomics signature and selected
+               clinical predictors was developed by using multivariable logistic
+               regression analysis. The performance of the radiomic-clinical
+               model was assessed with respect to its discrimination,
+               calibration, and clinical usefulness. Results: Seven radiomics
+               features were selected among the 1301 features obtained as they
+               could differentiate PHEOs from other adrenal lesions in the
+               training (area under the curve [AUC], 0.887), internal validation
+               (AUC, 0.880), and external validation cohorts (AUC, 0.807).
+               Predictors contained in the individualized prediction nomogram
+               included the radiomics signature and symptom number (symptoms
+               include headache, palpitation, and diaphoresis). The training set
+               yielded an AUC of 0.893 for the nomogram, which was confirmed in
+               the internal and external validation sets with AUCs of 0.906 and
+               0.844, respectively. Decision curve analyses indicated the
+               nomogram was clinically useful. In addition, 25 patients with 25
+               lesions were recruited for prospective validation, which yielded
+               an AUC of 0.917 for the nomogram. Conclusion: We propose a
+               radiomic-based nomogram incorporating clinically useful
+               signatures as an easy-to-use, predictive and individualized tool
+               for PHEO diagnosis.",
+  year      =  2022,
+  keywords  = "Magnetic resonance
+               imaging,Nomogram,Pheochromocytoma,Prediction,Radiomics"
 }
 
 @ARTICLE{Bi2022-fb,
@@ -134,370 +393,32 @@
   year     =  2022
 }
 
-@ARTICLE{Altay2023-ep,
-  title    = "Machine learning analysis of adrenal lesions: preliminary study
-              evaluating texture analysis in the differentiation of adrenal
-              lesions",
-  author   = "Altay, Canan and Başara Akın, Işıl and Özgül, Abdullah Hakan and
-              Adıyaman, Süleyman Cem and Yener, Abdullah Serkan and Seçil,
-              Mustafa",
-  journal  = "Diagn. Interv. Radiol.",
-  volume   =  29,
-  number   =  2,
-  pages    = "234--243",
-  abstract = "PURPOSE: This study aimed to determine the accuracy of texture
-              analysis in differentiating adrenal lesions on unenhanced computed
-              tomography (CT) images. METHODS: In this single-center
-              retrospective study, 166 adrenal lesions in 140 patients (64
-              women, 76 men; mean age 56.58 ± 13.65 years) were evaluated
-              between January 2015 and December 2019. The lesions consisted of
-              54 lipid-rich adrenal adenomas, 37 lipid-poor adrenal adenomas
-              (LPAs), 56 adrenal metastases (ADM), and 19 adrenal
-              pheochromocytomas (APhs). Each adrenal lesion was segmented by
-              manually contouring the borders of the lesion on unenhanced CT
-              images. A texture analysis of the CT images was performed using
-              Local Image Feature Extraction software. First-order and
-              second-order texture parameters were assessed, and 45 features
-              were extracted from each lesion. One-Way analysis of variance with
-              Bonferroni correction and the Mann-Whitney U test was performed to
-              determine the relationships between the texture features and
-              adrenal lesions. Receiver operating characteristic curves were
-              performed for lesion discrimination based on the texture features.
-              Logistic regression analysis was used to generate logistic models,
-              including only the texture parameters with a high-class separation
-              capacity (i.e., P < 0.050). SPSS software was used for all
-              statistical analyses. RESULTS: First-order and second-order
-              texture parameters were identified as significant factors capable
-              of differentiating among the four lesion types (P < 0.050). The
-              logistic models were evaluated to ascertain the relationships
-              between LPA and ADM, LPA and APh, and ADM and APh. The
-              sensitivity, specificity, positive predictive value (PPV),
-              negative predictive value (NPV), and accuracy of the first model
-              (LPA vs. ADM) were 85.7\%, 70.3\%, 81.3\%, 76.4\%, and 79.5\%,
-              respectively. The sensitivity, specificity, PPV, NPV, and accuracy
-              of the second model (LPA vs. APh) were all 100\%. The sensitivity,
-              specificity, PPV, NPV, and accuracy of the third model (ADM vs.
-              APh) were 87.5\%, 82\%, 36.8\%, 98.2\%, and 82.7\%, respectively.
-              CONCLUSION: Texture features may help in the characterization of
-              adrenal lesions on unenhanced CT images.",
-  month    =  mar,
-  year     =  2023,
-  keywords = "Adrenal adenoma; adrenal glands; adrenal mass; computed
-              tomography; texture analysis",
-  language = "en"
-}
-
-@ARTICLE{Torresan2021-vb,
-  title     = "Radiomics: a new tool to differentiate adrenocortical adenoma
-               from carcinoma",
-  author    = "Torresan, F and Crimì, F and Ceccato, F and Zavan, F and Barbot,
-               M and Lacognata, C and Motta, R and Armellin, C and Scaroni, C
-               and Quaia, E and Campi, C and Iacobone, M",
-  journal   = "BJS open",
-  publisher = "NLM (Medline)",
-  volume    =  5,
-  abstract  = "BACKGROUND: The main challenge in the management of indeterminate
-               incidentally discovered adrenal tumours is to differentiate
-               benign from malignant lesions. In the absence of clear signs of
-               invasion or metastases, imaging techniques do not always
-               precisely define the nature of the mass. The present pilot study
-               aimed to determine whether radiomics may predict malignancy in
-               adrenocortical tumours. METHODS: CT images in unenhanced,
-               arterial, and venous phases from 19 patients who had undergone
-               resection of adrenocortical tumours and a cohort who had
-               undergone surveillance for at least 5 years for incidentalomas
-               were reviewed. A volume of interest was drawn for each lesion
-               using dedicated software, and, for each phase, first-order
-               (histogram) and second-order (grey-level colour matrix and
-               run-length matrix) radiological features were extracted. Data
-               were revised by an unsupervised machine learning approach using
-               the K-means clustering technique. RESULTS: Of operated patients,
-               nine had non-functional adenoma and 10 carcinoma. There were 11
-               patients in the surveillance group. Two first-order features in
-               unenhanced CT and one in arterial CT, and 14 second-order
-               parameters in unenhanced and venous CT and 10 second-order
-               features in arterial CT, were able to differentiate
-               adrenocortical carcinoma from adenoma (P < 0.050). After
-               excluding two malignant outliers, the unsupervised machine
-               learning approach correctly predicted malignancy in seven of
-               eight adrenocortical carcinomas in all phases. CONCLUSION:
-               Radiomics with CT texture analysis was able to discriminate
-               malignant from benign adrenocortical tumours, even by an
-               unsupervised machine learning approach, in nearly all patients.",
-  year      =  2021
-}
-
-@ARTICLE{Elmohr2019-uo,
-  title     = "Machine learning-based texture analysis for differentiation of
-               large adrenal cortical tumours on {CT}",
-  author    = "Elmohr, M M and Fuentes, D and Habra, M A and Bhosale, P R and
-               Qayyum, A A and Gates, E and Morshid, A I and Hazle, J D and
-               Elsayes, K M and I, A Morshid and Hazle, J D and Elsayes, K M",
-  journal   = "Clin. Radiol.",
-  publisher = "W.B. Saunders Ltd",
-  volume    =  74,
-  pages     = "818.e1--818.e7",
-  abstract  = "AIM: To compare the efficacy of computed tomography (CT) texture
-               analysis and conventional evaluation by radiologists for
-               differentiation between large adrenal adenomas and carcinomas.
-               MATERIALS AND METHODS: Quantitative CT texture analysis was used
-               to evaluate 54 histopathologically proven adrenal masses (mean
-               size=5.9 cm; range=4.1–10 cm) from 54 patients referred to
-               Anderson Cancer Center from January 2002 through April 2014. The
-               patient group included 32 women (mean age at mass evaluation=59
-               years) and 22 men (mean age at mass evaluation=61 years). Adrenal
-               lesions seen on precontrast and venous-phase CT images were
-               labelled by three different readers, and the labels were used to
-               generate intensity- and geometry-based textural features. The
-               textural features and the attenuation values were considered as
-               input values for a random forest-based classifier. Similarly, the
-               adrenal lesions were classified by two different radiologists
-               based on morphological criteria. Prediction accuracy and
-               interobserver agreement were compared. RESULTS: The textural
-               predictive model achieved a mean accuracy of 82\%, whereas the
-               mean accuracy for the radiologists was 68.5\% (p<0.0001). The
-               interobserver agreements between the predictive model and
-               radiologists 1 and 2 were 0.44 (p<0.0005; 95\% confidence
-               interval [CI]: 0.25–0.62) and 0.47 (p<0.0005; 95\% CI:
-               0.28–0.66), respectively. The Dice similarity coefficient between
-               the readers' image labels was 0.875±0.04. CONCLUSION: CT texture
-               analysis of large adrenal adenomas and carcinomas is likely to
-               improve CT evaluation of adrenal cortical tumours.",
-  year      =  2019
-}
-
-@ARTICLE{Andersen2021-ef,
-  title     = "Metastases or benign adrenal lesions in patients with
-               histopathological verification of lung cancer: Can {CT} texture
-               analysis distinguish?",
-  author    = "Andersen, Michael Brun and Bodtger, Uffe and Andersen, Iben
-               Rahbek and Thorup, Kennet Sønderstgaard and Ganeshan, Balaji and
-               Rasmussen, Finn",
-  journal   = "Eur. J. Radiol.",
-  publisher = "Elsevier Ireland Ltd",
-  volume    =  138,
-  pages     =  109664,
-  abstract  = "Introduction: Distant metastases are found in the many of
-               patients with lung cancer at time of diagnosis. Several
-               diagnostic tools are available to distinguish between metastatic
-               spread and benign lesions in the adrenal gland. However, all
-               require additional diagnostic steps after the initial CT. The
-               purpose of this study was to evaluate if texture analysis of
-               CT-abnormal adrenal glands on the initial CT correctly
-               differentiates between malignant and benign lesions in patients
-               with confirmed lung cancer. Materials and methods: In this
-               retrospective study 160 patients with endoscopic
-               ultrasound-guided biopsy from the left adrenal gland and a
-               contrast-enhanced CT in portal venous phase were assessed with
-               texture analysis. A region of interest encircling the entire
-               adrenal gland was used and from this dataset the slice with the
-               largest cross section of the lesion was analyzed individually.
-               Results: Several texture parameters showed statistically
-               significantly difference between metastatic and benign lesions
-               but with considerable between-groups overlaps in confidence
-               intervals. Sensitivity and specificity were assessed using
-               ROC-curves, and in univariate binary logistic regression the area
-               under the curve ranged from 36 \% (Kurtosis 0.5) to 69 \%
-               (Entropy 2.5) compared to 73 \% in the best fitting model using
-               multivariate binary logistic regression. Conclusion: In lung
-               cancer patients with abnormal adrenal gland at imaging, adrenal
-               gland texture analyses appear not to have any role in
-               discriminating benign from malignant lesions.",
-  year      =  2021,
-  keywords  = "Adrenal gland,Computed tomography,Lung cancer,Texture analysis"
-}
-
-@ARTICLE{Ho2019-hf,
-  title     = "Can Texture Analysis Be Used to Distinguish Benign From Malignant
-               Adrenal Nodules on Unenhanced {CT}, Contrast-Enhanced {CT}, or
-               In-Phase and Opposed-Phase {MRI}?",
-  author    = "Ho, Lisa M and Samei, Ehsan and Mazurowski, Maciej A and Zheng,
-               Yuese and Allen, Brian C and Nelson, Rendon C and Marin, Daniele",
-  journal   = "American Journal of Roentgenology",
-  publisher = "American Roentgen Ray Society",
-  volume    =  212,
-  pages     = "554--561",
-  abstract  = "OBJECTIVE. The purpose of this study is to determine whether
-               second-order texture analysis can be used to distinguish
-               lipid-poor adenomas from malignant adrenal nodules on unenhanced
-               CT, contrast-enhanced CT (CECT), and chemical-shift MRI.
-               MATERIALS AND METHODS. In this retrospective study, 23 adrenal
-               nodules (15 lipid-poor adenomas and eight adrenal malignancies)
-               in 20 patients (nine female patients and 11 male patients; mean
-               age, 59 years [range, 15–80 years]) were assessed. All patients
-               underwent unenhanced CT, CECT, and chemical-shift MRI. Twenty-one
-               second-order texture features from the gray-level cooccurrence
-               matrix and gray-level run-length matrix were calculated in 3D.
-               The mean values for 21 texture features and four imaging features
-               (lesion size, unenhanced CT attenuation, CECT attenuation, and
-               signal intensity index) were compared using a t test. The
-               diagnostic performance of texture analysis versus imaging
-               features was also compared using AUC values. Multivariate
-               logistic regression models to predict malignancy were constructed
-               for texture analysis and imaging features. RESULTS. Lesion size,
-               unenhanced CT attenuation, and the signal intensity index showed
-               significant differences between benign and malignant adrenal
-               nodules. No significant difference was seen for CECT attenuation.
-               Eighteen of 21 CECT texture features and nine of 21 unenhanced CT
-               texture features revealed significant differences between benign
-               and malignant adrenal nodules. CECT texture features (mean AUC
-               value, 0.80) performed better than CECT attenuation (mean AUC
-               value, 0.60). Multivariate logistic regression models showed that
-               CECT texture features, chemical-shift MRI texture features, and
-               imaging features were predictive of malignancy. CONCLUSION.
-               Texture analysis has a potential role in distinguishing benign
-               from malignant adrenal nodules on CECT and may decrease the need
-               for additional imaging studies in the workup of incidentally
-               discovered adrenal nodules.",
-  year      =  2019,
-  keywords  = "Adrenal nodules,Chemical-shift MRI,Contrast-enhanced CT,Texture
-               analysis"
-}
-
-@ARTICLE{Zhang2022-ep,
-  title    = "Diagnostic performance of radiomics in adrenal masses: A
-              systematic review and meta-analysis",
-  author   = "Zhang, Hao and Lei, Hanqi and Pang, Jun",
-  journal  = "Front. Oncol.",
-  volume   =  12,
-  pages    =  975183,
-  abstract = "OBJECTIVES: (1) To assess the methodological quality and risk of
-              bias of radiomics studies investigating the diagnostic performance
-              in adrenal masses and (2) to determine the potential diagnostic
-              value of radiomics in adrenal tumors by quantitative analysis.
-              METHODS: PubMed, Embase, Web of Science, and Cochrane Library
-              databases were searched for eligible literature. Methodological
-              quality and risk of bias in the included studies were assessed by
-              the Quality Assessment of Diagnostic Accuracy Studies 2 (QUADAS-2)
-              and Radiomics Quality Score (RQS). The diagnostic performance was
-              evaluated by pooled sensitivity, specificity, diagnostic odds
-              ratio (DOR), and area under the curve (AUC). Spearman's
-              correlation coefficient and subgroup analysis were used to
-              investigate the cause of heterogeneity. Publication bias was
-              examined using the Deeks' funnel plot. RESULTS: Twenty-eight
-              studies investigating the diagnostic performance of radiomics in
-              adrenal tumors were identified, with a total of 3579 samples. The
-              average RQS was 5.11 (14.2\% of total) with an acceptable
-              inter-rater agreement (ICC 0.94, 95\% CI 0.93-0.95). The risk of
-              bias was moderate according to the result of QUADAS-2. Nine
-              studies investigating the use of CT-based radiomics in
-              differentiating malignant from benign adrenal tumors were included
-              in the quantitative analysis. The pooled sensitivity, specificity,
-              DOR and AUC with 95\% confidence intervals were 0.80 (0.68-0.88),
-              0.83 (0.73-0.90), 19.06 (7.87-46.19) and 0.88 (0.85-0.91),
-              respectively. There was significant heterogeneity among the
-              included studies but no threshold effect in the meta-analysis. The
-              result of subgroup analysis demonstrated that radiomics based on
-              unenhanced and contrast-enhanced CT possessed higher diagnostic
-              performance, and second-order or higher-order features could
-              enhance the diagnostic sensitivity but also increase the false
-              positive rate. No significant difference in diagnostic ability was
-              observed between studies with machine learning and those without.
-              CONCLUSIONS: The methodological quality and risk of bias of
-              studies investigating the diagnostic performance of radiomics in
-              adrenal tumors should be further improved in the future. CT-based
-              radiomics has the potential benefits in differentiating malignant
-              from benign adrenal tumors. The heterogeneity between the included
-              studies was a major limitation to obtaining more accurate
-              conclusions. SYSTEMATIC REVIEW REGISTRATION:
-              https://www.crd.york.ac.uk/PROSPERO/ CRD 42022331999 .",
-  month    =  sep,
-  year     =  2022,
-  keywords = "adrenal tumor; diagnostic performance; machine learning;
-              radiomics; radiomics quality score",
-  language = "en"
-}
-
-@ARTICLE{Kusunoki2022-ok,
-  title    = "A deep learning-based approach for the diagnosis of adrenal
-              adenoma: a new trial using {CT}",
-  author   = "Kusunoki, Masaoki and Nakayama, Tomohiro and Nishie, Akihiro and
-              Yamashita, Yasuo and Kikuchi, Kazufumi and Eto, Masatoshi and Oda,
-              Yoshinao and Ishigami, Kousei",
-  journal  = "Br. J. Radiol.",
-  volume   =  95,
-  abstract = "Objective: To develop and validate deep convolutional neural
-              network (DCNN) models for the diagnosis of adrenal adenoma (AA)
-              using CT. Methods: This retrospective study enrolled 112 patients
-              who underwent abdominal CT (non-contrast, early, and delayed
-              phases) with 107 adrenal lesions (83 AAs and 24 non-AAs) confirmed
-              pathologically and with 8 lesions confirmed by follow-up as
-              metastatic carcinomas. Three patients had adrenal lesions on both
-              sides. We constructed six DCNN models from six types of input
-              images for comparison: non-contrast images only (Model A), delayed
-              phase images only (Model B), three phasic images merged into a
-              3-channel (Model C), relative washout rate (RWR) image maps only
-              (Model D), non-contrast and RWR maps merged into a 2-channel
-              (Model E), and delayed phase and RWR maps merged into a 2-channel
-              (Model F). These input images were prepared manually with cropping
-              and registration of CT images. Each DCNN model with six
-              convolutional layers was trained with data augmentation and
-              hyperparameter tuning. The optimal threshold values for binary
-              classification were determined from the receiveroperating
-              characteristic curve analyses. We adopted the nested
-              cross-validation method, in which the outer fivefold
-              cross-validation was used to assess the diagnostic performance of
-              the models and the inner fivefold cross-validation was used to
-              tune hyperparameters of the models. Results: The areas under the
-              curve with 95\% confidence intervals of Models A–F were 0.94
-              [0.90, 0.98], 0.80 [0.69, 0.89], 0.97 [0.94, 1.00], 0.92 [0.85,
-              0.97], 0.99 [0.97, 1.00] and 0.94 [0.86, 0.99], respectively.
-              Model E showed high area under the curve greater than 0.95.
-              Conclusion: DCNN models may be a useful tool for the diagnosis of
-              AA using CT. Advances in knowledge: The current study demonstrates
-              a deep learning-based approach could differentiate adrenal adenoma
-              from non-adenoma using multiphasic CT.",
-  year     =  2022
-}
-
-@ARTICLE{Israel2004-bn,
-  title     = "Comparison of unenhanced {CT} and chemical shift {MRI} in
-               evaluating lipid-rich adrenal adenomas",
-  author    = "Israel, Gary M and Korobkin, Melvyn and Wang, Chun and Hecht,
-               Elizabeth N and Krinsky, Glenn A",
-  journal   = "American Journal of Roentgenology",
-  publisher = "American Roentgen Ray Society",
-  volume    =  183,
-  pages     = "215--219",
-  abstract  = "OBJECTIVE. Our aim was to evaluate adrenal adenomas in patients
-               who underwent both unenhanced CT and chemical shift MRI to
-               determine if adenomas can be characterized with MRI when the
-               findings of CT are indeterminate. MATERIALS AND METHODS. Between
-               January 1999 and June 2003, 40 patients (42 adrenal masses)
-               underwent unenhanced CT and chemical shift MRI and were
-               retrospectively analyzed. Hounsfield units, adrenal-to-spleen
-               chemical shift ratio, and signal-intensity index were obtained
-               for each adrenal mass. Qualitative analysis for loss of signal in
-               each adrenal mass on the opposed-phase images was also performed
-               by two reviewers and compared with the quantitative analyses. A
-               lipid-rich adenoma was diagnosed if the mass measured equal to or
-               less than 10 H, had an adrenal-to-spleen chemical shift ratio of
-               less than 0.71, and had a signal-intensity index of greater than
-               16.5\% or if the mass fulfilled two of the preceding criteria and
-               had follow-up imaging without change. RESULTS. The sensitivities
-               and specificities for diagnosing a lipid-rich adenoma using the
-               qualitative, adrenal-to-spleen chemical shift ratio,
-               signal-intensity index, and unenhanced CT attenuation analyses
-               were 92\% (33/36) and 17\% (1/6), 100\% (36/36) and 100\% (6/6),
-               100\% (36/36) and 67\% (4/6), and 78\% (28/36) and 83\% (5/6),
-               respectively. Twenty-eight (67\%) lipid-rich adenomas measured
-               equal to or less than 10 H, had an adrenal-to-spleen chemical
-               shift ratio of less than 0.71, and had a signal-intensity index
-               of greater than 16.5\%. Eight masses (19\%) measured greater than
-               10 H but had an adrenal-to-spleen chemical shift ratio of less
-               than 0.71 and a signal-intensity index greater than 16.5\% and
-               were unchanged at follow-up. CONCLUSION. Eight (62\%) of 13
-               adrenal adenomas measuring greater than 10 H on unenhanced CT
-               were definitively characterized with chemical shift MRI.",
-  year      =  2004,
-  keywords  = "Adenoma / chemistry,Adenoma / diagnosis*,Adrenal Gland Neoplasms
-               / chemistry,Adrenal Gland Neoplasms / diagnosis*,Aged,Comparative
-               Study,Female,Gary M Israel,Glenn A Krinsky,Humans,Lipid
-               Metabolism,MEDLINE,Magnetic Resonance Imaging*,Male,Melvyn
-               Korobkin,NCBI,NIH,NLM,National Center for Biotechnology
-               Information,National Institutes of Health,National Library of
-               Medicine,PubMed Abstract,Retrospective Studies,Tomography,X-Ray
-               Computed*,doi:10.2214/ajr.183.1.1830215,pmid:15208141"
+@ARTICLE{Bracci2022-fo,
+  title     = "Adrenal Lesions: A Review of Imaging",
+  author    = "Bracci, Benedetta and Santis, Domenico De and Gaudio, Antonella
+               Del and Faugno, Maria Carla and Romano, Allegra and Tarallo,
+               Mariarita and Zerunian, Marta and Guido, Gisella and Polici,
+               Michela and Polidori, Tiziano and Pucciarelli, Francesco and
+               Matarazzo, Iolanda and Laghi, Andrea and Caruso, Damiano",
+  journal   = "Diagnostics",
+  publisher = "MDPI",
+  volume    =  12,
+  pages     =  2171,
+  abstract  = "Adrenal lesions are frequently incidentally diagnosed during
+               investigations for other clinical conditions. Despite being
+               usually benign, nonfunctioning, and silent, they can occasionally
+               cause discomfort or be responsible for various clinical
+               conditions due to hormonal dysregulation; therefore, their
+               characterization is of paramount importance for establishing the
+               best therapeutic strategy. Imaging techniques such as ultrasound,
+               computed tomography, magnetic resonance, and PET-TC, providing
+               anatomical and functional information, play a central role in the
+               diagnostic workup, allowing clinicians and surgeons to choose the
+               optimal lesion management. This review aims at providing an
+               overview of the most encountered adrenal lesions, both benign and
+               malignant, including describing their imaging characteristics.",
+  year      =  2022,
+  keywords  = "adenoma,adrenal,computed tomography,incidentaloma,myelolipoma"
 }
 
 @ARTICLE{Shoemaker2018-ta,
@@ -587,535 +508,33 @@
   language = "en"
 }
 
-@ARTICLE{Stanzione2021-fh,
-  title     = "Handcrafted {MRI} radiomics and machine learning: Classification
-               of indeterminate solid adrenal lesions",
-  author    = "Stanzione, Arnaldo and Cuocolo, Renato and Verde, Francesco and
-               Galatola, Roberta and Romeo, Valeria and Mainenti, Pier Paolo and
-               Aprea, Giovanni and Guadagno, Elia and Caro, Marialaura Del Basso
-               De and Maurea, Simone",
-  journal   = "Magn. Reson. Imaging",
-  publisher = "Elsevier BV",
-  volume    =  79,
-  pages     = "52--58",
-  abstract  = "PURPOSE To assess a radiomic machine learning (ML) model in
-               classifying solid adrenal lesions (ALs) without fat signal drop
-               on chemical shift (CS) as benign or malignant. METHOD 55
-               indeterminate ALs (21 lipid poor adenomas, 15 benign
-               pheocromocytomas, 1 oncocytoma, 12 metastases, 6 primary tumors)
-               showing no fat signal drop on CS were retrospectively included.
-               Manual 3D segmentation on T2-weighted and CS images was performed
-               for subsequent radiomic feature extraction. After feature
-               stability testing and an 80-20\% train-test split, the train set
-               was balanced via oversampling. Following a multi-step feature
-               selection, an Extra Trees model was tuned with 5-fold stratified
-               cross-validation in the train set and then tested on the hold-out
-               test set. RESULTS A total of 3396 features were extracted from
-               each AL, of which 133 resulted unstable while none had low
-               variance ( 0.8) features were also excluded, leaving 440
-               parameters. Among these, Support Vector Machine 5-fold stratified
-               cross-validated recursive feature elimination selected a subset
-               of 6 features. ML obtained a cross-validation accuracy of 0.94 on
-               the train and 0.91 on the test sets. Precision, recall and F1
-               score were respectively 0.92, 0.91 and 0.91. CONCLUSIONS Our MRI
-               handcrafted radiomics and ML pipeline proved useful to
-               characterize benign and malignant solid indeterminate adrenal
-               lesions.",
-  year      =  2021,
-  keywords  = "Adrenal glands,Chemical shift imaging,Machine learning,Magnetic
-               resonance imaging,Neoplasms"
-}
-
-@ARTICLE{Kong2022-zv,
-  title     = "Development of a radiomics model to diagnose pheochromocytoma
-               preoperatively: a multicenter study with prospective validation",
-  author    = "Kong, Jianqiu and Zheng, Junjiong and Wu, Jieying and Wu, Shaoxu
-               and Cai, Jinhua and Diao, Xiayao and Xie, Weibin and Chen, Xiong
-               and Yu, Hao and Huang, Lifang and Fang, Hongpeng and Fan,
-               Xinxiang and Qin, Haide and Li, Yong and Wu, Zhuo and Huang, Jian
-               and Lin, Tianxin",
-  journal   = "J. Transl. Med.",
-  publisher = "BioMed Central Ltd",
-  volume    =  20,
-  abstract  = "Background: Preoperative diagnosis of pheochromocytoma (PHEO)
-               accurately impacts preoperative preparation and surgical outcome
-               in PHEO patients. Highly reliable model to diagnose PHEO is
-               lacking. We aimed to develop a magnetic resonance imaging
-               (MRI)-based radiomic-clinical model to distinguish PHEO from
-               adrenal lesions. Methods: In total, 305 patients with 309 adrenal
-               lesions were included and divided into different sets. The least
-               absolute shrinkage and selection operator (LASSO) regression
-               model was used for data dimension reduction, feature selection,
-               and radiomics signature building. In addition, a nomogram
-               incorporating the obtained radiomics signature and selected
-               clinical predictors was developed by using multivariable logistic
-               regression analysis. The performance of the radiomic-clinical
-               model was assessed with respect to its discrimination,
-               calibration, and clinical usefulness. Results: Seven radiomics
-               features were selected among the 1301 features obtained as they
-               could differentiate PHEOs from other adrenal lesions in the
-               training (area under the curve [AUC], 0.887), internal validation
-               (AUC, 0.880), and external validation cohorts (AUC, 0.807).
-               Predictors contained in the individualized prediction nomogram
-               included the radiomics signature and symptom number (symptoms
-               include headache, palpitation, and diaphoresis). The training set
-               yielded an AUC of 0.893 for the nomogram, which was confirmed in
-               the internal and external validation sets with AUCs of 0.906 and
-               0.844, respectively. Decision curve analyses indicated the
-               nomogram was clinically useful. In addition, 25 patients with 25
-               lesions were recruited for prospective validation, which yielded
-               an AUC of 0.917 for the nomogram. Conclusion: We propose a
-               radiomic-based nomogram incorporating clinically useful
-               signatures as an easy-to-use, predictive and individualized tool
-               for PHEO diagnosis.",
+@ARTICLE{Suganyadevi2022-jm,
+  title     = "A review on deep learning in medical image analysis",
+  author    = "Suganyadevi, S and Seethalakshmi, V and Balasamy, K",
+  journal   = "International Journal of Multimedia Information Retrieval",
+  publisher = "Springer Science and Business Media Deutschland GmbH",
+  volume    =  11,
+  pages     = "19--38",
+  abstract  = "Ongoing improvements in AI, particularly concerning deep learning
+               techniques, are assisting to identify, classify, and quantify
+               patterns in clinical images. Deep learning is the quickest
+               developing field in artificial intelligence and is effectively
+               utilized lately in numerous areas, including medication. A brief
+               outline is given on studies carried out on the region of
+               application: neuro, brain, retinal, pneumonic, computerized
+               pathology, bosom, heart, breast, bone, stomach, and
+               musculoskeletal. For information exploration, knowledge
+               deployment, and knowledge-based prediction, deep learning
+               networks can be successfully applied to big data. In the field of
+               medical image processing methods and analysis, fundamental
+               information and state-of-the-art approaches with deep learning
+               are presented in this paper. The primary goals of this paper are
+               to present research on medical image processing as well as to
+               define and implement the key guidelines that are identified and
+               addressed.",
   year      =  2022,
-  keywords  = "Magnetic resonance
-               imaging,Nomogram,Pheochromocytoma,Prediction,Radiomics"
-}
-
-@ARTICLE{Liu2022-yw,
-  title    = "Computed Tomography-Based Machine Learning Differentiates Adrenal
-              Pheochromocytoma From Lipid-Poor Adenoma",
-  author   = "Liu, Haipeng and Guan, Xiao and Xu, Beibei and Zeng, Feiyue and
-              Chen, Changyong and Yin, Hong Ling and Yi, Xiaoping and Peng,
-              Yousong and Chen, Bihong T",
-  journal  = "Front. Endocrinol.",
-  volume   =  13,
-  abstract = "Objectives: To assess the accuracy of computed tomography
-              (CT)-based machine learning models for differentiating subclinical
-              pheochromocytoma (sPHEO) from lipid-poor adenoma (LPA) in patients
-              with adrenal incidentalomas. Patients and Methods: The study
-              included 188 tumors in the 183 patients with LPA and 92 tumors in
-              86 patients with sPHEO. Pre-enhanced CT imaging features of the
-              tumors were evaluated. Machine learning prediction models and
-              scoring systems for differentiating sPHEO from LPA were built
-              using logistic regression (LR), support vector machine (SVM) and
-              random forest (RF) approaches. Results: The LR model performed
-              better than other models. The LR model (M1) including three CT
-              features: CTpre value, shape, and necrosis/cystic changes had an
-              area under the receiver operating characteristic curve (AUC) of
-              0.917 and an accuracy of 0.864. The LR model (M2) including three
-              CT features: CTpre value, shape and homogeneity had an AUC of
-              0.888 and an accuracy of 0.832. The S2 scoring system
-              (sensitivity: 0.859, specificity: 0.824) had comparable diagnostic
-              value to S1 (sensitivity: 0.815; specificity: 0.910). Conclusions:
-              Our results indicated the potential of using a non-invasive
-              imaging method such as CT-based machine learning models and
-              scoring systems for predicting histology of adrenal
-              incidentalomas. This approach may assist the diagnosis and
-              personalized care of patients with adrenal tumors.",
-  year     =  2022
-}
-
-@ARTICLE{Zheng2020-fn,
-  title     = "A Preliminary Study for Distinguish Hormone-Secreting Functional
-               Adrenocortical Adenoma Subtypes Using Multiparametric {CT}
-               Radiomics-Based Machine Learning Model and Nomogram",
-  author    = "Zheng, Yineng and Liu, Xin and Zhong, Yi and Lv, Fajin and Yang,
-               Haitao",
-  journal   = "Front. Oncol.",
-  publisher = "Frontiers Media S.A.",
-  volume    =  10,
-  abstract  = "Purpose: To explore the application value of multiparametric
-               computed tomography (CT) radiomics in non-invasive
-               differentiation between aldosterone-producing and
-               cortisol-producing functional adrenocortical adenomas. Methods:
-               This retrospective review analyzed 83 patients including 41
-               patients with aldosterone-producing adenoma and 42 patients with
-               cortisol-producing adenoma. The quantitative radiomics features
-               were extracted from the complete unenhanced, arterial, and venous
-               phase CT images. A comparative study of several frequently used
-               machine learning models (linear discriminant analysis, logistic
-               regression, random forest, and support vector machine) combined
-               with different feature selection methods was implemented in order
-               to determine which was most advantageous for differential
-               diagnosis using radiomics features. Then, the integrated model
-               using the combination of radiomic signature and
-               clinic–radiological features was built, and the associated
-               calibration curve was also presented. The diagnostic performance
-               of these models was estimated and compared using the area under
-               the receiver operating characteristic (ROC) curve (AUC). Result:
-               In the radiomics-based machine learning model, logistic
-               regression model with LASSO (least absolute shrinkage and
-               selection operator) outperformed the other models, which yielded
-               a sensitivity of 0.935, a specificity of 0.823, and an accuracy
-               of 0.887 [AUC = 0.882, 95\% confidence interval (CI) =
-               0.819–0.945]. Moreover, the nomogram representing the integrated
-               model achieved good discrimination performances, which yielded a
-               sensitivity of 0.915, a specificity of 0.928, and an accuracy of
-               0.922 (AUC = 0.902, 95\% CI = 0.822–0.982), and it was better
-               than that of the radiomics model alone. Conclusion: This study
-               found that the combination of multiparametric radiomics signature
-               and clinic–radiological features can non-invasively differentiate
-               the subtypes of hormone-secreting functional adrenocortical
-               adenomas, which may have good potential for facilitating the
-               diagnosis and treatment in clinical practice.",
-  year      =  2020,
-  keywords  = "adrenocortical adenoma,computer-assisted diagnosis,machine
-               learning,multidetector computed tomography,radiomics"
-}
-
-@INPROCEEDINGS{Chen2018-ln,
-  title       = "Bayesian classifiers of solid lesions with dynamic {CT}:
-                 Integrating enhancement density with washout density and delay
-                 interval",
-  author      = "Chen, Nan and Ng, Chaan and Hobbs, Brian Paul",
-  publisher   = "IEEE",
-  institution = "IEEE; IEEE Signal Proc Soc; Engn Med \& Biol Soc",
-  pages       = "236--239",
-  abstract    = "Solid lesions emerge within diverse host tissue environments,
-                 making their diagnosis a challenge on the basis of non-invasive
-                 techniques alone. Various techniques have been developed to
-                 transform images into quantifiable feature sets producing
-                 summary statistics that describe enhancement distributions of
-                 solid masses. Relying on empirical distributional summaries,
-                 conventional approaches to cancer radiomics analysis are
-                 limited by the application of regression or machine learning
-                 algorithms to correlated feature sets. Moreover, often relying
-                 on summary statistics that derive from a single scan, current
-                 analytical approaches ignore temporal patterns that describe
-                 washout across multiple scans with contrast. Motivated by the
-                 diagnosis of adrenal masses on the basis of dynamic contrast
-                 enhanced computed tomography, this article presents novel
-                 statistical methodology for formulating similarity networks
-                 that integrate the entire enhancement and washout distributions
-                 of a delineated region of interest (ROI) with the duration of
-                 the delay scan interval. Applying consensus clustering to the
-                 network, we demonstrate unsupervised learning, revealing five
-                 discrete patterns of the combination of non-contrast
-                 enhancement distribution and contrast washout. Additionally, we
-                 demonstrate how the resultant network may be used to train a
-                 supervised Bayesian classifier based on the concept of partial
-                 exchangeability. When applied to predict the true
-                 pathology-verified malignancy status of adrenal lesions in our
-                 study, classification using Bayesian predictive probabilities
-                 deriving from the similarity network yielded an area under the
-                 ROC curve of 0.908 outperforming prediction with conventional
-                 regression analysis based on summary statistics of the
-                 enhancement densities, which yielded only 0.828.",
-  year        =  2018
-}
-
-@ARTICLE{Moawad2021-kz,
-  title     = "Machine learning-based texture analysis for differentiation of
-               radiologically indeterminate small adrenal tumors on adrenal
-               protocol {CT} scans",
-  author    = "Moawad, Ahmed W and Ahmed, Ayahallah and Fuentes, David T and
-               Hazle, John D and Habra, Mouhammed A and Elsayes, Khaled M",
-  journal   = "Abdominal Radiology",
-  publisher = "Springer",
-  volume    =  46,
-  pages     = "4853--4863",
-  abstract  = "Goal: To evaluate the ability of radiomic feature extraction and
-               a machine learning algorithm to differentiate between benign and
-               malignant indeterminate adrenal lesions on contrast-enhanced
-               computed tomography (CT) studies. Background: Adrenal
-               “incidentalomas” are adrenal lesions that are accidentally
-               discovered during workup not related to the adrenal glands; they
-               have an incidence as high as 5\%. Small adrenal incidentalomas (
-               10 HU) need further evaluation to calculate the absolute
-               percentage of washout (APW). If the APW is 10 HU, and APW < 60\%.
-               Exclusion criteria included pheochromocytoma and no
-               histopathological examination. CT images were converted to Nifti
-               format, and adrenal tumors were segmented using Amira software.
-               Radiomic features from the adrenal mask were extracted using
-               PyRadiomics software after removing redundant features (highly
-               pairwise correlated features and low-variance features) using
-               recursive feature extraction to select the final discriminative
-               set of features. Lastly, the final features were used to build a
-               binary classification model using a random forest algorithm,
-               which was validated and tested using leave-one-out
-               cross-validation, confusion matrix, and receiver operating
-               characteristic curve. Results: We found 40 indeterminate adrenal
-               lesions (21 benign and 19 malignant). Feature extraction resulted
-               in 3947 features, which reduced down to 62 features after
-               removing redundancies. Recursive feature elimination resulted in
-               the following top 4 discriminative features: gray-level size zone
-               matrix-derived size zone non-uniformity from pre-contrast and
-               delayed phases, gray-level dependency matrix-derived large
-               dependence high gray-level emphasis from venous-phase, and
-               gray-level co-occurrence matrix-derived cluster shade from
-               delayed-phase. A binary classification model with leave-one-out
-               cross-validation showed AUC = 0.85, sensitivity = 84.2\%, and
-               specificity = 71.4\%. Conclusion: Machine learning and radiomic
-               features extraction can differentiate between benign and
-               malignant indeterminate adrenal tumors and can be used to direct
-               further workup with high sensitivity and specificity.",
-  year      =  2021,
-  keywords  = "Classification,Indeterminate adrenal tumors,Machine
-               learning,Radiomics"
-}
-
-@ARTICLE{Platzek2019-tk,
-  title     = "Chemical shift imaging for evaluation of adrenal masses: a
-               systematic review and meta-analysis",
-  author    = "Platzek, Ivan and Sieron, Dominik and Plodeck, Verena and
-               Borkowetz, Angelika and Laniado, Michael and Hoffmann, Ralf
-               Thorsten",
-  journal   = "Eur. Radiol.",
-  publisher = "Springer Verlag",
-  volume    =  29,
-  pages     = "806--817",
-  abstract  = "Objectives: To perform a systematic review and meta-analysis of
-               published data to evaluate the utility of chemical shift imaging
-               (CSI) for differentiating between adrenal adenomas and
-               non-adenomas. Methods: A systematic search of the MEDLINE, Web of
-               Science Core Collection, EMBASE and Cochrane Central Register of
-               Controlled Trials electronic databases was performed. The
-               methodological quality of the included studies was assessed by
-               using the QUADAS-2 (Quality Assessment of Diagnostic Accuracy
-               Studies) tool. A bivariate random effect model was used to
-               determine summary and subgroup sensitivity and specificity and
-               calculate summary receiver operating characteristic curves
-               (SROC). Results: Eighteen studies with 1138 patients and 1280
-               lesions (859 adenomas, 421 non-adenomas) in total were included.
-               In addition to summary analysis, quantitative analyses of the
-               adrenal signal intensity index (SII, 978 lesions, 14 studies),
-               adrenal-to-spleen ratio (ASR; 394 lesions, 7 studies) and visual
-               analysis (560 lesions, 5 studies) were performed. The resultant
-               data showed considerable heterogeneity (inconsistency index I2 of
-               94\%, based on the diagnostic odds ratio, DOR). The pooled
-               sensitivity of CSI for adenoma was 0.94 [95\% confidence interval
-               (CI) 0.88–0.97] and pooled specificity was 0.95 (95\% CI
-               0.89–0.97). The area (AUC) under the SROC curve was 0.98 (95\% CI
-               0.96–0.99). The corresponding AUCs were 0.98, 0.99 and 0.95 for
-               SII, ASR and visual evaluation, respectively. Conclusion: CSI has
-               high sensitivity, specificity and accuracy for adrenal adenoma.
-               Diagnostic performance does not improve when quantitative indices
-               are used. Key Points: • Inclusion of CSI in abdominal MRI
-               protocols provides an effective solution for classifying adrenal
-               masses discovered on MR exams • Visual evaluation of adrenal CSI
-               is sufficient; use of quantitative indices does not improve
-               diagnostic accuracy.",
-  year      =  2019,
-  keywords  = "Adrenal gland neoplasms,Adrenocortical adenoma,Chemical shift
-               imaging,Magnetic resonance imaging"
-}
-
-@ARTICLE{Yi2018-ud,
-  title     = "Radiomics improves efficiency for differentiating subclinical
-               pheochromocytoma from lipid-poor adenoma: a predictive,
-               preventive and personalized medical approach in adrenal
-               incidentalomas",
-  author    = "Yi, Xiaoping and Guan, Xiao and Zhang, Youming and Liu, Longfei
-               and Long, Xueying and Yin, Hongling and Wang, Zhongjie and Li,
-               Xuejun and Liao, Weihua and Chen, Bihong T and Zee, Chishing",
-  journal   = "EPMA J.",
-  publisher = "Springer International Publishing",
-  volume    =  9,
-  pages     = "421--429",
-  abstract  = "Objectives: This study aims to define a radiomic signature for
-               pre-operative differentiation between subclinical
-               pheochromocytoma (sPHEO) and lipid-poor adrenal adenoma (LPA) in
-               adrenal incidentaloma. The goal was to apply a predictive,
-               preventive, and personalized medical approach to the management
-               of adrenal tumors. Patients and methods: This retrospective study
-               consisted of 265 consecutive patients (training cohort, 212 (LPA,
-               145; sPHEO, 67); validation cohort, 53 (LPA, 36; sPHEO, 17)).
-               Computed tomography (CT) imaging features were evaluated,
-               including long diameter (LD), short diameter (SD), pre-enhanced
-               CT value (CTpre), enhanced CT value (CTpost), shape, homogeneity,
-               necrosis or cystic degeneration (N/C). Radiomic features were
-               extracted and then were used to construct a radiomic signature
-               (Rad-score) and radiomic nomogram. The area under the receiver
-               operating characteristic curve (AUC) was used to evaluate their
-               performance. Results: Sixteen of three hundred forty candidate
-               features were used to build a radiomic signature. The signature
-               was significantly different between the sPHEO and LPA groups
-               (AUC: training, 0.907; validation, 0.902). The radiomic nomogram
-               based on enhanced CT features (M1) consisted of Rad-score, LD,
-               SD, CTpre, shape, homogeneity and N/C (AUC: training, 0.957;
-               validation, 0.967). The pre-enhanced CT features based radiomic
-               nomogram (M2) included Rad-score, LD, SD, CTpre, shape, and
-               homogeneity (AUC: training, 0.955; validation, 0.958).
-               Conclusions: Our radiomic nomograms based on pre-enhanced and
-               enhanced CT images distinguished sPHEO from LPA. In addition, the
-               promising result using pre-enhanced CT images for predictive
-               diagnostics is important because patients could avoid the
-               additional radiation and risk associated with enhanced CT.",
-  year      =  2018,
-  keywords  = "Adrenal adenoma,Adrenal gland neoplasms,Computed
-               tomography,Pheochromocytoma,Predictive preventive personalized
-               medicine,Radiomics"
-}
-
-@ARTICLE{Liu2021-oc,
-  title     = "Combined Diagnosis of Whole-Lesion Histogram Analysis of {T1}-
-               and {T2}-Weighted Imaging for Differentiating Adrenal Adenoma and
-               Pheochromocytoma: A Support Vector Machine-Based Study",
-  author    = "Liu, Junhong and Xue, Kangkang and Li, Shujian and Zhang, Yong
-               and Cheng, Jingliang",
-  journal   = "Can. Assoc. Radiol. J.",
-  publisher = "SAGE Publications Inc.",
-  volume    =  72,
-  pages     = "452--459",
-  abstract  = "Purpose: This study aimed to determine whether a combined
-               diagnosis of whole-lesion histogram analysis of T1- and
-               T2-weighted imaging based on support vector machine (SVM) can
-               distinguish pheochromocytoma from adrenal adenoma. Methods: A
-               pathology database was retrospectively appraised over a period of
-               7 years and we obtained 40 histopathologically proven adrenal
-               adenomas and 20 pheochromocytomas with magnetic resonance images.
-               The T1-weighted imaging (T1WI, including both in phase and
-               opposed phase) and T2-weighted imaging (T2WI) images of each
-               patients were analyzed using Mazda software. Nine parameters were
-               selected as indicators of comparison: variance, skewness,
-               kurtosis, mean, 1st percentile, 10th percentile, 50th percentile,
-               90th percentile, and 99th percentile. The parameters with
-               differential-diagnosis significance were used to establish the
-               combined diagnostic model of SVM. Results: Among the 9 parameters
-               extracted using histogram analysis, the 1st percentile, 10th
-               percentile, and 50th percentile of T1WI (in phase) and the
-               skewness of T2WI and almost all parameters of T1WI (opposed
-               phase), except variance and 99th percentile, showed statistical
-               significance between groups. Among the above parameters, the area
-               under the curve (AUC) of 10th percentile of T1WI (opposed phase)
-               was the largest with the value of 0.909 (100.0\% sensitivity and
-               80.0\% specificity). After the analysis of combined diagnosis was
-               performed, the AUC of SVM model in testing set showed the value
-               of 0.917 (85.0\% accuracy). Conclusions: Whole-lesion histogram
-               analysis of T1WI and T2WI may help differentiate adrenal adenomas
-               from pheochromocytomas. Furthermore, the combined diagnosis of
-               T1WI and T2WI histogram based on SVM was more effective than most
-               of individual histogram parameters.",
-  year      =  2021,
-  keywords  = "adrenocortical tumor,diagnosis,magnetic resonance
-               imaging,pheochromocytoma,support vector machine"
-}
-
-@ARTICLE{Tu2020-dh,
-  title     = "Utility of {t2}-weighted mri to differentiate adrenal metastases
-               from lipid-poor adrenal adenomas",
-  author    = "Tu, Wendy and Abreu-Gomez, Jorge and Udare, Amar and Alrashed,
-               Abdulmohsen and Schieda, Nicola",
-  journal   = "Radiology: Imaging Cancer",
-  publisher = "Radiological Society of North America Inc.",
-  volume    =  2,
-  abstract  = "Purpose: To evaluate T2-weighted MRI features to differentiate
-               adrenal metastases from lipid-poor adenomas. Materials and
-               Methods: With institutional review board approval, this study
-               retrospectively compared 40 consecutive patients (mean age, 66
-               years ± 10 [standard deviation]) with metastases to 23 patients
-               (mean age, 60 years ± 15) with lipid-poor adenomas at 1.5-and 3-T
-               MRI between June 2016 and March 2019. A blinded radiologist
-               measured T2-weighted signal intensity (SI) ratio (SInodule /
-               SIpsoas muscle ), T2-weighted histogram features, and chemical
-               shift SI index. Two blinded radiologists (radiologist 1 and
-               radiologist 2) assessed T2-weighted SI and T2-weighted
-               heterogeneity using five-point Likert scales. Results:
-               Subjectively, T2-weighted SI (P .05). Conclusion Logistic
-               regression models combining T2-weighted SI and T2-weighted
-               heterogeneity can differentiate metastases from lipid-poor
-               adenomas. Validation of these preliminary results is required.",
-  year      =  2020
-}
-
-@ARTICLE{Qi2023-nt,
-  title    = "Using {CT} radiomic features based on machine learning models to
-              subtype adrenal adenoma",
-  author   = "Qi, Shouliang and Zuo, Yifan and Chang, Runsheng and Huang, Kun
-              and Liu, Jing and Zhang, Zhe",
-  journal  = "BMC Cancer",
-  volume   =  23,
-  number   =  1,
-  pages    =  111,
-  abstract = "BACKGROUND: Functioning and non-functioning adrenocortical adenoma
-              are two subtypes of benign adrenal adenoma, and their differential
-              diagnosis is crucial. Current diagnostic procedures use an
-              invasive method, adrenal venous sampling, for endocrinologic
-              assessment. METHODS: This study proposes establishing an accurate
-              differential model for subtyping adrenal adenoma using computed
-              tomography (CT) radiomic features and machine learning (ML)
-              methods. Dataset 1 (289 patients with adrenal adenoma) was
-              collected to develop the models, and Dataset 2 (54 patients) was
-              utilized for external validation. Cuboids containing the lesion
-              were cropped from the non-contrast, arterial, and venous phase CT
-              images, and 1,967 features were extracted from each cuboid. Ten
-              discriminative features were selected from each phase or the
-              combined phases. Random forest, support vector machine, logistic
-              regression (LR), Gradient Boosting Machine, and eXtreme Gradient
-              Boosting were used to establish prediction models. RESULTS: The
-              highest accuracies were 72.7\%, 72.7\%, and 76.1\% in the
-              arterial, venous, and non-contrast phases, respectively, when
-              using radiomic features alone with the ML classifier of LR. When
-              features from the three CT phases were combined, the accuracy of
-              LR reached 83.0\%. After adding clinical information, the area
-              under the receiver operating characteristic curve increased for
-              all the machine learning methods except for LR. In Dataset 2, the
-              accuracy of LR was the highest, reaching 77.8\%. CONCLUSION: The
-              radiomic features of the lesion in three-phase CT images can
-              potentially suggest the functioning or non-functioning nature of
-              adrenal adenoma. The resulting radiomic models can be a
-              non-invasive, low-cost, and rapid method of minimizing unnecessary
-              testing in asymptomatic patients with incidentally discovered
-              adrenal adenoma.",
-  month    =  jan,
-  year     =  2023,
-  keywords = "Adrenal adenoma; Computed tomography; Machine learning; Radiomic
-              features; Radiomics",
-  language = "en"
-}
-
-@MISC{OpenStaxCollege_undated-jm,
-  title  = "The Adrenal Glands – Anatomy and Physiology",
-  author = "{OpenStaxCollege}"
-}
-
-@MISC{Merck_undated-nw,
-  title  = "Overview of the Adrenal Glands - Hormonal and Metabolic Disorders -
-            Merck Manuals Consumer Version",
-  author = "{Merck}"
-}
-
-@MISC{noauthor_2012-py,
-  title = "adrenal gland | Definition, Anatomy, and Function | Britannica",
-  year  =  2012
-}
-
-@ARTICLE{Barstugan2020-gg,
-  title     = "Adrenal tumor characterization on magnetic resonance images",
-  author    = "Barstugan, Mucahid and Ceylan, Rahime and Asoglu, Sewall Semih
-               Sewall and Cebeci, Hakan and Koplay, Mustafa",
-  journal   = "Int. J. Imaging Syst. Technol.",
-  publisher = "John Wiley and Sons Inc.",
-  volume    =  30,
-  pages     = "252--265",
-  abstract  = "Adrenal tumors occur on adrenal glands and are generally detected
-               on abdominal area scans. Adrenal tumors, which are incidentally
-               detected, release vital hormones. These types of tumors that can
-               be malignant affect body metabolism. Both of benign and malign
-               adrenal tumors can have a similar size, intensity, and shape,
-               this situation may lead to wrong decision during diagnosis and
-               characterization of tumors. Thus, biopsy is done to confirm
-               diagnosis of tumor types. In this study, adrenal tumor
-               characterization is handled by using magnetic resonance images.
-               In this way, it is wanted that patient can be disentangled from
-               one or more imaging modalities (some of them can includes X-ray)
-               and biopsy. An adrenal tumor image set, which includes five types
-               of adrenal tumors and has 112 benign tumors and 10 malign tumors,
-               was used in this study. Two data sets were created from the
-               adrenal tumor image set by manually/semiautomatically segmented
-               adrenal tumors and feature sets of these data sets are
-               constituted by different methods. Two-dimensional gray-level
-               co-occurrence matrix (2D-GLCM), gray-level run-length matrix
-               (GLRLM), and two-dimensional discrete wavelet transform (2D-DWT)
-               methods were analyzed to reveal the most effective features on
-               adrenal tumor characterization. Feature sets were classified in
-               two ways: benign/malign (binary classification) and type
-               characterization (multiclass classification). Support vector
-               machine and artificial neural network classified feature sets.
-               The best performance on benign/malign classification was obtained
-               by the 2D-GLCM feature set. The best results were assessed with
-               sensitivity, specificity, accuracy, precision, and F-score
-               metrics and they were 99.17\%, 90\%, 98.4\%, 99.17\%, and
-               99.13\%, respectively. The highest classification performance on
-               type characterization was obtained by the 2D-DWT feature set as
-               59.62\%, 96.17\%, 93.19\%, 54.69\%, and 54.94\% for sensitivity,
-               specificity, accuracy, precision, and F-score metrics,
-               respectively.",
-  year      =  2020,
-  keywords  = "MR images,adrenal glands,adrenal tumor classification,feature
-               extraction,segmentation"
+  keywords  = "Accuracy,Deep learning,Image classes,Medical image
+               analysis,Survey"
 }
 
 @ARTICLE{Barat2022-hq,
@@ -1158,6 +577,252 @@
   keywords  = "Adrenal gland disease,Adrenal glands,Adrenal glands
                neoplasm,Artificial intelligence,Magnetic resonance
                imaging,Positron emission tomography,Tomography,X-rays computed"
+}
+
+@INPROCEEDINGS{Li2017-pl,
+  title     = "Classification of adrenal lesions through spatial Bayesian
+               modeling of {GLCM}",
+  author    = "Li, X and Guindani, M and Ng, C S and Hobbs, B P",
+  publisher = "IEEE Computer Society",
+  pages     = "147--151",
+  abstract  = "Radiomics, an emerging field of quantitative imaging, encompasses
+               a broad class of analytical techniques. Recent literature have
+               interrogated associations between quantitatively derived
+               GLCM-based texture features and clinical/pathology information
+               using machine learning algorithms in many cancer settings, but
+               often fail to elucidate the predictive power of these features.
+               Moreover, for many cancers characterized by complex
+               histopathological profiles, such as adrenocortical carcinoma,
+               reducing the multivariate functional structure of GLCM to a set
+               of summary statistics is potentially reductive, masking the
+               patterns that distinguish malignancy from benignity. We develop a
+               Bayesian probabilistic framework for predictive classification of
+               lesion types, based on the entire GLCM. Our method, which uses a
+               spatial Gaussian random field to model dependencies among
+               neighboring cells of the GLCMs, was applied in a cancer detection
+               context to discriminant malignant from benign adrenal lesions
+               using GLCMs arising from non-contrast CT scans. Our method is
+               shown to yield improved predictive power both in simulations as
+               well as the adrenal CT application when compared to
+               state-of-the-art diagnostic algorithms that use GLCM derived
+               features.",
+  year      =  2017,
+  keywords  = "Bayesian modeling,Discriminant analysis,Gaussian Markov Random
+               Field,Gray Level Co-Occurrence Matrix,Lesion
+               classification,Prediction accuracy"
+}
+
+@ARTICLE{Altay2023-ep,
+  title    = "Machine learning analysis of adrenal lesions: preliminary study
+              evaluating texture analysis in the differentiation of adrenal
+              lesions",
+  author   = "Altay, Canan and Başara Akın, Işıl and Özgül, Abdullah Hakan and
+              Adıyaman, Süleyman Cem and Yener, Abdullah Serkan and Seçil,
+              Mustafa",
+  journal  = "Diagn. Interv. Radiol.",
+  volume   =  29,
+  number   =  2,
+  pages    = "234--243",
+  abstract = "PURPOSE: This study aimed to determine the accuracy of texture
+              analysis in differentiating adrenal lesions on unenhanced computed
+              tomography (CT) images. METHODS: In this single-center
+              retrospective study, 166 adrenal lesions in 140 patients (64
+              women, 76 men; mean age 56.58 ± 13.65 years) were evaluated
+              between January 2015 and December 2019. The lesions consisted of
+              54 lipid-rich adrenal adenomas, 37 lipid-poor adrenal adenomas
+              (LPAs), 56 adrenal metastases (ADM), and 19 adrenal
+              pheochromocytomas (APhs). Each adrenal lesion was segmented by
+              manually contouring the borders of the lesion on unenhanced CT
+              images. A texture analysis of the CT images was performed using
+              Local Image Feature Extraction software. First-order and
+              second-order texture parameters were assessed, and 45 features
+              were extracted from each lesion. One-Way analysis of variance with
+              Bonferroni correction and the Mann-Whitney U test was performed to
+              determine the relationships between the texture features and
+              adrenal lesions. Receiver operating characteristic curves were
+              performed for lesion discrimination based on the texture features.
+              Logistic regression analysis was used to generate logistic models,
+              including only the texture parameters with a high-class separation
+              capacity (i.e., P < 0.050). SPSS software was used for all
+              statistical analyses. RESULTS: First-order and second-order
+              texture parameters were identified as significant factors capable
+              of differentiating among the four lesion types (P < 0.050). The
+              logistic models were evaluated to ascertain the relationships
+              between LPA and ADM, LPA and APh, and ADM and APh. The
+              sensitivity, specificity, positive predictive value (PPV),
+              negative predictive value (NPV), and accuracy of the first model
+              (LPA vs. ADM) were 85.7\%, 70.3\%, 81.3\%, 76.4\%, and 79.5\%,
+              respectively. The sensitivity, specificity, PPV, NPV, and accuracy
+              of the second model (LPA vs. APh) were all 100\%. The sensitivity,
+              specificity, PPV, NPV, and accuracy of the third model (ADM vs.
+              APh) were 87.5\%, 82\%, 36.8\%, 98.2\%, and 82.7\%, respectively.
+              CONCLUSION: Texture features may help in the characterization of
+              adrenal lesions on unenhanced CT images.",
+  month    =  mar,
+  year     =  2023,
+  keywords = "Adrenal adenoma; adrenal glands; adrenal mass; computed
+              tomography; texture analysis",
+  language = "en"
+}
+
+@ARTICLE{Romeo2018-yz,
+  title     = "Characterization of Adrenal Lesions on Unenhanced {MRI} Using
+               Texture Analysis: A Machine-Learning Approach",
+  author    = "Romeo, Valeria and Maurea, Simone and Cuocolo, Renato and
+               Petretta, Mario and Mainenti, Pier Paolo and Verde, Francesco and
+               Coppola, Milena and Dell'Aversana, Serena and Brunetti, Arturo",
+  journal   = "J. Magn. Reson. Imaging",
+  publisher = "John Wiley and Sons Inc.",
+  volume    =  48,
+  pages     = "198--204",
+  abstract  = "Background: Adrenal adenomas (AA) are the most common benign
+               adrenal lesions, often characterized based on intralesional fat
+               content as either lipid-rich (LRA) or lipid-poor (LPA). The
+               differentiation of AA, particularly LPA, from nonadenoma adrenal
+               lesions (NAL) may be challenging. Texture analysis (TA) can
+               extract quantitative parameters from MR images. Machine learning
+               is a technique for recognizing patterns that can be applied to
+               medical images by identifying the best combination of TA features
+               to create a predictive model for the diagnosis of interest.
+               Purpose/Hypothesis: To assess the diagnostic efficacy of
+               TA-derived parameters extracted from MR images in characterizing
+               LRA, LPA, and NAL using a machine-learning approach. Study Type:
+               Retrospective, observational study.
+               Population/Subjects/Phantom/Specimen/Animal Model: Sixty MR
+               examinations, including 20 LRA, 20 LPA, and 20 NAL. Field
+               Strength/Sequence: Unenhanced T 1 -weighted in-phase (IP) and
+               out-of-phase (OP) as well as T 2 -weighted (T 2 -w) MR images
+               acquired at 3T. Assessment: Adrenal lesions were manually
+               segmented, placing a spherical volume of interest on IP, OP, and
+               T 2 -w images. Different selection methods were trained and
+               tested using the J48 machine-learning classifiers. Statistical
+               Tests: The feature selection method that obtained the highest
+               diagnostic performance using the J48 classifier was identified;
+               the diagnostic performance was also compared with that of a
+               senior radiologist by means of McNemar's test. Results: A total
+               of 138 TA-derived features were extracted; among these, four
+               features were selected, extracted from the IP
+               (Short\_Run\_High\_Gray\_Level\_Emphasis), OP (Mean\_Intensity
+               and Maximum\_3D\_Diameter), and T 2 -w (Standard\_Deviation)
+               images; the J48 classifier obtained a diagnostic accuracy of
+               80\%. The expert radiologist obtained a diagnostic accuracy of
+               73\%. McNemar's test did not show significant differences in
+               terms of diagnostic performance between the J48 classifier and
+               the expert radiologist. Data Conclusion: Machine learning
+               conducted on MR TA-derived features is a potential tool to
+               characterize adrenal lesions. Level of Evidence: 4. Technical
+               Efficacy: Stage 2. J. Magn. Reson. Imaging 2018.",
+  year      =  2018,
+  keywords  = "adrenal glands,machine learning,magnetic resonance
+               imaging,texture analysis"
+}
+
+@ARTICLE{Elsayes2020-ao,
+  title     = "Mimics, pitfalls, and misdiagnoses of adrenal masses on {CT} and
+               {MRI}",
+  author    = "Elsayes, Khaled M and Elmohr, Mohab M and Javadi, Sanaz and
+               Menias, Christine O and Remer, Erick M and Morani, Ajaykumar C
+               and Shaaban, Akram M",
+  journal   = "Abdominal Radiology",
+  publisher = "Springer",
+  volume    =  45,
+  pages     = "982--1000",
+  abstract  = "Due to the widespread use of imaging, incidental adrenal masses
+               are commonly encountered. A number of pitfalls can result in
+               misdiagnosis of these lesions, including inappropriate choice of
+               imaging technique, presence of pseudolesions, and overlap of
+               imaging features of different adrenal lesions. This article
+               explores the potential pitfalls in imaging of the adrenal glands,
+               on computed tomography and magnetic resonance imaging, that can
+               lead to misinterpretation. Clues to correct diagnoses are
+               provided to evade potential misinterpretation.",
+  year      =  2020,
+  keywords  = "Adrenal gland,CT,MRI,Mimics"
+}
+
+@ARTICLE{Koyuncu2019-wi,
+  title     = "An extensive study for binary characterisation of adrenal tumours",
+  author    = "Koyuncu, Hasan and Ceylan, Rahime and Asoglu, Semih and Cebeci,
+               Hakan and Koplay, Mustafa",
+  journal   = "Med. Biol. Eng. Comput.",
+  publisher = "Springer Nature",
+  volume    =  57,
+  pages     = "849--862",
+  abstract  = "On adrenal glands, benign tumours generally change the hormone
+               equilibrium, and malign tumours usually tend to spread to the
+               nearby tissues and to the organs of the immune system. These
+               features can give a trace about the type of adrenal tumours;
+               however, they cannot be observed all the time. Different tumour
+               types can be confused in terms of having a similar shape, size
+               and intensity features on scans. To support the evaluation
+               process, biopsy process is applied that includes injury and
+               complication risks. In this study, we handle the binary
+               characterisation of adrenal tumours by using dynamic computed
+               tomography images. Concerning this, the usage of one more imaging
+               modalities and biopsy process is wanted to be excluded. The used
+               dataset consists of 8 subtypes of adrenal tumours, and it seemed
+               as the worst-case scenario in which all handicaps are available
+               against tumour classification. Histogram, grey level
+               co-occurrence matrix and wavelet-based features are investigated
+               to reveal the most effective one on the identification of adrenal
+               tumours. Binary classification is proposed utilising
+               four-promising algorithms that have proven oneself on the task of
+               binary-medical pattern classification. For this purpose,
+               optimised neural networks are examined using six dataset inspired
+               by the aforementioned features, and an efficient framework is
+               offered before the use of a biopsy. Accuracy, sensitivity,
+               specificity, and AUC are used to evaluate the performance of
+               classifiers. Consequently, malign/benign characterisation is
+               performed by proposed framework, with success rates of 80.7\%,
+               75\%, 82.22\% and 78.61\% for the metrics, respectively.
+               Graphical abstract. [ABSTRACT FROM AUTHOR]",
+  year      =  2019,
+  keywords  = "ADRENAL tumors,Adrenal tumours,BIOPSY,COMPUTED
+               tomography,Computed tomography,HORMONES,Hybrid classifier,IMMUNE
+               system,Optimisation,Tumour classification"
+}
+
+@ARTICLE{Piskin2023-ts,
+  title    = "A machine learning approach to distinguishing between
+              non-functioning and autonomous cortisol secreting adrenal
+              incidentaloma on magnetic resonance imaging using texture analysis",
+  author   = "Piskin, Ferhat Can and Akkus, Gamze and Yucel, Sevinc Puren and
+              Unal, Ilker and Balli, Huseyin Tugsan and Olgun, Mehtap Evran and
+              Sert, Murat and Tetiker, Bekir Tamer and Aikimbaev, Kairgeldy",
+  journal  = "Ir. J. Med. Sci.",
+  volume   =  192,
+  number   =  3,
+  pages    = "1155--1161",
+  abstract = "PURPOSE: To investigate the possibility of distinguishing between
+              nonfunctioning adrenal incidentalomas (NFAI) and autonomous
+              cortisol secreting adrenal incidentalomas (ACSAI) with a model
+              created with magnetic resonance imaging (MRI)-based radiomics and
+              clinical features. METHODS: In this study, 100 adrenal lesions
+              were evaluated. The lesions were segmented on unenhanced
+              T1-weighted in-phase (IP) and opposed-phase (OP) as well as on
+              T2-weighted (T2-W) 3Tesla MRIs. The LASSO regression model was
+              used to select potential predictors from 108 texture features for
+              each sequence. Subsequently, a combined radiomics score and
+              clinical features were created and compared. RESULTS: A
+              significant difference was found between median rad-scores for
+              ACSAI and NFAI in training and test sets (p < 0.05 for all
+              sequences). Multivariate logistic regression analysis revealed
+              that the length of the tumor (OR = 1.09, p = 0.007) was an
+              independent risk factor related to ACSAI. Multivariate logistic
+              regression analysis was used for building clinical-radiomics
+              (combined) models. The Op, IP, and IP plus T2-W model had a higher
+              performance with area under curve (AUC) 0.758, 0.746, and 0.721 on
+              the test dataset, respectively. CONCLUSION: ACSAI can be
+              distinguished from NFAI with high accuracy on unenhanced MRI.
+              Radiomics analysis and the model constructed by machine learning
+              algorithms seem superior to another radiologic assessment method.
+              The inclusion of chemical shift MRI and the length of the tumor in
+              the radiomics model could increase the power of the test.",
+  month    =  jun,
+  year     =  2023,
+  keywords = "Adrenal incidentalomas; Hormone secretion; Machine
+              learning-magnetic resonance imaging",
+  language = "en"
 }
 
 @ARTICLE{Fujiyoshi2003-fc,
@@ -1229,6 +894,115 @@
   year     =  2003
 }
 
+@ARTICLE{Chai2017-ac,
+  title     = "Automatic computer aided analysis algorithms and system for
+               adrenal tumors on {CT} images",
+  author    = "Chai, Hanchao and Guo, Yi and Wang, Yuanyuan and Zhou, Guohui",
+  journal   = "Technol. Health Care",
+  publisher = "IOS Press",
+  volume    =  25,
+  pages     = "1105--1118",
+  abstract  = "BACKGROUND: The adrenal tumor will disturb the secreting function
+               of adrenocortical cells, leading to many diseases. Different
+               kinds of adrenal tumors require different therapeutic schedules.
+               OBJECTIVE: In the practical diagnosis, it highly relies on the
+               doctor's experience to judge the tumor type by reading the
+               hundreds of CT images. METHODS: This paper proposed an automatic
+               computer aided analysis method for adrenal tumors detection and
+               classification. It consisted of the automatic segmentation
+               algorithms, the feature extraction and the classification
+               algorithms. These algorithms were then integrated into a system
+               and conducted on the graphic interface by using MATLAB Graphic
+               user interface (GUI). RESULTS: The accuracy of the automatic
+               computer aided segmentation and classification reached 90\% on
+               436 CT images. CONCLUSION: The experiments proved the stability
+               and reliability of this automatic computer aided analytic system.",
+  year      =  2017,
+  keywords  = "Adrenal tumor,automatic segmentation,sparse representations,tumor
+               classification"
+}
+
+@ARTICLE{Liu2022-yw,
+  title    = "Computed Tomography-Based Machine Learning Differentiates Adrenal
+              Pheochromocytoma From Lipid-Poor Adenoma",
+  author   = "Liu, Haipeng and Guan, Xiao and Xu, Beibei and Zeng, Feiyue and
+              Chen, Changyong and Yin, Hong Ling and Yi, Xiaoping and Peng,
+              Yousong and Chen, Bihong T",
+  journal  = "Front. Endocrinol.",
+  volume   =  13,
+  abstract = "Objectives: To assess the accuracy of computed tomography
+              (CT)-based machine learning models for differentiating subclinical
+              pheochromocytoma (sPHEO) from lipid-poor adenoma (LPA) in patients
+              with adrenal incidentalomas. Patients and Methods: The study
+              included 188 tumors in the 183 patients with LPA and 92 tumors in
+              86 patients with sPHEO. Pre-enhanced CT imaging features of the
+              tumors were evaluated. Machine learning prediction models and
+              scoring systems for differentiating sPHEO from LPA were built
+              using logistic regression (LR), support vector machine (SVM) and
+              random forest (RF) approaches. Results: The LR model performed
+              better than other models. The LR model (M1) including three CT
+              features: CTpre value, shape, and necrosis/cystic changes had an
+              area under the receiver operating characteristic curve (AUC) of
+              0.917 and an accuracy of 0.864. The LR model (M2) including three
+              CT features: CTpre value, shape and homogeneity had an AUC of
+              0.888 and an accuracy of 0.832. The S2 scoring system
+              (sensitivity: 0.859, specificity: 0.824) had comparable diagnostic
+              value to S1 (sensitivity: 0.815; specificity: 0.910). Conclusions:
+              Our results indicated the potential of using a non-invasive
+              imaging method such as CT-based machine learning models and
+              scoring systems for predicting histology of adrenal
+              incidentalomas. This approach may assist the diagnosis and
+              personalized care of patients with adrenal tumors.",
+  year     =  2022
+}
+
+@ARTICLE{Ho2019-hf,
+  title     = "Can Texture Analysis Be Used to Distinguish Benign From Malignant
+               Adrenal Nodules on Unenhanced {CT}, Contrast-Enhanced {CT}, or
+               In-Phase and Opposed-Phase {MRI}?",
+  author    = "Ho, Lisa M and Samei, Ehsan and Mazurowski, Maciej A and Zheng,
+               Yuese and Allen, Brian C and Nelson, Rendon C and Marin, Daniele",
+  journal   = "American Journal of Roentgenology",
+  publisher = "American Roentgen Ray Society",
+  volume    =  212,
+  pages     = "554--561",
+  abstract  = "OBJECTIVE. The purpose of this study is to determine whether
+               second-order texture analysis can be used to distinguish
+               lipid-poor adenomas from malignant adrenal nodules on unenhanced
+               CT, contrast-enhanced CT (CECT), and chemical-shift MRI.
+               MATERIALS AND METHODS. In this retrospective study, 23 adrenal
+               nodules (15 lipid-poor adenomas and eight adrenal malignancies)
+               in 20 patients (nine female patients and 11 male patients; mean
+               age, 59 years [range, 15–80 years]) were assessed. All patients
+               underwent unenhanced CT, CECT, and chemical-shift MRI. Twenty-one
+               second-order texture features from the gray-level cooccurrence
+               matrix and gray-level run-length matrix were calculated in 3D.
+               The mean values for 21 texture features and four imaging features
+               (lesion size, unenhanced CT attenuation, CECT attenuation, and
+               signal intensity index) were compared using a t test. The
+               diagnostic performance of texture analysis versus imaging
+               features was also compared using AUC values. Multivariate
+               logistic regression models to predict malignancy were constructed
+               for texture analysis and imaging features. RESULTS. Lesion size,
+               unenhanced CT attenuation, and the signal intensity index showed
+               significant differences between benign and malignant adrenal
+               nodules. No significant difference was seen for CECT attenuation.
+               Eighteen of 21 CECT texture features and nine of 21 unenhanced CT
+               texture features revealed significant differences between benign
+               and malignant adrenal nodules. CECT texture features (mean AUC
+               value, 0.80) performed better than CECT attenuation (mean AUC
+               value, 0.60). Multivariate logistic regression models showed that
+               CECT texture features, chemical-shift MRI texture features, and
+               imaging features were predictive of malignancy. CONCLUSION.
+               Texture analysis has a potential role in distinguishing benign
+               from malignant adrenal nodules on CECT and may decrease the need
+               for additional imaging studies in the workup of incidentally
+               discovered adrenal nodules.",
+  year      =  2019,
+  keywords  = "Adrenal nodules,Chemical-shift MRI,Contrast-enhanced CT,Texture
+               analysis"
+}
+
 @ARTICLE{Yi2018-pn,
   title    = "Adrenal incidentaloma: machine learning-based quantitative texture
               analysis of unenhanced {CT} can effectively differentiate {sPHEO}
@@ -1263,6 +1037,214 @@
   year     =  2018
 }
 
+@ARTICLE{Inan2008-nc,
+  title     = "Dynamic contrast enhanced {MRI} in the differential diagnosis of
+               adrenal adenomas and malignant adrenal masses",
+  author    = "Inan, Nagihan and Arslan, Arzu and Akansel, Gur and Anik, Yonca
+               and Balci, N Cem and Demirci, Ali",
+  journal   = "Eur. J. Radiol.",
+  publisher = "Eur J Radiol",
+  volume    =  65,
+  pages     = "154--162",
+  year      =  2008,
+  keywords  = "Adrenal gland,Contrast enhancement,Dynamic,Magnetic resonance
+               (MR),Neoplasms,Wash-in rate"
+}
+
+@ARTICLE{Jahanvi2021-ni,
+  title   = "Chemical shift imaging: An indispensable tool in diagnosing
+             musculoskeletal pathologies",
+  author  = "Jahanvi, Vandana and Kelkar, Abhimanyu",
+  journal = "SA Journal of Radiology",
+  year    =  2021
+}
+
+@ARTICLE{Elmohr2019-uo,
+  title     = "Machine learning-based texture analysis for differentiation of
+               large adrenal cortical tumours on {CT}",
+  author    = "Elmohr, M M and Fuentes, D and Habra, M A and Bhosale, P R and
+               Qayyum, A A and Gates, E and Morshid, A I and Hazle, J D and
+               Elsayes, K M and I, A Morshid and Hazle, J D and Elsayes, K M",
+  journal   = "Clin. Radiol.",
+  publisher = "W.B. Saunders Ltd",
+  volume    =  74,
+  pages     = "818.e1--818.e7",
+  abstract  = "AIM: To compare the efficacy of computed tomography (CT) texture
+               analysis and conventional evaluation by radiologists for
+               differentiation between large adrenal adenomas and carcinomas.
+               MATERIALS AND METHODS: Quantitative CT texture analysis was used
+               to evaluate 54 histopathologically proven adrenal masses (mean
+               size=5.9 cm; range=4.1–10 cm) from 54 patients referred to
+               Anderson Cancer Center from January 2002 through April 2014. The
+               patient group included 32 women (mean age at mass evaluation=59
+               years) and 22 men (mean age at mass evaluation=61 years). Adrenal
+               lesions seen on precontrast and venous-phase CT images were
+               labelled by three different readers, and the labels were used to
+               generate intensity- and geometry-based textural features. The
+               textural features and the attenuation values were considered as
+               input values for a random forest-based classifier. Similarly, the
+               adrenal lesions were classified by two different radiologists
+               based on morphological criteria. Prediction accuracy and
+               interobserver agreement were compared. RESULTS: The textural
+               predictive model achieved a mean accuracy of 82\%, whereas the
+               mean accuracy for the radiologists was 68.5\% (p<0.0001). The
+               interobserver agreements between the predictive model and
+               radiologists 1 and 2 were 0.44 (p<0.0005; 95\% confidence
+               interval [CI]: 0.25–0.62) and 0.47 (p<0.0005; 95\% CI:
+               0.28–0.66), respectively. The Dice similarity coefficient between
+               the readers' image labels was 0.875±0.04. CONCLUSION: CT texture
+               analysis of large adrenal adenomas and carcinomas is likely to
+               improve CT evaluation of adrenal cortical tumours.",
+  year      =  2019
+}
+
+@ARTICLE{Barstugan2020-gg,
+  title     = "Adrenal tumor characterization on magnetic resonance images",
+  author    = "Barstugan, Mucahid and Ceylan, Rahime and Asoglu, Sewall Semih
+               Sewall and Cebeci, Hakan and Koplay, Mustafa",
+  journal   = "Int. J. Imaging Syst. Technol.",
+  publisher = "John Wiley and Sons Inc.",
+  volume    =  30,
+  pages     = "252--265",
+  abstract  = "Adrenal tumors occur on adrenal glands and are generally detected
+               on abdominal area scans. Adrenal tumors, which are incidentally
+               detected, release vital hormones. These types of tumors that can
+               be malignant affect body metabolism. Both of benign and malign
+               adrenal tumors can have a similar size, intensity, and shape,
+               this situation may lead to wrong decision during diagnosis and
+               characterization of tumors. Thus, biopsy is done to confirm
+               diagnosis of tumor types. In this study, adrenal tumor
+               characterization is handled by using magnetic resonance images.
+               In this way, it is wanted that patient can be disentangled from
+               one or more imaging modalities (some of them can includes X-ray)
+               and biopsy. An adrenal tumor image set, which includes five types
+               of adrenal tumors and has 112 benign tumors and 10 malign tumors,
+               was used in this study. Two data sets were created from the
+               adrenal tumor image set by manually/semiautomatically segmented
+               adrenal tumors and feature sets of these data sets are
+               constituted by different methods. Two-dimensional gray-level
+               co-occurrence matrix (2D-GLCM), gray-level run-length matrix
+               (GLRLM), and two-dimensional discrete wavelet transform (2D-DWT)
+               methods were analyzed to reveal the most effective features on
+               adrenal tumor characterization. Feature sets were classified in
+               two ways: benign/malign (binary classification) and type
+               characterization (multiclass classification). Support vector
+               machine and artificial neural network classified feature sets.
+               The best performance on benign/malign classification was obtained
+               by the 2D-GLCM feature set. The best results were assessed with
+               sensitivity, specificity, accuracy, precision, and F-score
+               metrics and they were 99.17\%, 90\%, 98.4\%, 99.17\%, and
+               99.13\%, respectively. The highest classification performance on
+               type characterization was obtained by the 2D-DWT feature set as
+               59.62\%, 96.17\%, 93.19\%, 54.69\%, and 54.94\% for sensitivity,
+               specificity, accuracy, precision, and F-score metrics,
+               respectively.",
+  year      =  2020,
+  keywords  = "MR images,adrenal glands,adrenal tumor classification,feature
+               extraction,segmentation"
+}
+
+@ARTICLE{Israel2004-bn,
+  title     = "Comparison of unenhanced {CT} and chemical shift {MRI} in
+               evaluating lipid-rich adrenal adenomas",
+  author    = "Israel, Gary M and Korobkin, Melvyn and Wang, Chun and Hecht,
+               Elizabeth N and Krinsky, Glenn A",
+  journal   = "American Journal of Roentgenology",
+  publisher = "American Roentgen Ray Society",
+  volume    =  183,
+  pages     = "215--219",
+  abstract  = "OBJECTIVE. Our aim was to evaluate adrenal adenomas in patients
+               who underwent both unenhanced CT and chemical shift MRI to
+               determine if adenomas can be characterized with MRI when the
+               findings of CT are indeterminate. MATERIALS AND METHODS. Between
+               January 1999 and June 2003, 40 patients (42 adrenal masses)
+               underwent unenhanced CT and chemical shift MRI and were
+               retrospectively analyzed. Hounsfield units, adrenal-to-spleen
+               chemical shift ratio, and signal-intensity index were obtained
+               for each adrenal mass. Qualitative analysis for loss of signal in
+               each adrenal mass on the opposed-phase images was also performed
+               by two reviewers and compared with the quantitative analyses. A
+               lipid-rich adenoma was diagnosed if the mass measured equal to or
+               less than 10 H, had an adrenal-to-spleen chemical shift ratio of
+               less than 0.71, and had a signal-intensity index of greater than
+               16.5\% or if the mass fulfilled two of the preceding criteria and
+               had follow-up imaging without change. RESULTS. The sensitivities
+               and specificities for diagnosing a lipid-rich adenoma using the
+               qualitative, adrenal-to-spleen chemical shift ratio,
+               signal-intensity index, and unenhanced CT attenuation analyses
+               were 92\% (33/36) and 17\% (1/6), 100\% (36/36) and 100\% (6/6),
+               100\% (36/36) and 67\% (4/6), and 78\% (28/36) and 83\% (5/6),
+               respectively. Twenty-eight (67\%) lipid-rich adenomas measured
+               equal to or less than 10 H, had an adrenal-to-spleen chemical
+               shift ratio of less than 0.71, and had a signal-intensity index
+               of greater than 16.5\%. Eight masses (19\%) measured greater than
+               10 H but had an adrenal-to-spleen chemical shift ratio of less
+               than 0.71 and a signal-intensity index greater than 16.5\% and
+               were unchanged at follow-up. CONCLUSION. Eight (62\%) of 13
+               adrenal adenomas measuring greater than 10 H on unenhanced CT
+               were definitively characterized with chemical shift MRI.",
+  year      =  2004,
+  keywords  = "Adenoma / chemistry,Adenoma / diagnosis*,Adrenal Gland Neoplasms
+               / chemistry,Adrenal Gland Neoplasms / diagnosis*,Aged,Comparative
+               Study,Female,Gary M Israel,Glenn A Krinsky,Humans,Lipid
+               Metabolism,MEDLINE,Magnetic Resonance Imaging*,Male,Melvyn
+               Korobkin,NCBI,NIH,NLM,National Center for Biotechnology
+               Information,National Institutes of Health,National Library of
+               Medicine,PubMed Abstract,Retrospective Studies,Tomography,X-Ray
+               Computed*,doi:10.2214/ajr.183.1.1830215,pmid:15208141"
+}
+
+@ARTICLE{Schieda2017-ah,
+  title     = "Utility of {MRI} to Differentiate Clear Cell Renal Cell Carcinoma
+               Adrenal Metastases From Adrenal Adenomas",
+  author    = "Schieda, Nicola and Krishna, Satheesh and McInnes, Matthew D F
+               and Moosavi, Bardia and Alrashed, Abdulmohsen and Moreland,
+               Robert and Siegelman, Evan S",
+  journal   = "AJR Am. J. Roentgenol.",
+  publisher = "AJR Am J Roentgenol",
+  volume    =  209,
+  pages     = "W152--W159",
+  abstract  = "OBJECTIVE. The purpose of this study is to compare MRI features
+               of clear cell renal cell carcinoma (RCC) adrenal metastases and
+               adenomas. MATERIALS AND METHODS. Fifteen clear cell RCC adrenal
+               metastases imaged with MRI were compared to 29 consecutive
+               adenomas between 2006 and 2015. Two blinded radiologists assessed
+               homogeneity (homogeneous vs heterogeneous), signal intensity (SI)
+               decrease on chemical-shift MRI, and T2-weighted SI (isointense,
+               mildly hyperintense, or markedly hyperintense) relative to
+               muscle. A third blinded radiologist measured the chemical-shift
+               SI index, adrenal-to-spleen SI ratio, T2-weighted SI ratio, AUC
+               for contrast-enhanced MRI, and histogram analysis. Analyses were
+               performed using chi-square, linear regression, ROC, and logistic
+               regression modeling. RESULTS. Clear cell RCC metastases were
+               larger than adenomas (mean [± SD], 5.0 ± 4.2 cm [range, 1.1-15
+               cm] vs 2.0 ± 0.7 cm [range, 1.2-3.7 cm]; p 16.5\%). Metastases
+               had higher T2-weighted SI than did adenomas, both quantitatively
+               (5.1 ± 3.0 [range, 1.5-10.6] vs 1.8 ± 0.8 [range, 0.5-3.8]; p
+               0.05). The ROC AUCs were 0.91 (95\% CI, 0.79-1.0) for T2-weighted
+               SI ratio and 0.85 (95\% CI, 0.68-1.0) for entropy. The logistic
+               regression model of T2-weighted SI ratio plus entropy improved
+               accuracy (ROC AUC, 0.97; 95\% CI, 0.93-1.0]) compared with either
+               feature alone (p = 0.0215). CONCLUSION. Increased T2-weighted SI
+               and heterogeneity are features that can differentiate clear cell
+               RCC adrenal metastases from adenomas using quantitative and
+               subjective analysis.",
+  year      =  2017,
+  keywords  = "Adrenal Gland Neoplasms / diagnostic imaging*,Adrenal Gland
+               Neoplasms / pathology*,Adrenocortical Adenoma / diagnostic
+               imaging*,Adrenocortical Adenoma /
+               pathology*,Biopsy,Carcinoma,Contrast
+               Media,Diagnosis,Differential,Evan S
+               Siegelman,Female,Humans,Kidney Neoplasms / diagnostic
+               imaging*,Kidney Neoplasms / secondary*,MEDLINE,Magnetic Resonance
+               Imaging / methods*,Male,Middle Aged,NCBI,NIH,NLM,National Center
+               for Biotechnology Information,National Institutes of
+               Health,National Library of Medicine,Needle,Nicola Schieda,PubMed
+               Abstract,Renal Cell / pathology*,Renal Cell /
+               secondary*,Retrospective Studies,Satheesh
+               Krishna,doi:10.2214/AJR.16.17649,pmid:28742373"
+}
+
 @ARTICLE{Shi2019-vy,
   title     = "Distinguishing metastases from benign adrenal masses: what can
                {CT} texture analysis do?",
@@ -1280,81 +1262,28 @@
   keywords  = "Adrenal,CT,metastasis,texture analysis"
 }
 
-@ARTICLE{Romeo2018-yz,
-  title     = "Characterization of Adrenal Lesions on Unenhanced {MRI} Using
-               Texture Analysis: A Machine-Learning Approach",
-  author    = "Romeo, Valeria and Maurea, Simone and Cuocolo, Renato and
-               Petretta, Mario and Mainenti, Pier Paolo and Verde, Francesco and
-               Coppola, Milena and Dell'Aversana, Serena and Brunetti, Arturo",
-  journal   = "J. Magn. Reson. Imaging",
-  publisher = "John Wiley and Sons Inc.",
-  volume    =  48,
-  pages     = "198--204",
-  abstract  = "Background: Adrenal adenomas (AA) are the most common benign
-               adrenal lesions, often characterized based on intralesional fat
-               content as either lipid-rich (LRA) or lipid-poor (LPA). The
-               differentiation of AA, particularly LPA, from nonadenoma adrenal
-               lesions (NAL) may be challenging. Texture analysis (TA) can
-               extract quantitative parameters from MR images. Machine learning
-               is a technique for recognizing patterns that can be applied to
-               medical images by identifying the best combination of TA features
-               to create a predictive model for the diagnosis of interest.
-               Purpose/Hypothesis: To assess the diagnostic efficacy of
-               TA-derived parameters extracted from MR images in characterizing
-               LRA, LPA, and NAL using a machine-learning approach. Study Type:
-               Retrospective, observational study.
-               Population/Subjects/Phantom/Specimen/Animal Model: Sixty MR
-               examinations, including 20 LRA, 20 LPA, and 20 NAL. Field
-               Strength/Sequence: Unenhanced T 1 -weighted in-phase (IP) and
-               out-of-phase (OP) as well as T 2 -weighted (T 2 -w) MR images
-               acquired at 3T. Assessment: Adrenal lesions were manually
-               segmented, placing a spherical volume of interest on IP, OP, and
-               T 2 -w images. Different selection methods were trained and
-               tested using the J48 machine-learning classifiers. Statistical
-               Tests: The feature selection method that obtained the highest
-               diagnostic performance using the J48 classifier was identified;
-               the diagnostic performance was also compared with that of a
-               senior radiologist by means of McNemar's test. Results: A total
-               of 138 TA-derived features were extracted; among these, four
-               features were selected, extracted from the IP
-               (Short\_Run\_High\_Gray\_Level\_Emphasis), OP (Mean\_Intensity
-               and Maximum\_3D\_Diameter), and T 2 -w (Standard\_Deviation)
-               images; the J48 classifier obtained a diagnostic accuracy of
-               80\%. The expert radiologist obtained a diagnostic accuracy of
-               73\%. McNemar's test did not show significant differences in
-               terms of diagnostic performance between the J48 classifier and
-               the expert radiologist. Data Conclusion: Machine learning
-               conducted on MR TA-derived features is a potential tool to
-               characterize adrenal lesions. Level of Evidence: 4. Technical
-               Efficacy: Stage 2. J. Magn. Reson. Imaging 2018.",
-  year      =  2018,
-  keywords  = "adrenal glands,machine learning,magnetic resonance
-               imaging,texture analysis"
-}
-
-@MISC{Grossman2022-tz,
-  title  = "Overview of the Adrenal Glands",
-  author = "Grossman, Ashley",
-  year   =  2022
-}
-
-@MISC{noauthor_2022-ay,
-  title = "Peritoneum: Anatomy",
-  year  =  2022
-}
-
-@ARTICLE{Inan2008-nc,
-  title     = "Dynamic contrast enhanced {MRI} in the differential diagnosis of
-               adrenal adenomas and malignant adrenal masses",
-  author    = "Inan, Nagihan and Arslan, Arzu and Akansel, Gur and Anik, Yonca
-               and Balci, N Cem and Demirci, Ali",
-  journal   = "Eur. J. Radiol.",
-  publisher = "Eur J Radiol",
-  volume    =  65,
-  pages     = "154--162",
-  year      =  2008,
-  keywords  = "Adrenal gland,Contrast enhancement,Dynamic,Magnetic resonance
-               (MR),Neoplasms,Wash-in rate"
+@ARTICLE{Dhamija2015-il,
+  title     = "Adrenal imaging (Part 2): Medullary and secondary adrenal lesions",
+  author    = "Dhamija, Ekta and Panda, Ananya and Das, Chandan J and Gupta, A K",
+  journal   = "Indian J. Endocrinol. Metab.",
+  publisher = "Medknow Publications",
+  volume    =  19,
+  pages     = "16--24",
+  abstract  = "Adrenal malignancies can be either primary adrenal tumors or
+               secondary metastases, with metastases representing the most
+               common malignant adrenal lesion. While imaging cannot always
+               clearly differentiate between various adrenal malignancies,
+               presence of certain imaging features, in conjunction with
+               appropriate clinical background and hormonal profile, can suggest
+               the appropriate diagnosis. The second part of the article on
+               adrenal imaging describes adrenal medullary tumors, secondary
+               adrenal lesions, bilateral adrenal lesions, adrenal
+               incidentalomas and provides an algorithmic approach to adrenal
+               lesions based on current imaging recommendations.",
+  year      =  2015,
+  keywords  = "Adrenal imaging,adrenal incidentalomas,adrenal lymphoma,adrenal
+               medulla,adrenal metastases,bilateral adrenal
+               masses,pheochromocytoma"
 }
 
 @ARTICLE{Anagnostis2009-tw,
@@ -1388,175 +1317,90 @@
               syndrome,Incidentaloma,Pheochromo-cytoma,Αldosteronoma"
 }
 
-@ARTICLE{Baba2012-pz,
-  title     = "Adrenal gland",
-  author    = "Baba, Yahya and Bashir, Omar",
-  journal   = "Radiopaedia. org",
-  publisher = "Radiopaedia.org",
-  year      =  2012
+@ARTICLE{Liu2021-oc,
+  title     = "Combined Diagnosis of Whole-Lesion Histogram Analysis of {T1}-
+               and {T2}-Weighted Imaging for Differentiating Adrenal Adenoma and
+               Pheochromocytoma: A Support Vector Machine-Based Study",
+  author    = "Liu, Junhong and Xue, Kangkang and Li, Shujian and Zhang, Yong
+               and Cheng, Jingliang",
+  journal   = "Can. Assoc. Radiol. J.",
+  publisher = "SAGE Publications Inc.",
+  volume    =  72,
+  pages     = "452--459",
+  abstract  = "Purpose: This study aimed to determine whether a combined
+               diagnosis of whole-lesion histogram analysis of T1- and
+               T2-weighted imaging based on support vector machine (SVM) can
+               distinguish pheochromocytoma from adrenal adenoma. Methods: A
+               pathology database was retrospectively appraised over a period of
+               7 years and we obtained 40 histopathologically proven adrenal
+               adenomas and 20 pheochromocytomas with magnetic resonance images.
+               The T1-weighted imaging (T1WI, including both in phase and
+               opposed phase) and T2-weighted imaging (T2WI) images of each
+               patients were analyzed using Mazda software. Nine parameters were
+               selected as indicators of comparison: variance, skewness,
+               kurtosis, mean, 1st percentile, 10th percentile, 50th percentile,
+               90th percentile, and 99th percentile. The parameters with
+               differential-diagnosis significance were used to establish the
+               combined diagnostic model of SVM. Results: Among the 9 parameters
+               extracted using histogram analysis, the 1st percentile, 10th
+               percentile, and 50th percentile of T1WI (in phase) and the
+               skewness of T2WI and almost all parameters of T1WI (opposed
+               phase), except variance and 99th percentile, showed statistical
+               significance between groups. Among the above parameters, the area
+               under the curve (AUC) of 10th percentile of T1WI (opposed phase)
+               was the largest with the value of 0.909 (100.0\% sensitivity and
+               80.0\% specificity). After the analysis of combined diagnosis was
+               performed, the AUC of SVM model in testing set showed the value
+               of 0.917 (85.0\% accuracy). Conclusions: Whole-lesion histogram
+               analysis of T1WI and T2WI may help differentiate adrenal adenomas
+               from pheochromocytomas. Furthermore, the combined diagnosis of
+               T1WI and T2WI histogram based on SVM was more effective than most
+               of individual histogram parameters.",
+  year      =  2021,
+  keywords  = "adrenocortical tumor,diagnosis,magnetic resonance
+               imaging,pheochromocytoma,support vector machine"
 }
 
-@ARTICLE{Dhamija2015-il,
-  title     = "Adrenal imaging (Part 2): Medullary and secondary adrenal lesions",
-  author    = "Dhamija, Ekta and Panda, Ananya and Das, Chandan J and Gupta, A K",
-  journal   = "Indian J. Endocrinol. Metab.",
-  publisher = "Medknow Publications",
-  volume    =  19,
-  pages     = "16--24",
-  abstract  = "Adrenal malignancies can be either primary adrenal tumors or
-               secondary metastases, with metastases representing the most
-               common malignant adrenal lesion. While imaging cannot always
-               clearly differentiate between various adrenal malignancies,
-               presence of certain imaging features, in conjunction with
-               appropriate clinical background and hormonal profile, can suggest
-               the appropriate diagnosis. The second part of the article on
-               adrenal imaging describes adrenal medullary tumors, secondary
-               adrenal lesions, bilateral adrenal lesions, adrenal
-               incidentalomas and provides an algorithmic approach to adrenal
-               lesions based on current imaging recommendations.",
-  year      =  2015,
-  keywords  = "Adrenal imaging,adrenal incidentalomas,adrenal lymphoma,adrenal
-               medulla,adrenal metastases,bilateral adrenal
-               masses,pheochromocytoma"
-}
-
-@INPROCEEDINGS{Li2017-pl,
-  title     = "Classification of adrenal lesions through spatial Bayesian
-               modeling of {GLCM}",
-  author    = "Li, X and Guindani, M and Ng, C S and Hobbs, B P",
-  publisher = "IEEE Computer Society",
-  pages     = "147--151",
-  abstract  = "Radiomics, an emerging field of quantitative imaging, encompasses
-               a broad class of analytical techniques. Recent literature have
-               interrogated associations between quantitatively derived
-               GLCM-based texture features and clinical/pathology information
-               using machine learning algorithms in many cancer settings, but
-               often fail to elucidate the predictive power of these features.
-               Moreover, for many cancers characterized by complex
-               histopathological profiles, such as adrenocortical carcinoma,
-               reducing the multivariate functional structure of GLCM to a set
-               of summary statistics is potentially reductive, masking the
-               patterns that distinguish malignancy from benignity. We develop a
-               Bayesian probabilistic framework for predictive classification of
-               lesion types, based on the entire GLCM. Our method, which uses a
-               spatial Gaussian random field to model dependencies among
-               neighboring cells of the GLCMs, was applied in a cancer detection
-               context to discriminant malignant from benign adrenal lesions
-               using GLCMs arising from non-contrast CT scans. Our method is
-               shown to yield improved predictive power both in simulations as
-               well as the adrenal CT application when compared to
-               state-of-the-art diagnostic algorithms that use GLCM derived
-               features.",
-  year      =  2017,
-  keywords  = "Bayesian modeling,Discriminant analysis,Gaussian Markov Random
-               Field,Gray Level Co-Occurrence Matrix,Lesion
-               classification,Prediction accuracy"
-}
-
-@ARTICLE{Chai2017-ac,
-  title     = "Automatic computer aided analysis algorithms and system for
-               adrenal tumors on {CT} images",
-  author    = "Chai, Hanchao and Guo, Yi and Wang, Yuanyuan and Zhou, Guohui",
-  journal   = "Technol. Health Care",
-  publisher = "IOS Press",
-  volume    =  25,
-  pages     = "1105--1118",
-  abstract  = "BACKGROUND: The adrenal tumor will disturb the secreting function
-               of adrenocortical cells, leading to many diseases. Different
-               kinds of adrenal tumors require different therapeutic schedules.
-               OBJECTIVE: In the practical diagnosis, it highly relies on the
-               doctor's experience to judge the tumor type by reading the
-               hundreds of CT images. METHODS: This paper proposed an automatic
-               computer aided analysis method for adrenal tumors detection and
-               classification. It consisted of the automatic segmentation
-               algorithms, the feature extraction and the classification
-               algorithms. These algorithms were then integrated into a system
-               and conducted on the graphic interface by using MATLAB Graphic
-               user interface (GUI). RESULTS: The accuracy of the automatic
-               computer aided segmentation and classification reached 90\% on
-               436 CT images. CONCLUSION: The experiments proved the stability
-               and reliability of this automatic computer aided analytic system.",
-  year      =  2017,
-  keywords  = "Adrenal tumor,automatic segmentation,sparse representations,tumor
-               classification"
-}
-
-@INPROCEEDINGS{Bi2017-vm,
-  title     = "Adrenal lesions detection on low-contrast {CT} images using fully
-               convolutional networks with multi-scale integration",
-  author    = "Bi, Lei and Kim, Jinman and Su, Tingwei and Fulham, Michael and
-               Feng, Dagan and Ning, Guang",
-  publisher = "IEEE Computer Society",
-  pages     = "895--898",
-  abstract  = "Adrenal lesions include a wide variety of benign and malignant
-               neoplasms of the adrenal gland, and are seen in up to 5\% of
-               computed tomography (CT) examinations of the abdomen. Better
-               identification of these lesions is important for effective
-               management and patient prognosis. Detection on low-contrast CT
-               images, however, even for experienced physicians can be difficult
-               and error-prone, because the lesions are often problematic to be
-               separated from the normal surrounding structures. Existing lesion
-               detection techniques have problems in identifying and
-               differentiating low-contrast tumors, which is related to their
-               use of low-level features rather than high level of semantics.
-               Hence we propose an automated approach using fully convolutional
-               networks (FCNs) and multi-scale integration to detect adrenal
-               lesion on low-contrast CT scans. The architecture of FCNs
-               includes deep, coarse, semantic information and shallow, fine,
-               appearance information in a hierarchical manner and it enables
-               the encoding of image-wide location and semantics, which are
-               desirable characteristics for adrenal lesion detection. We also
-               propose a multi-scale integration with a superpixel based random
-               walk (MI-SRW) approach to refine the lesion boundaries on
-               different scales. The MI-SRW technique enables us to constrain
-               the spatial and appearance consistency and then use complementary
-               information provided on different scales to detect adrenal
-               lesions of various sizes and characteristics. We used 38 adrenal
-               lesions detected on low-contrast CT and compared our approach to
-               existing 'state-of-the-art' methods and found that our approach
-               had superior detection performance.",
-  year      =  2017,
-  keywords  = "Adrenal lesions,Detection,Fully Convolutional Networks (FCN)"
-}
-
-@ARTICLE{Wang2018-wh,
-  title    = "{CT} and {MRI} of adrenal gland pathologies",
-  author   = "Wang, Fuqin and Liu, Junwei and Zhang, Ruoxi and Bai, Yonghua and
-              Li, Cailin and Li, Bangguo and Liu, Heng and Zhang, Tijiang",
-  journal  = "Quant. Imaging Med. Surg.",
-  volume   =  8,
-  number   =  8,
-  abstract = "Besides ultrasound and nuclear medicine techniques, computed
-              tomography (CT) and magnetic resonance imaging (MRI) are commonly
-              used to examine adrenal lesions in both symptomatic and
-              asymptomatic patients. Some adrenal lesions have characteristic
-              radiological features. If an adrenal nodule is discovered
-              incidentally, determining whether the lesion is benign or
-              malignant is of great importance. According to their biological
-              behavior, lesions can be divided into benign (mainly: adenoma,
-              hyperplasia, pheochromocytoma, cyst, hemorrhage, cystic
-              lymphangioma, myelolipoma, hemangioma, ganglioneuroma, teratoma)
-              and malignant (mainly: metastases, adrenal cortical carcinoma,
-              neuroblastoma, lymphoma) conditions. In this paper, we review
-              CT/MRI findings of common adrenal gland lesions.",
-  year     =  2018
-}
-
-@ARTICLE{Tu2018-xx,
-  title     = "Can Adrenal Adenomas Be Differentiated From Adrenal Metastases at
-               Single-Phase Contrast-Enhanced {CT}?",
-  author    = "Tu, Wendy and Verma, Raman and Krishna, Satheesh and McInnes,
-               Matthew D F and Flood, Trevor A and Schieda, Nicola",
-  journal   = "American Journal of Roentgenology",
-  publisher = "American Roentgen Ray Society",
-  volume    =  211,
-  pages     = "1044--1050",
-  abstract  = "OBJECTIVE. The purpose of this study is to evaluate whether
-               adrenal metastases can be reliably differentiated from adenomas
-               at single-phase contrast-enhanced CT. MATERIALS AND METHODS.
-               Sixty-one co...",
-  year      =  2018,
-  keywords  = "CT,adenoma,adrenal,metastases,texture analysis"
+@ARTICLE{Kusunoki2022-ok,
+  title    = "A deep learning-based approach for the diagnosis of adrenal
+              adenoma: a new trial using {CT}",
+  author   = "Kusunoki, Masaoki and Nakayama, Tomohiro and Nishie, Akihiro and
+              Yamashita, Yasuo and Kikuchi, Kazufumi and Eto, Masatoshi and Oda,
+              Yoshinao and Ishigami, Kousei",
+  journal  = "Br. J. Radiol.",
+  volume   =  95,
+  abstract = "Objective: To develop and validate deep convolutional neural
+              network (DCNN) models for the diagnosis of adrenal adenoma (AA)
+              using CT. Methods: This retrospective study enrolled 112 patients
+              who underwent abdominal CT (non-contrast, early, and delayed
+              phases) with 107 adrenal lesions (83 AAs and 24 non-AAs) confirmed
+              pathologically and with 8 lesions confirmed by follow-up as
+              metastatic carcinomas. Three patients had adrenal lesions on both
+              sides. We constructed six DCNN models from six types of input
+              images for comparison: non-contrast images only (Model A), delayed
+              phase images only (Model B), three phasic images merged into a
+              3-channel (Model C), relative washout rate (RWR) image maps only
+              (Model D), non-contrast and RWR maps merged into a 2-channel
+              (Model E), and delayed phase and RWR maps merged into a 2-channel
+              (Model F). These input images were prepared manually with cropping
+              and registration of CT images. Each DCNN model with six
+              convolutional layers was trained with data augmentation and
+              hyperparameter tuning. The optimal threshold values for binary
+              classification were determined from the receiveroperating
+              characteristic curve analyses. We adopted the nested
+              cross-validation method, in which the outer fivefold
+              cross-validation was used to assess the diagnostic performance of
+              the models and the inner fivefold cross-validation was used to
+              tune hyperparameters of the models. Results: The areas under the
+              curve with 95\% confidence intervals of Models A–F were 0.94
+              [0.90, 0.98], 0.80 [0.69, 0.89], 0.97 [0.94, 1.00], 0.92 [0.85,
+              0.97], 0.99 [0.97, 1.00] and 0.94 [0.86, 0.99], respectively.
+              Model E showed high area under the curve greater than 0.95.
+              Conclusion: DCNN models may be a useful tool for the diagnosis of
+              AA using CT. Advances in knowledge: The current study demonstrates
+              a deep learning-based approach could differentiate adrenal adenoma
+              from non-adenoma using multiphasic CT.",
+  year     =  2022
 }
 
 @ARTICLE{Li2019-wx,
@@ -1600,80 +1444,270 @@
                analysis"
 }
 
-@ARTICLE{Koyuncu2019-wi,
-  title     = "An extensive study for binary characterisation of adrenal tumours",
-  author    = "Koyuncu, Hasan and Ceylan, Rahime and Asoglu, Semih and Cebeci,
-               Hakan and Koplay, Mustafa",
-  journal   = "Med. Biol. Eng. Comput.",
-  publisher = "Springer Nature",
-  volume    =  57,
-  pages     = "849--862",
-  abstract  = "On adrenal glands, benign tumours generally change the hormone
-               equilibrium, and malign tumours usually tend to spread to the
-               nearby tissues and to the organs of the immune system. These
-               features can give a trace about the type of adrenal tumours;
-               however, they cannot be observed all the time. Different tumour
-               types can be confused in terms of having a similar shape, size
-               and intensity features on scans. To support the evaluation
-               process, biopsy process is applied that includes injury and
-               complication risks. In this study, we handle the binary
-               characterisation of adrenal tumours by using dynamic computed
-               tomography images. Concerning this, the usage of one more imaging
-               modalities and biopsy process is wanted to be excluded. The used
-               dataset consists of 8 subtypes of adrenal tumours, and it seemed
-               as the worst-case scenario in which all handicaps are available
-               against tumour classification. Histogram, grey level
-               co-occurrence matrix and wavelet-based features are investigated
-               to reveal the most effective one on the identification of adrenal
-               tumours. Binary classification is proposed utilising
-               four-promising algorithms that have proven oneself on the task of
-               binary-medical pattern classification. For this purpose,
-               optimised neural networks are examined using six dataset inspired
-               by the aforementioned features, and an efficient framework is
-               offered before the use of a biopsy. Accuracy, sensitivity,
-               specificity, and AUC are used to evaluate the performance of
-               classifiers. Consequently, malign/benign characterisation is
-               performed by proposed framework, with success rates of 80.7\%,
-               75\%, 82.22\% and 78.61\% for the metrics, respectively.
-               Graphical abstract. [ABSTRACT FROM AUTHOR]",
-  year      =  2019,
-  keywords  = "ADRENAL tumors,Adrenal tumours,BIOPSY,COMPUTED
-               tomography,Computed tomography,HORMONES,Hybrid classifier,IMMUNE
-               system,Optimisation,Tumour classification"
+@ARTICLE{Tu2018-xx,
+  title     = "Can Adrenal Adenomas Be Differentiated From Adrenal Metastases at
+               Single-Phase Contrast-Enhanced {CT}?",
+  author    = "Tu, Wendy and Verma, Raman and Krishna, Satheesh and McInnes,
+               Matthew D F and Flood, Trevor A and Schieda, Nicola",
+  journal   = "American Journal of Roentgenology",
+  publisher = "American Roentgen Ray Society",
+  volume    =  211,
+  pages     = "1044--1050",
+  abstract  = "OBJECTIVE. The purpose of this study is to evaluate whether
+               adrenal metastases can be reliably differentiated from adenomas
+               at single-phase contrast-enhanced CT. MATERIALS AND METHODS.
+               Sixty-one co...",
+  year      =  2018,
+  keywords  = "CT,adenoma,adrenal,metastases,texture analysis"
 }
 
-@INCOLLECTION{Hosseinzadeh2020-mh,
-  title     = "Robust control applications in biomedical engineering: Control of
-               depth of hypnosis",
-  author    = "Hosseinzadeh, Mehdi",
-  booktitle = "Control Applications for Biomedical Engineering Systems",
-  publisher = "Elsevier",
-  pages     = "89--125",
-  year      =  2020,
-  language  = "en"
+@MISC{Merck_undated-nw,
+  title  = "Overview of the Adrenal Glands - Hormonal and Metabolic Disorders -
+            Merck Manuals Consumer Version",
+  author = "{Merck}"
 }
 
-@ARTICLE{Elsayes2020-ao,
-  title     = "Mimics, pitfalls, and misdiagnoses of adrenal masses on {CT} and
-               {MRI}",
-  author    = "Elsayes, Khaled M and Elmohr, Mohab M and Javadi, Sanaz and
-               Menias, Christine O and Remer, Erick M and Morani, Ajaykumar C
-               and Shaaban, Akram M",
-  journal   = "Abdominal Radiology",
-  publisher = "Springer",
-  volume    =  45,
-  pages     = "982--1000",
-  abstract  = "Due to the widespread use of imaging, incidental adrenal masses
-               are commonly encountered. A number of pitfalls can result in
-               misdiagnosis of these lesions, including inappropriate choice of
-               imaging technique, presence of pseudolesions, and overlap of
-               imaging features of different adrenal lesions. This article
-               explores the potential pitfalls in imaging of the adrenal glands,
-               on computed tomography and magnetic resonance imaging, that can
-               lead to misinterpretation. Clues to correct diagnoses are
-               provided to evade potential misinterpretation.",
+@MISC{OpenStaxCollege_undated-jm,
+  title  = "The Adrenal Glands – Anatomy and Physiology",
+  author = "{OpenStaxCollege}"
+}
+
+@MISC{noauthor_2022-ay,
+  title = "Peritoneum: Anatomy",
+  year  =  2022
+}
+
+@ARTICLE{Tu2020-dh,
+  title     = "Utility of {t2}-weighted mri to differentiate adrenal metastases
+               from lipid-poor adrenal adenomas",
+  author    = "Tu, Wendy and Abreu-Gomez, Jorge and Udare, Amar and Alrashed,
+               Abdulmohsen and Schieda, Nicola",
+  journal   = "Radiology: Imaging Cancer",
+  publisher = "Radiological Society of North America Inc.",
+  volume    =  2,
+  abstract  = "Purpose: To evaluate T2-weighted MRI features to differentiate
+               adrenal metastases from lipid-poor adenomas. Materials and
+               Methods: With institutional review board approval, this study
+               retrospectively compared 40 consecutive patients (mean age, 66
+               years ± 10 [standard deviation]) with metastases to 23 patients
+               (mean age, 60 years ± 15) with lipid-poor adenomas at 1.5-and 3-T
+               MRI between June 2016 and March 2019. A blinded radiologist
+               measured T2-weighted signal intensity (SI) ratio (SInodule /
+               SIpsoas muscle ), T2-weighted histogram features, and chemical
+               shift SI index. Two blinded radiologists (radiologist 1 and
+               radiologist 2) assessed T2-weighted SI and T2-weighted
+               heterogeneity using five-point Likert scales. Results:
+               Subjectively, T2-weighted SI (P .05). Conclusion Logistic
+               regression models combining T2-weighted SI and T2-weighted
+               heterogeneity can differentiate metastases from lipid-poor
+               adenomas. Validation of these preliminary results is required.",
+  year      =  2020
+}
+
+@ARTICLE{Luo2021-qi,
+  title     = "An optimized two-stage cascaded deep neural network for adrenal
+               segmentation on {CT} images",
+  author    = "Luo, Guoting and Yang, Qing and Chen, Tao and Zheng, Tao and Xie,
+               Wei and Sun, Huaiqiang",
+  journal   = "Comput. Biol. Med.",
+  publisher = "Elsevier Ltd",
+  volume    =  136,
+  pages     =  104749,
+  abstract  = "Segmentation of adrenal glands from CT images is a crucial step
+               in the AI-assisted diagnosis of adrenal gland-related disease.
+               However, highly intrasubject variability in shape and adhesive
+               boundaries with surrounding tissues make accurate segmentation of
+               the adrenal gland a challenging task. In the current study, we
+               proposed a novel two-stage deep neural network for adrenal gland
+               segmentation in an end-to-end fashion. In the first stage, a
+               localization network that aims to determine the candidate volume
+               of the target organ was used in the preprocessing step to reduce
+               class imbalance and computational burden. Then, in the second
+               stage, a Small-organNet model trained with a novel boundary
+               attention focal loss was designed to refine the boundary of the
+               organ within the screened volume. The experimental results show
+               that our proposed cascaded framework outperforms the
+               state-of-the-art deep learning method in segmenting the adrenal
+               gland with respect to accuracy; it requires fewer trainable
+               parameters and imposes a smaller demand on computational
+               resources.",
+  year      =  2021,
+  keywords  = "Adrenal gland,CT,Convolutional neural network,Image segmentation"
+}
+
+@ARTICLE{Zhang2022-ep,
+  title    = "Diagnostic performance of radiomics in adrenal masses: A
+              systematic review and meta-analysis",
+  author   = "Zhang, Hao and Lei, Hanqi and Pang, Jun",
+  journal  = "Front. Oncol.",
+  volume   =  12,
+  pages    =  975183,
+  abstract = "OBJECTIVES: (1) To assess the methodological quality and risk of
+              bias of radiomics studies investigating the diagnostic performance
+              in adrenal masses and (2) to determine the potential diagnostic
+              value of radiomics in adrenal tumors by quantitative analysis.
+              METHODS: PubMed, Embase, Web of Science, and Cochrane Library
+              databases were searched for eligible literature. Methodological
+              quality and risk of bias in the included studies were assessed by
+              the Quality Assessment of Diagnostic Accuracy Studies 2 (QUADAS-2)
+              and Radiomics Quality Score (RQS). The diagnostic performance was
+              evaluated by pooled sensitivity, specificity, diagnostic odds
+              ratio (DOR), and area under the curve (AUC). Spearman's
+              correlation coefficient and subgroup analysis were used to
+              investigate the cause of heterogeneity. Publication bias was
+              examined using the Deeks' funnel plot. RESULTS: Twenty-eight
+              studies investigating the diagnostic performance of radiomics in
+              adrenal tumors were identified, with a total of 3579 samples. The
+              average RQS was 5.11 (14.2\% of total) with an acceptable
+              inter-rater agreement (ICC 0.94, 95\% CI 0.93-0.95). The risk of
+              bias was moderate according to the result of QUADAS-2. Nine
+              studies investigating the use of CT-based radiomics in
+              differentiating malignant from benign adrenal tumors were included
+              in the quantitative analysis. The pooled sensitivity, specificity,
+              DOR and AUC with 95\% confidence intervals were 0.80 (0.68-0.88),
+              0.83 (0.73-0.90), 19.06 (7.87-46.19) and 0.88 (0.85-0.91),
+              respectively. There was significant heterogeneity among the
+              included studies but no threshold effect in the meta-analysis. The
+              result of subgroup analysis demonstrated that radiomics based on
+              unenhanced and contrast-enhanced CT possessed higher diagnostic
+              performance, and second-order or higher-order features could
+              enhance the diagnostic sensitivity but also increase the false
+              positive rate. No significant difference in diagnostic ability was
+              observed between studies with machine learning and those without.
+              CONCLUSIONS: The methodological quality and risk of bias of
+              studies investigating the diagnostic performance of radiomics in
+              adrenal tumors should be further improved in the future. CT-based
+              radiomics has the potential benefits in differentiating malignant
+              from benign adrenal tumors. The heterogeneity between the included
+              studies was a major limitation to obtaining more accurate
+              conclusions. SYSTEMATIC REVIEW REGISTRATION:
+              https://www.crd.york.ac.uk/PROSPERO/ CRD 42022331999 .",
+  month    =  sep,
+  year     =  2022,
+  keywords = "adrenal tumor; diagnostic performance; machine learning;
+              radiomics; radiomics quality score",
+  language = "en"
+}
+
+@ARTICLE{Zheng2020-fn,
+  title     = "A Preliminary Study for Distinguish Hormone-Secreting Functional
+               Adrenocortical Adenoma Subtypes Using Multiparametric {CT}
+               Radiomics-Based Machine Learning Model and Nomogram",
+  author    = "Zheng, Yineng and Liu, Xin and Zhong, Yi and Lv, Fajin and Yang,
+               Haitao",
+  journal   = "Front. Oncol.",
+  publisher = "Frontiers Media S.A.",
+  volume    =  10,
+  abstract  = "Purpose: To explore the application value of multiparametric
+               computed tomography (CT) radiomics in non-invasive
+               differentiation between aldosterone-producing and
+               cortisol-producing functional adrenocortical adenomas. Methods:
+               This retrospective review analyzed 83 patients including 41
+               patients with aldosterone-producing adenoma and 42 patients with
+               cortisol-producing adenoma. The quantitative radiomics features
+               were extracted from the complete unenhanced, arterial, and venous
+               phase CT images. A comparative study of several frequently used
+               machine learning models (linear discriminant analysis, logistic
+               regression, random forest, and support vector machine) combined
+               with different feature selection methods was implemented in order
+               to determine which was most advantageous for differential
+               diagnosis using radiomics features. Then, the integrated model
+               using the combination of radiomic signature and
+               clinic–radiological features was built, and the associated
+               calibration curve was also presented. The diagnostic performance
+               of these models was estimated and compared using the area under
+               the receiver operating characteristic (ROC) curve (AUC). Result:
+               In the radiomics-based machine learning model, logistic
+               regression model with LASSO (least absolute shrinkage and
+               selection operator) outperformed the other models, which yielded
+               a sensitivity of 0.935, a specificity of 0.823, and an accuracy
+               of 0.887 [AUC = 0.882, 95\% confidence interval (CI) =
+               0.819–0.945]. Moreover, the nomogram representing the integrated
+               model achieved good discrimination performances, which yielded a
+               sensitivity of 0.915, a specificity of 0.928, and an accuracy of
+               0.922 (AUC = 0.902, 95\% CI = 0.822–0.982), and it was better
+               than that of the radiomics model alone. Conclusion: This study
+               found that the combination of multiparametric radiomics signature
+               and clinic–radiological features can non-invasively differentiate
+               the subtypes of hormone-secreting functional adrenocortical
+               adenomas, which may have good potential for facilitating the
+               diagnosis and treatment in clinical practice.",
   year      =  2020,
-  keywords  = "Adrenal gland,CT,MRI,Mimics"
+  keywords  = "adrenocortical adenoma,computer-assisted diagnosis,machine
+               learning,multidetector computed tomography,radiomics"
+}
+
+@ARTICLE{Anaya-Isaza2021-um,
+  title     = "An overview of deep learning in medical imaging",
+  author    = "Anaya-Isaza, Andrés and Mera-Jiménez, Leonel and Zequera-Diaz,
+               Martha",
+  journal   = "Informatics in Medicine Unlocked",
+  publisher = "Elsevier Ltd",
+  volume    =  26,
+  pages     =  100723,
+  abstract  = "Deep learning (DL) is one of the branches of artificial
+               intelligence that has seen exponential growth in recent years.
+               The scientific community has focused its attention on DL due to
+               its versatility, high performance, high generalization capacity,
+               and multidisciplinary uses, among many other qualities. In
+               addition, a large amount of medical data and the development of
+               more powerful computers has also fostered an interest in this
+               area. This paper presents an overview of current deep learning
+               methods, starting from the most straightforward concept but
+               accompanied by the mathematical models that are behind the
+               functionality of this type of intelligence. In the first
+               instance, the fundamental concept of artificial neural networks
+               is introduced, progressively covering convolutional structures,
+               recurrent networks, attention models, up to the current structure
+               known as the Transformer. Secondly, all the basic concepts
+               involved in training and other common elements in the design of
+               the architectures are introduced. Thirdly, some of the key
+               elements in modern networks for medical image classification and
+               segmentation are shown. Subsequently, a review of some
+               applications realized in the last years is shown, where the main
+               features related to DL are highlighted. Finally, the perspectives
+               and future expectations of deep learning are presented.",
+  year      =  2021,
+  keywords  = "Attention models,Convolutional neural networks,Deep
+               learning,Medical imaging,Recurrent neural networks,Transformers"
+}
+
+@INPROCEEDINGS{Bi2017-vm,
+  title     = "Adrenal lesions detection on low-contrast {CT} images using fully
+               convolutional networks with multi-scale integration",
+  author    = "Bi, Lei and Kim, Jinman and Su, Tingwei and Fulham, Michael and
+               Feng, Dagan and Ning, Guang",
+  publisher = "IEEE Computer Society",
+  pages     = "895--898",
+  abstract  = "Adrenal lesions include a wide variety of benign and malignant
+               neoplasms of the adrenal gland, and are seen in up to 5\% of
+               computed tomography (CT) examinations of the abdomen. Better
+               identification of these lesions is important for effective
+               management and patient prognosis. Detection on low-contrast CT
+               images, however, even for experienced physicians can be difficult
+               and error-prone, because the lesions are often problematic to be
+               separated from the normal surrounding structures. Existing lesion
+               detection techniques have problems in identifying and
+               differentiating low-contrast tumors, which is related to their
+               use of low-level features rather than high level of semantics.
+               Hence we propose an automated approach using fully convolutional
+               networks (FCNs) and multi-scale integration to detect adrenal
+               lesion on low-contrast CT scans. The architecture of FCNs
+               includes deep, coarse, semantic information and shallow, fine,
+               appearance information in a hierarchical manner and it enables
+               the encoding of image-wide location and semantics, which are
+               desirable characteristics for adrenal lesion detection. We also
+               propose a multi-scale integration with a superpixel based random
+               walk (MI-SRW) approach to refine the lesion boundaries on
+               different scales. The MI-SRW technique enables us to constrain
+               the spatial and appearance consistency and then use complementary
+               information provided on different scales to detect adrenal
+               lesions of various sizes and characteristics. We used 38 adrenal
+               lesions detected on low-contrast CT and compared our approach to
+               existing 'state-of-the-art' methods and found that our approach
+               had superior detection performance.",
+  year      =  2017,
+  keywords  = "Adrenal lesions,Detection,Fully Convolutional Networks (FCN)"
 }
 
 @ARTICLE{Avanzo2020-ai,
@@ -1722,31 +1756,101 @@
                analysis,radiomics"
 }
 
-@ARTICLE{Karras2021-mj,
-  title    = "A Style-Based Generator Architecture for Generative Adversarial
-              Networks",
-  author   = "Karras, Tero and Laine, Samuli and Aila, Timo",
-  journal  = "IEEE Trans. Pattern Anal. Mach. Intell.",
-  volume   =  43,
-  number   =  12,
-  pages    = "4217--4228",
-  abstract = "We propose an alternative generator architecture for generative
-              adversarial networks, borrowing from style transfer literature.
-              The new architecture leads to an automatically learned,
-              unsupervised separation of high-level attributes (e.g., pose and
-              identity when trained on human faces) and stochastic variation in
-              the generated images (e.g., freckles, hair), and it enables
-              intuitive, scale-specific control of the synthesis. The new
-              generator improves the state-of-the-art in terms of traditional
-              distribution quality metrics, leads to demonstrably better
-              interpolation properties, and also better disentangles the latent
-              factors of variation. To quantify interpolation quality and
-              disentanglement, we propose two new, automated methods that are
-              applicable to any generator architecture. Finally, we introduce a
-              new, highly varied and high-quality dataset of human faces.",
-  month    =  dec,
-  year     =  2021,
-  language = "en"
+@ARTICLE{Stanzione2021-fh,
+  title     = "Handcrafted {MRI} radiomics and machine learning: Classification
+               of indeterminate solid adrenal lesions",
+  author    = "Stanzione, Arnaldo and Cuocolo, Renato and Verde, Francesco and
+               Galatola, Roberta and Romeo, Valeria and Mainenti, Pier Paolo and
+               Aprea, Giovanni and Guadagno, Elia and Caro, Marialaura Del Basso
+               De and Maurea, Simone",
+  journal   = "Magn. Reson. Imaging",
+  publisher = "Elsevier BV",
+  volume    =  79,
+  pages     = "52--58",
+  abstract  = "PURPOSE To assess a radiomic machine learning (ML) model in
+               classifying solid adrenal lesions (ALs) without fat signal drop
+               on chemical shift (CS) as benign or malignant. METHOD 55
+               indeterminate ALs (21 lipid poor adenomas, 15 benign
+               pheocromocytomas, 1 oncocytoma, 12 metastases, 6 primary tumors)
+               showing no fat signal drop on CS were retrospectively included.
+               Manual 3D segmentation on T2-weighted and CS images was performed
+               for subsequent radiomic feature extraction. After feature
+               stability testing and an 80-20\% train-test split, the train set
+               was balanced via oversampling. Following a multi-step feature
+               selection, an Extra Trees model was tuned with 5-fold stratified
+               cross-validation in the train set and then tested on the hold-out
+               test set. RESULTS A total of 3396 features were extracted from
+               each AL, of which 133 resulted unstable while none had low
+               variance ( 0.8) features were also excluded, leaving 440
+               parameters. Among these, Support Vector Machine 5-fold stratified
+               cross-validated recursive feature elimination selected a subset
+               of 6 features. ML obtained a cross-validation accuracy of 0.94 on
+               the train and 0.91 on the test sets. Precision, recall and F1
+               score were respectively 0.92, 0.91 and 0.91. CONCLUSIONS Our MRI
+               handcrafted radiomics and ML pipeline proved useful to
+               characterize benign and malignant solid indeterminate adrenal
+               lesions.",
+  year      =  2021,
+  keywords  = "Adrenal glands,Chemical shift imaging,Machine learning,Magnetic
+               resonance imaging,Neoplasms"
+}
+
+@ARTICLE{Yi2018-ud,
+  title     = "Radiomics improves efficiency for differentiating subclinical
+               pheochromocytoma from lipid-poor adenoma: a predictive,
+               preventive and personalized medical approach in adrenal
+               incidentalomas",
+  author    = "Yi, Xiaoping and Guan, Xiao and Zhang, Youming and Liu, Longfei
+               and Long, Xueying and Yin, Hongling and Wang, Zhongjie and Li,
+               Xuejun and Liao, Weihua and Chen, Bihong T and Zee, Chishing",
+  journal   = "EPMA J.",
+  publisher = "Springer International Publishing",
+  volume    =  9,
+  pages     = "421--429",
+  abstract  = "Objectives: This study aims to define a radiomic signature for
+               pre-operative differentiation between subclinical
+               pheochromocytoma (sPHEO) and lipid-poor adrenal adenoma (LPA) in
+               adrenal incidentaloma. The goal was to apply a predictive,
+               preventive, and personalized medical approach to the management
+               of adrenal tumors. Patients and methods: This retrospective study
+               consisted of 265 consecutive patients (training cohort, 212 (LPA,
+               145; sPHEO, 67); validation cohort, 53 (LPA, 36; sPHEO, 17)).
+               Computed tomography (CT) imaging features were evaluated,
+               including long diameter (LD), short diameter (SD), pre-enhanced
+               CT value (CTpre), enhanced CT value (CTpost), shape, homogeneity,
+               necrosis or cystic degeneration (N/C). Radiomic features were
+               extracted and then were used to construct a radiomic signature
+               (Rad-score) and radiomic nomogram. The area under the receiver
+               operating characteristic curve (AUC) was used to evaluate their
+               performance. Results: Sixteen of three hundred forty candidate
+               features were used to build a radiomic signature. The signature
+               was significantly different between the sPHEO and LPA groups
+               (AUC: training, 0.907; validation, 0.902). The radiomic nomogram
+               based on enhanced CT features (M1) consisted of Rad-score, LD,
+               SD, CTpre, shape, homogeneity and N/C (AUC: training, 0.957;
+               validation, 0.967). The pre-enhanced CT features based radiomic
+               nomogram (M2) included Rad-score, LD, SD, CTpre, shape, and
+               homogeneity (AUC: training, 0.955; validation, 0.958).
+               Conclusions: Our radiomic nomograms based on pre-enhanced and
+               enhanced CT images distinguished sPHEO from LPA. In addition, the
+               promising result using pre-enhanced CT images for predictive
+               diagnostics is important because patients could avoid the
+               additional radiation and risk associated with enhanced CT.",
+  year      =  2018,
+  keywords  = "Adrenal adenoma,Adrenal gland neoplasms,Computed
+               tomography,Pheochromocytoma,Predictive preventive personalized
+               medicine,Radiomics"
+}
+
+@INCOLLECTION{Hosseinzadeh2020-mh,
+  title     = "Robust control applications in biomedical engineering: Control of
+               depth of hypnosis",
+  author    = "Hosseinzadeh, Mehdi",
+  booktitle = "Control Applications for Biomedical Engineering Systems",
+  publisher = "Elsevier",
+  pages     = "89--125",
+  year      =  2020,
+  language  = "en"
 }
 
 @ARTICLE{Wagner2021-gm,
@@ -1782,133 +1886,60 @@
   keywords  = "Artificial intelligence,Machine learning,Neuroradiology,Radiomics"
 }
 
-@ARTICLE{Luo2021-qi,
-  title     = "An optimized two-stage cascaded deep neural network for adrenal
-               segmentation on {CT} images",
-  author    = "Luo, Guoting and Yang, Qing and Chen, Tao and Zheng, Tao and Xie,
-               Wei and Sun, Huaiqiang",
-  journal   = "Comput. Biol. Med.",
-  publisher = "Elsevier Ltd",
-  volume    =  136,
-  pages     =  104749,
-  abstract  = "Segmentation of adrenal glands from CT images is a crucial step
-               in the AI-assisted diagnosis of adrenal gland-related disease.
-               However, highly intrasubject variability in shape and adhesive
-               boundaries with surrounding tissues make accurate segmentation of
-               the adrenal gland a challenging task. In the current study, we
-               proposed a novel two-stage deep neural network for adrenal gland
-               segmentation in an end-to-end fashion. In the first stage, a
-               localization network that aims to determine the candidate volume
-               of the target organ was used in the preprocessing step to reduce
-               class imbalance and computational burden. Then, in the second
-               stage, a Small-organNet model trained with a novel boundary
-               attention focal loss was designed to refine the boundary of the
-               organ within the screened volume. The experimental results show
-               that our proposed cascaded framework outperforms the
-               state-of-the-art deep learning method in segmenting the adrenal
-               gland with respect to accuracy; it requires fewer trainable
-               parameters and imposes a smaller demand on computational
-               resources.",
-  year      =  2021,
-  keywords  = "Adrenal gland,CT,Convolutional neural network,Image segmentation"
+@ARTICLE{Karras2021-mj,
+  title    = "A Style-Based Generator Architecture for Generative Adversarial
+              Networks",
+  author   = "Karras, Tero and Laine, Samuli and Aila, Timo",
+  journal  = "IEEE Trans. Pattern Anal. Mach. Intell.",
+  volume   =  43,
+  number   =  12,
+  pages    = "4217--4228",
+  abstract = "We propose an alternative generator architecture for generative
+              adversarial networks, borrowing from style transfer literature.
+              The new architecture leads to an automatically learned,
+              unsupervised separation of high-level attributes (e.g., pose and
+              identity when trained on human faces) and stochastic variation in
+              the generated images (e.g., freckles, hair), and it enables
+              intuitive, scale-specific control of the synthesis. The new
+              generator improves the state-of-the-art in terms of traditional
+              distribution quality metrics, leads to demonstrably better
+              interpolation properties, and also better disentangles the latent
+              factors of variation. To quantify interpolation quality and
+              disentanglement, we propose two new, automated methods that are
+              applicable to any generator architecture. Finally, we introduce a
+              new, highly varied and high-quality dataset of human faces.",
+  month    =  dec,
+  year     =  2021,
+  language = "en"
 }
 
-@ARTICLE{Jahanvi2021-ni,
-  title   = "Chemical shift imaging: An indispensable tool in diagnosing
-             musculoskeletal pathologies",
-  author  = "Jahanvi, Vandana and Kelkar, Abhimanyu",
-  journal = "SA Journal of Radiology",
-  year    =  2021
-}
-
-@ARTICLE{Anaya-Isaza2021-um,
-  title     = "An overview of deep learning in medical imaging",
-  author    = "Anaya-Isaza, Andrés and Mera-Jiménez, Leonel and Zequera-Diaz,
-               Martha",
-  journal   = "Informatics in Medicine Unlocked",
-  publisher = "Elsevier Ltd",
-  volume    =  26,
-  pages     =  100723,
-  abstract  = "Deep learning (DL) is one of the branches of artificial
-               intelligence that has seen exponential growth in recent years.
-               The scientific community has focused its attention on DL due to
-               its versatility, high performance, high generalization capacity,
-               and multidisciplinary uses, among many other qualities. In
-               addition, a large amount of medical data and the development of
-               more powerful computers has also fostered an interest in this
-               area. This paper presents an overview of current deep learning
-               methods, starting from the most straightforward concept but
-               accompanied by the mathematical models that are behind the
-               functionality of this type of intelligence. In the first
-               instance, the fundamental concept of artificial neural networks
-               is introduced, progressively covering convolutional structures,
-               recurrent networks, attention models, up to the current structure
-               known as the Transformer. Secondly, all the basic concepts
-               involved in training and other common elements in the design of
-               the architectures are introduced. Thirdly, some of the key
-               elements in modern networks for medical image classification and
-               segmentation are shown. Subsequently, a review of some
-               applications realized in the last years is shown, where the main
-               features related to DL are highlighted. Finally, the perspectives
-               and future expectations of deep learning are presented.",
-  year      =  2021,
-  keywords  = "Attention models,Convolutional neural networks,Deep
-               learning,Medical imaging,Recurrent neural networks,Transformers"
-}
-
-@ARTICLE{Suganyadevi2022-jm,
-  title     = "A review on deep learning in medical image analysis",
-  author    = "Suganyadevi, S and Seethalakshmi, V and Balasamy, K",
-  journal   = "International Journal of Multimedia Information Retrieval",
-  publisher = "Springer Science and Business Media Deutschland GmbH",
-  volume    =  11,
-  pages     = "19--38",
-  abstract  = "Ongoing improvements in AI, particularly concerning deep learning
-               techniques, are assisting to identify, classify, and quantify
-               patterns in clinical images. Deep learning is the quickest
-               developing field in artificial intelligence and is effectively
-               utilized lately in numerous areas, including medication. A brief
-               outline is given on studies carried out on the region of
-               application: neuro, brain, retinal, pneumonic, computerized
-               pathology, bosom, heart, breast, bone, stomach, and
-               musculoskeletal. For information exploration, knowledge
-               deployment, and knowledge-based prediction, deep learning
-               networks can be successfully applied to big data. In the field of
-               medical image processing methods and analysis, fundamental
-               information and state-of-the-art approaches with deep learning
-               are presented in this paper. The primary goals of this paper are
-               to present research on medical image processing as well as to
-               define and implement the key guidelines that are identified and
-               addressed.",
-  year      =  2022,
-  keywords  = "Accuracy,Deep learning,Image classes,Medical image
-               analysis,Survey"
-}
-
-@ARTICLE{Bracci2022-fo,
-  title     = "Adrenal Lesions: A Review of Imaging",
-  author    = "Bracci, Benedetta and Santis, Domenico De and Gaudio, Antonella
-               Del and Faugno, Maria Carla and Romano, Allegra and Tarallo,
-               Mariarita and Zerunian, Marta and Guido, Gisella and Polici,
-               Michela and Polidori, Tiziano and Pucciarelli, Francesco and
-               Matarazzo, Iolanda and Laghi, Andrea and Caruso, Damiano",
-  journal   = "Diagnostics",
-  publisher = "MDPI",
-  volume    =  12,
-  pages     =  2171,
-  abstract  = "Adrenal lesions are frequently incidentally diagnosed during
-               investigations for other clinical conditions. Despite being
-               usually benign, nonfunctioning, and silent, they can occasionally
-               cause discomfort or be responsible for various clinical
-               conditions due to hormonal dysregulation; therefore, their
-               characterization is of paramount importance for establishing the
-               best therapeutic strategy. Imaging techniques such as ultrasound,
-               computed tomography, magnetic resonance, and PET-TC, providing
-               anatomical and functional information, play a central role in the
-               diagnostic workup, allowing clinicians and surgeons to choose the
-               optimal lesion management. This review aims at providing an
-               overview of the most encountered adrenal lesions, both benign and
-               malignant, including describing their imaging characteristics.",
-  year      =  2022,
-  keywords  = "adenoma,adrenal,computed tomography,incidentaloma,myelolipoma"
+@ARTICLE{Barat2023-sx,
+  title     = "Artificial intelligence in adrenal imaging: A critical review of
+               current applications",
+  author    = "Barat, Maxime and Gaillard, Martin and Cottereau, Anne-Ségolène
+               and Fishman, Elliot K and Assié, Guillaume and Jouinot, Anne and
+               Hoeffel, Christine and Soyer, Philippe and Dohan, Anthony",
+  journal   = "Diagn. Interv. Imaging",
+  publisher = "Elsevier BV",
+  volume    =  104,
+  number    =  1,
+  pages     = "37--42",
+  abstract  = "In the elective field of adrenal imaging, artificial intelligence
+               (AI) can be used for adrenal lesion detection, characterization,
+               hypersecreting syndrome management and patient follow-up.
+               Although a perfect AI tool that includes all required steps from
+               detection to analysis does not exist yet, multiple AI algorithms
+               have been developed and tested with encouraging results. However,
+               AI in this setting is still at an early stage. In this regard,
+               most published studies about AI in adrenal gland imaging report
+               preliminary results that do not have yet daily applications in
+               clinical practice. In this review, recent developments and
+               current results of AI in the field of adrenal imaging are
+               presented. Limitations and future perspectives of AI are
+               discussed.",
+  month     =  jan,
+  year      =  2023,
+  keywords  = "Adrenal glands; Artificial intelligence; Deep learning; Machine
+               learning",
+  language  = "en"
 }
